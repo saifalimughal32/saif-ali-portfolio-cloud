@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import nodemailer from "nodemailer";
 
 type Payload = {
   name?: string;
@@ -7,6 +8,8 @@ type Payload = {
   statusType?: string;
   info?: string;
 };
+
+const MAILBOX = "info@saifali.site";
 
 export async function POST(request: Request) {
   let body: Payload;
@@ -29,15 +32,46 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: false, error: "Invalid email" }, { status: 400 });
   }
 
-  // Local / mock delivery fallback until SMTP or a mail provider is configured.
-  console.info("[contact]", {
-    name,
-    role,
-    email,
-    statusType,
-    info,
-    at: new Date().toISOString(),
-  });
+  const smtpUser = process.env.SMTP_USER;
+  const smtpPass = process.env.SMTP_PASS;
+  const smtpHost = process.env.SMTP_HOST || "smtp.hostinger.com";
+  const smtpPort = Number(process.env.SMTP_PORT || "465");
 
-  return NextResponse.json({ ok: true, delivery: "local-log" });
+  if (!smtpUser || !smtpPass) {
+    console.error("[contact] Missing SMTP_USER or SMTP_PASS");
+    return NextResponse.json({ ok: false, error: "Delivery failed" }, { status: 500 });
+  }
+
+  const text = [
+    `Name: ${name}`,
+    `Role: ${role}`,
+    `Email: ${email}`,
+    `Status Type: ${statusType}`,
+    `Info: ${info}`,
+  ].join("\n");
+
+  try {
+    const transporter = nodemailer.createTransport({
+      host: smtpHost,
+      port: smtpPort,
+      secure: smtpPort === 465,
+      auth: {
+        user: smtpUser,
+        pass: smtpPass,
+      },
+    });
+
+    await transporter.sendMail({
+      from: MAILBOX,
+      to: MAILBOX,
+      replyTo: email,
+      subject: `New contact form submission: ${name}`,
+      text,
+    });
+  } catch (err) {
+    console.error("[contact] SMTP delivery failed", err);
+    return NextResponse.json({ ok: false, error: "Delivery failed" }, { status: 500 });
+  }
+
+  return NextResponse.json({ ok: true, delivery: "smtp" });
 }
