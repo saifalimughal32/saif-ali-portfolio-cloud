@@ -164,7 +164,7 @@ def draw_page1(c: canvas.Canvas) -> None:
     ry = TOP - 2
     contacts = [
         "Muzaffarabad, Pakistan",
-        "CreativeShopify32@gmail.com",
+        "info@saifali.site",
         "whyitworks.ai",
         "instagram.com/saifalimughal_01",
     ]
@@ -417,7 +417,7 @@ def draw_page2(c: canvas.Canvas) -> None:
     y -= 8
     contacts = [
         ("Portfolio", "whyitworks.ai / personal portfolio site"),
-        ("E-mail", "CreativeShopify32@gmail.com"),
+        ("E-mail", "info@saifali.site"),
         ("Agency", "whyitworks.ai"),
         ("Instagram", "instagram.com/saifalimughal_01"),
         ("Location", "Muzaffarabad, Pakistan"),
@@ -438,7 +438,7 @@ def draw_page2(c: canvas.Canvas) -> None:
     c.setFont(FONT, 7.5)
     c.setFillColor(SOFT)
     footer = (
-        "For references, case studies, and selected work, visit the portfolio or contact CreativeShopify32@gmail.com"
+        "For references, case studies, and selected work, visit the portfolio or contact info@saifali.site"
     )
     c.drawCentredString(PAGE_W / 2, BOTTOM + 6, footer)
 

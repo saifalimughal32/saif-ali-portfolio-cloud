@@ -49,7 +49,7 @@ export const site = {
   location: "Muzaffarabad, Pakistan",
   timeZone: "Asia/Karachi",
   gmtLabel: "GMT+5",
-  email: "CreativeShopify32@gmail.com",
+  email: "info@saifali.site",
   instagram: "https://www.instagram.com/saifalimughal_01/",
   agency: "whyitworks.ai",
   agencyUrl: "https://whyitworks.ai/",

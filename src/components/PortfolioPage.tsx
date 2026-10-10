@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { Play } from "lucide-react";
 import {
   portfolioCategories,
   publishedProjects,
@@ -25,6 +26,7 @@ export function PortfolioPage() {
   const [category, setCategory] = useState("all");
   const [lightbox, setLightbox] = useState<string | null>(null);
   const [mediaIndex, setMediaIndex] = useState(0);
+  const [videoFailed, setVideoFailed] = useState(false);
 
   useEffect(() => {
     setCategory(parseHash());
@@ -42,7 +44,12 @@ export function PortfolioPage() {
   const openProject = useCallback((id: string) => {
     setLightbox(id);
     setMediaIndex(0);
+    setVideoFailed(false);
   }, []);
+
+  useEffect(() => {
+    setVideoFailed(false);
+  }, [mediaIndex, lightbox]);
 
   const filtered = useMemo(() => {
     if (category === "all") return publishedProjects;
@@ -176,37 +183,53 @@ export function PortfolioPage() {
               <p className="mt-3 text-[var(--text-secondary)]">
                 {portfolioCategories.find((c) => c.hash === category)
                   ?.emptyMessage ??
-                  "No projects in this category yet — placeholder until work is ready."}
+                  "No projects in this category yet. Check back soon."}
               </p>
             </div>
           ) : (
             <div className="mt-10 grid gap-10 sm:grid-cols-2">
-              {filtered.map((project) => (
-                <button
-                  key={project.id}
-                  type="button"
-                  className="group rounded-[22px] bg-[#f3f3f3] p-4 text-left transition-opacity sm:rounded-[28px] sm:p-8"
-                  onClick={() => openProject(project.id)}
-                >
-                  <div className="overflow-hidden rounded-[20px] bg-white">
-                    <Image
-                      src={project.thumbnail}
-                      alt={project.thumbnailAlt}
-                      width={1200}
-                      height={900}
-                      quality={75}
-                      sizes="(max-width: 640px) 100vw, 50vw"
-                      className="h-auto w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
-                    />
-                  </div>
-                  <div className="mt-4 flex items-center justify-between gap-3">
-                    <p className="font-medium">{project.title}</p>
-                    <span className="rounded-full bg-white px-3 py-1 text-xs uppercase tracking-wide text-[var(--text-muted)]">
-                      {project.status}
-                    </span>
-                  </div>
-                </button>
-              ))}
+              {filtered.map((project) => {
+                const isVideo = project.media.some((m) => m.type === "video");
+                return (
+                  <button
+                    key={project.id}
+                    type="button"
+                    className="group rounded-[22px] bg-[#f3f3f3] p-4 text-left transition-opacity sm:rounded-[28px] sm:p-8"
+                    onClick={() => openProject(project.id)}
+                  >
+                    <div className="relative overflow-hidden rounded-[20px] bg-white">
+                      <Image
+                        src={project.thumbnail}
+                        alt={project.thumbnailAlt}
+                        width={1200}
+                        height={900}
+                        quality={75}
+                        sizes="(max-width: 640px) 100vw, 50vw"
+                        className="h-auto w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                      />
+                      {isVideo ? (
+                        <span
+                          className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/15 transition-colors group-hover:bg-black/25"
+                          aria-hidden
+                        >
+                          <span className="flex h-14 w-14 items-center justify-center rounded-full bg-white/95 text-[var(--text)] shadow-[0_8px_28px_rgba(0,0,0,0.2)] sm:h-16 sm:w-16">
+                            <Play
+                              className="ml-0.5 h-6 w-6 fill-current sm:h-7 sm:w-7"
+                              strokeWidth={0}
+                            />
+                          </span>
+                        </span>
+                      ) : null}
+                    </div>
+                    <div className="mt-4 flex items-center justify-between gap-3">
+                      <p className="font-medium">{project.title}</p>
+                      <span className="rounded-full bg-white px-3 py-1 text-xs uppercase tracking-wide text-[var(--text-muted)]">
+                        {isVideo ? "Video" : project.status}
+                      </span>
+                    </div>
+                  </button>
+                );
+              })}
             </div>
           )}
         </div>
@@ -228,17 +251,38 @@ export function PortfolioPage() {
             onClick={(e) => e.stopPropagation()}
           >
             {activeMedia.type === "video" ? (
-              <video
-                key={activeMedia.src}
-                src={activeMedia.src}
-                poster={activeMedia.poster}
-                controls
-                playsInline
-                autoPlay
-                muted
-                loop
-                className="mx-auto h-auto max-h-[52svh] w-full rounded-[16px] bg-black object-contain sm:max-h-[65vh]"
-              />
+              videoFailed ? (
+                <div className="relative mx-auto flex aspect-video w-full max-h-[52svh] items-center justify-center overflow-hidden rounded-[16px] bg-black sm:max-h-[65vh]">
+                  {activeMedia.poster ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={activeMedia.poster}
+                      alt=""
+                      className="absolute inset-0 h-full w-full object-contain opacity-40"
+                    />
+                  ) : null}
+                  <p className="relative z-10 max-w-[28ch] px-6 text-center text-sm text-white/90">
+                    Video file missing. Add the .mp4 to{" "}
+                    <span className="font-medium text-white">
+                      public/projects/ai-creatives/
+                    </span>
+                  </p>
+                </div>
+              ) : (
+                <video
+                  key={activeMedia.src}
+                  src={activeMedia.src}
+                  poster={activeMedia.poster}
+                  controls
+                  playsInline
+                  autoPlay
+                  muted
+                  loop
+                  preload="metadata"
+                  onError={() => setVideoFailed(true)}
+                  className="mx-auto h-auto max-h-[52svh] w-full rounded-[16px] bg-black object-contain sm:max-h-[65vh]"
+                />
+              )
             ) : (
               // eslint-disable-next-line @next/next/no-img-element
               <img

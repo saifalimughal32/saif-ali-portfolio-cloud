@@ -80,8 +80,7 @@ export const portfolioCategories: {
     id: "growth-strategy",
     label: "Offers & Funnels",
     hash: "growth-strategy",
-    emptyMessage:
-      "Offer and funnel case studies are not live yet — placeholder until approved work is ready.",
+    emptyMessage: "Offer and funnel case studies coming soon.",
     intro: {
       line1: "Offers and funnels that stop",
       line2Before: "confused traffic and ",
@@ -124,8 +123,7 @@ export const portfolioCategories: {
     id: "performance",
     label: "Paid Ads",
     hash: "performance",
-    emptyMessage:
-      "Paid ads case studies are not live yet — placeholder until campaign results can be shared.",
+    emptyMessage: "Paid ads case studies coming soon.",
     intro: {
       line1: "Paid ads that stop burning",
       line2Before: "budget and ",
@@ -139,8 +137,7 @@ export const portfolioCategories: {
     id: "ai-workflows",
     label: "Creative Ops",
     hash: "ai-workflows",
-    emptyMessage:
-      "Creative ops / production system examples are not live yet — placeholder until ready.",
+    emptyMessage: "Creative ops examples coming soon.",
     intro: {
       line1: "Creative systems that remove",
       line2Before: "bottlenecks and ",
@@ -279,17 +276,6 @@ export const projects: PortfolioProject[] = [
     approvedForDisplay: true,
   },
   {
-    id: "oneplace-ksa",
-    title: "OnePlace KSA",
-    category: "shopify",
-    thumbnail: "/projects/oneplace-ksa.jpg",
-    thumbnailAlt: "OnePlace KSA website concept placeholder",
-    media: [{ type: "image", src: "/projects/oneplace-ksa.jpg" }],
-    description: "Ecommerce website design concept — work in progress.",
-    status: "in-progress",
-    approvedForDisplay: true,
-  },
-  {
     id: "spookybite",
     title: "SpookyBite",
     category: "branding",
@@ -313,28 +299,6 @@ export const projects: PortfolioProject[] = [
     contribution:
       "Brand identity, mascot, wordmark, packaging system, pattern, and social visual direction.",
     status: "published",
-    approvedForDisplay: true,
-  },
-  {
-    id: "ilal-haider",
-    title: "Ilal Haider Portfolio",
-    category: "shopify",
-    thumbnail: "/projects/ilal-haider.jpg",
-    thumbnailAlt: "Ilal Haider portfolio website placeholder",
-    media: [{ type: "image", src: "/projects/ilal-haider.jpg" }],
-    description: "Personal portfolio website design.",
-    status: "concept",
-    approvedForDisplay: true,
-  },
-  {
-    id: "campaign-01",
-    title: "Campaign Creatives",
-    category: "branding",
-    thumbnail: "/projects/campaign-01.jpg",
-    thumbnailAlt: "Campaign creative concept placeholder",
-    media: [{ type: "image", src: "/projects/campaign-01.jpg" }],
-    description: "Selected campaign creative concepts.",
-    status: "concept",
     approvedForDisplay: true,
   },
   {
@@ -558,46 +522,8 @@ export const projects: PortfolioProject[] = [
     status: "published",
     approvedForDisplay: true,
   },
-  // —— Placeholders for services without public case studies yet ——
-  {
-    id: "placeholder-growth-strategy",
-    title: "Offer & Funnel Case Study",
-    category: "growth-strategy",
-    thumbnail: "/projects/campaign-01.jpg",
-    thumbnailAlt: "Placeholder for offer and funnel case study",
-    media: [{ type: "image", src: "/projects/campaign-01.jpg" }],
-    description:
-      "Placeholder — ecommerce offer, landing funnel, and conversion testing case study coming soon.",
-    contribution: "Offers & funnels (coming soon).",
-    status: "coming-soon",
-    approvedForDisplay: true,
-  },
-  {
-    id: "placeholder-performance",
-    title: "Paid Ads Case Study",
-    category: "performance",
-    thumbnail: "/projects/campaign-02.jpg",
-    thumbnailAlt: "Placeholder for paid ads case study",
-    media: [{ type: "image", src: "/projects/campaign-02.jpg" }],
-    description:
-      "Placeholder — Meta / TikTok / Google paid ads results case study coming soon.",
-    contribution: "Paid ads (coming soon).",
-    status: "coming-soon",
-    approvedForDisplay: true,
-  },
-  {
-    id: "placeholder-ai-workflows",
-    title: "Creative Ops Case Study",
-    category: "ai-workflows",
-    thumbnail: "/projects/botzen.jpg",
-    thumbnailAlt: "Placeholder for creative ops case study",
-    media: [{ type: "image", src: "/projects/botzen.jpg" }],
-    description:
-      "Placeholder — ecommerce creative production system case study coming soon.",
-    contribution: "Creative ops (coming soon).",
-    status: "coming-soon",
-    approvedForDisplay: true,
-  },
 ];
 
-export const publishedProjects = projects.filter((p) => p.approvedForDisplay);
+export const publishedProjects = projects.filter(
+  (p) => p.approvedForDisplay && p.status === "published",
+);

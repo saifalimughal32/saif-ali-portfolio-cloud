@@ -4,7 +4,7 @@ export const cv = {
   agency: "whyitworks.ai",
   contacts: [
     "Muzaffarabad, Pakistan",
-    "CreativeShopify32@gmail.com",
+    "info@saifali.site",
     "whyitworks.ai",
     "instagram.com/saifalimughal_01",
   ],
@@ -124,11 +124,11 @@ export const cv = {
   ],
   contactRows: [
     { label: "Portfolio", value: "whyitworks.ai / personal portfolio site" },
-    { label: "E-mail", value: "CreativeShopify32@gmail.com" },
+    { label: "E-mail", value: "info@saifali.site" },
     { label: "Agency", value: "whyitworks.ai" },
     { label: "Instagram", value: "instagram.com/saifalimughal_01" },
     { label: "Location", value: "Muzaffarabad, Pakistan" },
   ],
   footer:
-    "For references, case studies, and selected work, visit the portfolio or contact CreativeShopify32@gmail.com",
+    "For references, case studies, and selected work, visit the portfolio or contact info@saifali.site",
 } as const;

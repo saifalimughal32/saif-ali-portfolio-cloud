@@ -38,7 +38,7 @@ Do not turn this into a generic dark portfolio, dashboard, gradient landing page
 | Hero eyebrow | Ecommerce Design & Creative Strategy |
 | Location | Muzaffarabad, Pakistan |
 | Clock zone | Asia/Karachi, GMT+5 |
-| Contact email | CreativeShopify32@gmail.com; confirm before launch |
+| Contact email | info@saifali.site |
 | Instagram | https://www.instagram.com/saifalimughal_01/ |
 | Agency | TheClickUp |
 | Agency website | https://theclickup.com/ |
