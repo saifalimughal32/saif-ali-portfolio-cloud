@@ -152,10 +152,10 @@ export const portfolioCategories: {
 export const projects: PortfolioProject[] = [
   {
     id: "aura21",
-    title: "Aura21",
+    title: "Aura21 — Shopify Store Design for a Streetwear Brand",
     category: "shopify",
     thumbnail: "/projects/aura21.jpg",
-    thumbnailAlt: "Aura21 Shopify store — Wear the Aura summer drop hero",
+    thumbnailAlt: "Aura21 Shopify storefront — streetwear summer drop hero designed for conversion",
     media: [
       { type: "image", src: "/projects/aura21/section-01.jpg" },
       { type: "image", src: "/projects/aura21/section-02.jpg" },
@@ -164,7 +164,7 @@ export const projects: PortfolioProject[] = [
       { type: "image", src: "/projects/aura21/full.jpg" },
     ],
     description:
-      "Shopify store design for Aura21 — a streetwear fashion brand. Summer drop hero, collection edit, and conversion-focused ecommerce layout.",
+      "Shopify store design for Aura21, a streetwear fashion brand. Summer-drop hero, collection-edit flow, and a conversion-focused layout built to move shoppers from first scroll to checkout. Context: Aura21 launched a summer drop and needed a high-energy hero plus clear collection storytelling to keep shoppers browsing instead of bouncing. Role: full storefront design — hero composition, collection storytelling, and ecommerce UI. Result: a conversion-focused layout with a hero-first flow into collections.",
     contribution:
       "Shopify storefront design, hero composition, collection storytelling, and ecommerce UI.",
     status: "published",
