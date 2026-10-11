@@ -9,6 +9,7 @@ import { site } from "@/content/site";
 export const metadata: Metadata = {
   title: `Book a call | ${site.displayName}`,
   description: `Schedule a call with ${site.displayName} — founder of whyitworks.ai.`,
+  alternates: { canonical: "/book" },
 };
 
 export default function BookPage() {
