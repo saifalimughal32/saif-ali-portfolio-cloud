@@ -12,6 +12,20 @@ export const metadata: Metadata = {
     title: site.meta.homeTitle,
     description: site.meta.homeDescription,
     type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 2240,
+        height: 1120,
+        alt: "Saif Ali — Ecommerce Growth Consultant for DTC Brands",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: site.meta.homeTitle,
+    description: site.meta.homeDescription,
+    images: ["/og-image.jpg"],
   },
 };
 
