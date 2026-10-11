@@ -321,9 +321,10 @@ export function Hero() {
           <p className="font-hand text-base text-[var(--text-secondary)]">
             {site.heroEyebrow}
           </p>
-          <h1 className="font-clash text-[clamp(4rem,8vw,6rem)] font-semibold leading-[0.95] tracking-[-0.04em] text-[var(--text)]">
+          {/* SEO: single h1 per page — desktop hero name is a visual duplicate of the h1 above, so it renders as a styled p (zero visual change) */}
+          <p className="font-clash text-[clamp(4rem,8vw,6rem)] font-semibold leading-[0.95] tracking-[-0.04em] text-[var(--text)]">
             {site.heroLeft}
-          </h1>
+          </p>
         </div>
 
         <div
