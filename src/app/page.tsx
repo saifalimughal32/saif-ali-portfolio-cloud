@@ -15,6 +15,11 @@ import {
 import { ReviewsSection } from "@/components/ReviewsSection";
 import { ServicesSection } from "@/components/ServicesSection";
 import { SharedFooter } from "@/components/SharedFooter";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 export default function HomePage() {
   return (
