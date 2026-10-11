@@ -59,7 +59,7 @@ export const portfolioCategories: {
       line2Accent: "turns clicks into orders",
       body: "Most brands lose money between the ad, the store, and the offer. We connect store design, branding, creatives, and paid ads into one loop — so every dollar you spend has a clearer path to checkout. Done with you, built to sell.",
       cta: "Book your Discovery Call",
-      trust: "Trusted by 100+ DTC brands",
+      trust: "Trusted by ecommerce brands worldwide",
     },
   },
   {
