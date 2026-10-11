@@ -1,6 +1,12 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
-import { HELP_OPTIONS } from "@/content/freeAudit";
+
+type QuizAnswer = {
+  questionId?: string;
+  question?: string;
+  optionId?: string;
+  label?: string;
+};
 
 type Payload = {
   name?: string;
@@ -8,18 +14,13 @@ type Payload = {
   whatsapp?: string;
   brand?: string;
   website?: string;
-  helpCategory?: string;
-  problem?: string;
   alreadyTried?: string;
   usefulLink?: string;
-  outcome?: string;
+  stageLabel?: string;
+  quizAnswers?: QuizAnswer[];
 };
 
 const MAILBOX = "info@saifali.site";
-
-function isHelpCategory(value: string): boolean {
-  return (HELP_OPTIONS as readonly string[]).includes(value);
-}
 
 export async function POST(request: Request) {
   let body: Payload;
@@ -34,20 +35,26 @@ export async function POST(request: Request) {
   const whatsapp = String(body.whatsapp || "").trim();
   const brand = String(body.brand || "").trim();
   const website = String(body.website || "").trim();
-  const helpCategory = String(body.helpCategory || "").trim();
-  const problem = String(body.problem || "").trim();
   const alreadyTried = String(body.alreadyTried || "").trim();
   const usefulLink = String(body.usefulLink || "").trim();
-  const outcome = String(body.outcome || "").trim();
+  const stageLabel = String(body.stageLabel || "").trim();
+  const quizAnswers = Array.isArray(body.quizAnswers)
+    ? body.quizAnswers
+        .map((a) => ({
+          question: String(a?.question || "").trim(),
+          label: String(a?.label || "").trim(),
+        }))
+        .filter((a) => a.question && a.label)
+    : [];
 
-  if (!name || !email || !whatsapp || !brand || !helpCategory || !problem || !outcome) {
+  if (!name || !email || !whatsapp || !brand) {
     return NextResponse.json({ ok: false, error: "Missing fields" }, { status: 400 });
   }
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return NextResponse.json({ ok: false, error: "Invalid email" }, { status: 400 });
   }
-  if (!isHelpCategory(helpCategory)) {
-    return NextResponse.json({ ok: false, error: "Invalid category" }, { status: 400 });
+  if (quizAnswers.length === 0) {
+    return NextResponse.json({ ok: false, error: "Missing quiz answers" }, { status: 400 });
   }
   if (website && !/^https?:\/\//i.test(website) && !/^[\w.-]+\.[\w.-]+/.test(website)) {
     return NextResponse.json({ ok: false, error: "Invalid website" }, { status: 400 });
@@ -63,26 +70,28 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: false, error: "Delivery failed" }, { status: 500 });
   }
 
+  const auditType = stageLabel || quizAnswers[0]?.label || "Audit";
   const submittedAt = new Date().toISOString();
+  const quizBlock = quizAnswers
+    .map((a, i) => `${i + 1}. ${a.question}\n   → ${a.label}`)
+    .join("\n");
+
   const text = [
     `Name: ${name}`,
     `Email: ${email}`,
     `WhatsApp: ${whatsapp}`,
     `Brand: ${brand}`,
     `Website: ${website || "—"}`,
-    `Audit category: ${helpCategory}`,
+    `Stage: ${stageLabel || "—"}`,
     "",
-    `Problem:`,
-    problem,
+    `Diagnosis answers:`,
+    quizBlock,
     "",
     `What they already tried:`,
     alreadyTried || "—",
     "",
     `Relevant links:`,
     usefulLink || "—",
-    "",
-    `Desired outcome:`,
-    outcome,
     "",
     `Submission date: ${submittedAt}`,
   ].join("\n");
@@ -102,7 +111,7 @@ export async function POST(request: Request) {
       from: MAILBOX,
       to: MAILBOX,
       replyTo: email,
-      subject: `New Free Audit Request | ${brand} | ${helpCategory}`,
+      subject: `New Free Audit Request | ${brand} | ${auditType}`,
       text,
     });
   } catch (err) {
