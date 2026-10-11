@@ -96,11 +96,11 @@ export const site = {
     },
   ] as SocialLink[],
   meta: {
-    homeTitle: "Saif Ali | Founder, whyitworks.ai — AI Marketing for Ecommerce",
+    homeTitle: "Ecommerce CRO Consultant for DTC Brands | Saif Ali",
     homeDescription:
-      "Founder of whyitworks.ai — an AI-driven marketing agency helping ecommerce brands grow through Shopify design, creative strategy, Meta ads, and performance marketing.",
-    portfolioTitle: "Selected Work | Saif Ali",
+      "I help DTC brands turn ad clicks into customers — full-journey CRO across Meta ads, landing pages and Shopify. DM for a free teardown.",
+    portfolioTitle: "Shopify & Ecommerce Portfolio | Saif Ali",
     portfolioDescription:
-      "Portfolio across Shopify, growth strategy, branding, AI creatives, performance marketing, and AI workflows by Saif Ali / whyitworks.ai.",
+      "Selected Shopify builds, CRO-focused redesigns and ecommerce growth work by Saif Ali. See the builds and the thinking behind them.",
   },
 } as const;
