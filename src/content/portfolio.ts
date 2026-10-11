@@ -172,10 +172,10 @@ export const projects: PortfolioProject[] = [
   },
   {
     id: "bunbox",
-    title: "Bun Box",
+    title: "Bun Box — Shopify Store Design for a Bakery Brand",
     category: "shopify",
     thumbnail: "/projects/bunbox.jpg",
-    thumbnailAlt: "Bun Box Shopify bakery store — Bake the Treats hero",
+    thumbnailAlt: "Bun Box Shopify storefront — bakery hero designed for conversion",
     media: [
       { type: "image", src: "/projects/bunbox/section-01.jpg" },
       { type: "image", src: "/projects/bunbox/section-02.jpg" },
@@ -184,7 +184,7 @@ export const projects: PortfolioProject[] = [
       { type: "image", src: "/projects/bunbox/full.jpg" },
     ],
     description:
-      "Shopify store design for Bun Box — a bakery ecommerce brand. Playful product storytelling, menu browsing, and order-focused layout.",
+      "Shopify store design for Bun Box, a bakery ecommerce brand. Playful product storytelling, easy menu browsing, and an order-focused layout built to turn cravings into checkouts. Context: Bun Box sells baked goods online — bakery shoppers decide fast, so the menu must be easy to browse and the path to ordering obvious. Role: full storefront design — product presentation, menu-browsing UX, and conversion UI for baked goods ecommerce. Result: a playful, order-focused layout that guides shoppers from hero to checkout.",
     contribution:
       "Shopify storefront design, product presentation, and conversion UI for baked goods ecommerce.",
     status: "published",
