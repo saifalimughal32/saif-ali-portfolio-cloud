@@ -6,6 +6,7 @@ import { site } from "@/content/site";
 export const metadata: Metadata = {
   title: `CV | ${site.displayName}`,
   description: `Curriculum Vitae for ${site.displayName} — founder of whyitworks.ai.`,
+  alternates: { canonical: "/cv" },
 };
 
 function SectionTitle({ children }: { children: string }) {
