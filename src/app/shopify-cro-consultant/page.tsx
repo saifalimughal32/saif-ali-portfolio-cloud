@@ -35,6 +35,70 @@ const serviceSchema = {
   },
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://www.saifali.site/shopify-cro-consultant#faq",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "How much does it cost — is it really fixed-price?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "$750 flat for the sprint scope above. If something falls outside scope — a full theme rebuild, for example — I'll flag it and quote it separately before doing anything. No hidden fees.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How long does the sprint take?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Seven days from kickoff to handoff, assuming I get store access and timely answers from you. Slow access or slow approvals are the usual delays — everything else is on me.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How is this different from hiring a CRO agency?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "An agency puts an account manager between you and the person doing the work, and usually sells a monthly retainer. With me, the person auditing your store is the person fixing it — one operator, one fixed scope, faster decisions. An agency still makes sense if you need a whole team and ongoing experimentation at scale.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What access do you need to my store?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Shopify collaborator access — I'll tell you exactly which permissions and why before you approve anything. If I'm reviewing your ads, read-only access to the ad account helps; GA4 read access too, if you have it. I won't touch anything outside the agreed fixes.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you guarantee a conversion-rate lift?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No — and you should be wary of anyone who does. I target the highest-impact leaks first, but results depend on your traffic quality, your offer, and your pricing. What I guarantee is the work: the audit, the ranked fixes, the implementation, and the verification.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Will you change my store's design?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No redesign. Fixes work inside your existing theme — same design language, same brand. If a visual change would genuinely help conversion, I'll explain why and get your approval first.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What happens after the sprint?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "You get a handoff summary: what changed, why it changed, and what to watch next. If you want follow-up work afterward, we can talk about it — no obligation, no retainer pitch baked in.",
+      },
+    },
+  ],
+};
+
 const ctaButtonClass =
   "inline-flex items-center gap-2 rounded-full bg-[var(--accent)] px-7 py-3.5 text-sm font-medium text-white transition-opacity hover:opacity-90";
 
@@ -65,6 +129,10 @@ export default function ShopifyCroConsultantPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <div className="mx-auto w-full max-w-4xl">
         {/* Breadcrumb / back — mirrors the /book page pattern */}
