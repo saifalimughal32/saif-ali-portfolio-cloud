@@ -16,7 +16,7 @@ export function PortfolioCategoryHero({ intro }: { intro: PortfolioCategoryIntro
   return (
     <section className="px-5 pb-6 pt-4 md:px-10">
       <div className="mx-auto max-w-3xl text-center">
-        <h2 className="font-clash text-[clamp(2rem,5vw,3.35rem)] font-semibold leading-[1.08] tracking-[-0.03em] text-[var(--text)]">
+        <h1 className="font-clash text-[clamp(2rem,5vw,3.35rem)] font-semibold leading-[1.08] tracking-[-0.03em] text-[var(--text)]">
           {intro.line1}
           <br />
           {intro.line2Before}
@@ -31,7 +31,7 @@ export function PortfolioCategoryHero({ intro }: { intro: PortfolioCategoryIntro
               </em>
             </>
           ) : null}
-        </h2>
+        </h1>
         <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-[var(--text-secondary)] md:text-lg">
           {intro.body}
         </p>
