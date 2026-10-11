@@ -112,9 +112,9 @@ export function PortfolioGateway() {
             <p className="relative text-sm text-[var(--text-secondary)] md:text-base">
               Click here to see my
             </p>
-            <h2 className="relative mt-2 font-general text-[clamp(2rem,5vw,3.5rem)] font-medium leading-none tracking-[-2px] text-[var(--text)] transition-colors group-hover:text-[var(--accent)]">
+            <h1 className="relative mt-2 font-general text-[clamp(2rem,5vw,3.5rem)] font-medium leading-none tracking-[-2px] text-[var(--text)] transition-colors group-hover:text-[var(--accent)]">
               Complete Portfolio
-            </h2>
+            </h1>
             <p className="relative mt-4 text-sm text-[var(--text-muted)]">
               Updated portfolio showcase, as of October, 2026.
             </p>
