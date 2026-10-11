@@ -40,6 +40,10 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-0HZ7JB42PE');`}
         </Script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: "{\n  \"@context\": \"https://schema.org\",\n  \"@graph\": [\n    {\n      \"@type\": \"Person\",\n      \"@id\": \"https://www.saifali.site/#person\",\n      \"name\": \"Saif Ali\",\n      \"url\": \"https://www.saifali.site/\",\n      \"jobTitle\": \"Ecommerce Growth Consultant for DTC Brands\",\n      \"description\": \"Ecommerce growth consultant helping DTC brands turn ad clicks into customers \\u2014 full-journey CRO across Meta ads, landing pages and Shopify.\",\n      \"knowsAbout\": [\n        \"Conversion Rate Optimization\",\n        \"Shopify\",\n        \"Ecommerce\",\n        \"Meta Ads\",\n        \"Landing Page Optimization\",\n        \"Ecommerce UX\"\n      ],\n      \"sameAs\": [\n        \"https://www.linkedin.com/in/saif-ali-094034279/\",\n        \"https://dribbble.com/saifalimughal32\",\n        \"https://github.com/saifalimughal32\",\n        \"https://www.pinterest.com/saifalimughal32/\"\n      ]\n    },\n    {\n      \"@type\": \"WebSite\",\n      \"@id\": \"https://www.saifali.site/#website\",\n      \"url\": \"https://www.saifali.site/\",\n      \"name\": \"Saif Ali \\u2014 Ecommerce Growth Consultant\",\n      \"publisher\": {\n        \"@id\": \"https://www.saifali.site/#person\"\n      }\n    }\n  ]\n}" }}
+        />
         <SmoothScrollProvider>{children}</SmoothScrollProvider>
       </body>
     </html>
