@@ -14,7 +14,7 @@ export const servicesIntro = {
   label: "/ Growth system",
   heading: "What I do best?",
   accentWord: "best?",
-  body: "These are not separate services — they plug into each other. Shopify, strategy, branding, AI creatives, performance marketing, and AI workflows run as one loop so every piece feeds the next.",
+  body: "These are not separate services — they plug into each other. Shopify, strategy, branding, AI creatives, performance marketing, and AI workflows run as one full-journey CRO loop so every piece feeds the next.",
 };
 
 /** Top CTA block for the Services section (AI creatives positioning). */
@@ -46,7 +46,7 @@ export const services: Service[] = [
     systemLabel: "Shopify",
     connectsTo: "Growth Strategy decides what the store must convert",
     description:
-      "I build Shopify stores that make products easy to explore and buying simple — the foundation every other step sells into.",
+      "I build conversion-focused Shopify stores that make products easy to explore and buying simple — the foundation every other step sells into.",
     capabilities: [
       "Custom sections",
       "Theme customization",
@@ -62,7 +62,7 @@ export const services: Service[] = [
     systemLabel: "Growth Strategy",
     connectsTo: "Branding makes that direction look inevitable",
     description:
-      "I connect the offer, customer journey, creative, and store experience around one growth goal — so branding and performance pull the same way.",
+      "As an ecommerce growth consultant, I connect the offer, customer journey, creative, and store experience around one growth goal — so branding and performance pull the same way.",
     capabilities: [
       "Offer positioning",
       "Funnel planning",

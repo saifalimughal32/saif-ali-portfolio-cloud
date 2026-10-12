@@ -1,16 +1,16 @@
 export const about = {
   eyebrow: "/ About Me",
   /** Offer-style heading — accent words render in brand orange */
-  line1: "Ecommerce systems that reduce",
+  line1: "Ecommerce growth consulting that reduces",
   line2Before: "wasted spend and ",
   line2Accent: "scale what sells",
-  subtitle: "Store. Offer. Creative. Ads. One growth system.",
-  body: "If your Shopify store looks fine but CPA stays high, the pieces aren’t connected. I connect store design, offer clarity, Meta creatives, and paid growth so brands convert clearer, waste less, and scale with confidence.",
+  subtitle: "Ad. Click. Landing page. Store. Checkout. One full-journey CRO system.",
+  body: "If your Shopify store looks fine but CPA stays high, the pieces aren’t connected. As an ecommerce growth consultant, I run full-journey CRO — connecting store design, offer clarity, Meta creatives, and paid growth — so brands waste less, convert more consistently, and scale with confidence.",
   impactLine: "Done-for-you systems that compound.",
   trustLine: "Trusted by ecommerce brands worldwide",
   proofLine: "Founder at whyitworks.ai — AI marketing for ecommerce",
   positioning:
-    "I help ecommerce brands connect better design with clearer messaging, sharper creatives, and performance that compounds.",
+    "I help DTC brands turn ad clicks into customers — full-journey CRO across Meta ads, landing pages, and Shopify.",
   marqueeItems: [
     "Shopify Store Design",
     "$197K Funnel Case",
