@@ -192,10 +192,10 @@ export const projects: PortfolioProject[] = [
   },
   {
     id: "elvo",
-    title: "Elvo",
+    title: "Elvo — Shopify Store Design for a Furniture Brand",
     category: "shopify",
     thumbnail: "/projects/elvo.jpg",
-    thumbnailAlt: "Elvo Shopify furniture store — minimal wooden furniture hero",
+    thumbnailAlt: "Elvo Shopify storefront — minimal wooden furniture hero designed for conversion",
     media: [
       { type: "image", src: "/projects/elvo/section-01.jpg" },
       { type: "image", src: "/projects/elvo/section-02.jpg" },
@@ -203,7 +203,7 @@ export const projects: PortfolioProject[] = [
       { type: "image", src: "/projects/elvo/full.jpg" },
     ],
     description:
-      "Shopify store design for Elvo — minimal wooden furniture ecommerce. Calm hero, trust features, and product browsing experience.",
+      "Shopify store design for Elvo, a minimal wooden furniture brand. Calm hero, clear category browsing, and trust features built to make considered furniture purchases feel easy. Context: Elvo sells minimal wooden furniture online — furniture shoppers compare carefully, so the design keeps the hero calm, product presentation honest, and trust signals visible to reduce hesitation. Role: full storefront design — furniture category UX, trust features, and brand-forward ecommerce layout. Result: a minimal, browsing-friendly layout that guides shoppers from hero through product discovery toward purchase.",
     contribution:
       "Shopify storefront design, furniture category UX, and brand-forward ecommerce layout.",
     status: "published",
