@@ -25,7 +25,7 @@ export const servicesHero = {
   line3Accent: "spend",
   body: "We find your winning angles, produce fully-edited ads monthly, and build the system that compounds your results. Real-looking AI, no creator bottlenecks, completely done for you.",
   cta: "Book your Discovery Call",
-  trust: "Trusted by 100+ DTC brands",
+  trust: "Trusted by ecommerce brands worldwide",
 };
 
 /** Short names — must match each service below in order */
