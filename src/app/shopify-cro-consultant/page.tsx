@@ -96,6 +96,30 @@ const faqSchema = {
         text: "You get a handoff summary: what changed, why it changed, and what to watch next. If you want follow-up work afterward, we can talk about it — no obligation, no retainer pitch baked in.",
       },
     },
+    {
+      "@type": "Question",
+      name: "How much does Shopify CRO cost?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A one-off CRO audit typically costs $500–$5,000, and agency retainers run $4,000–$20,000 per month. My Shopify Conversion Fix Sprint is $750 fixed: a 13-area teardown plus the highest-impact fixes implemented on your store in 7 days — no retainer, no hidden quote.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is included in a Shopify conversion audit?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The sprint covers a 13-area teardown of your full buying journey — paid traffic alignment, landing pages, homepage, navigation, product pages, mobile UX, offer, pricing, social proof, trust, cart, checkout, and measurement — documented with screenshots, fixes ranked by revenue impact, and the highest-impact ones implemented in 7 days.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Should I hire a Shopify CRO consultant or redesign my store?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "If your store looks fine but isn't converting, a redesign is usually the wrong first move — the problem is rarely the theme. A CRO sprint finds and fixes the actual leaks: messaging, offer, trust, cart, checkout. Redesign only when the brand or structure is genuinely broken, not when the journey is.",
+      },
+    },
   ],
 };
 
@@ -159,8 +183,9 @@ export default function ShopifyCroConsultantPage() {
             </em>
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-[var(--text-secondary)] md:text-lg">
-            I find where your Shopify store leaks revenue — from Meta ads to
-            checkout — and fix it in a focused conversion sprint.
+            I find and fix conversion leaks across the entire journey — from
+            Meta ad click and landing page through product page, offer, trust,
+            cart and checkout.
           </p>
           <p className={bodyClass + " max-w-2xl"}>
             A Shopify CRO consultant audits your full buying journey, finds
@@ -168,6 +193,13 @@ export default function ShopifyCroConsultantPage() {
             implements fixes ranked by revenue impact. I do that across the
             whole journey: your ads, landing pages, product pages, cart, and
             checkout — not just the theme.
+          </p>
+          <p className={bodyClass + " max-w-2xl"}>
+            <span className="font-medium text-[var(--text)]">
+              The offer: Shopify Conversion Fix Sprint — $750 fixed price — a
+              13-area teardown of your journey, with the highest-impact fixes
+              shipped on your store in 7 days.
+            </span>
           </p>
           <CtaRow />
         </section>
@@ -298,6 +330,136 @@ export default function ShopifyCroConsultantPage() {
             have it.
           </p>
           <CtaRow label="Start the sprint" />
+        </section>
+
+        {/* 5b — The 13 areas */}
+        <section id="areas" className="mt-14 md:mt-20">
+          <h2 className={h2Class}>The 13-area sprint: what gets reviewed</h2>
+          <p className={bodyClass}>
+            Every sprint walks the same 13 areas, in the order a buyer
+            experiences them — from the ad click to the completed checkout.
+          </p>
+          <ol className={listClass + " list-none"}>
+            <li>
+              <span className="font-medium text-[var(--text)]">1. Paid traffic alignment.</span>{" "}
+              Do your Meta ads promise the same thing your store delivers? A mismatch here loses the sale before the click even lands.
+            </li>
+            <li>
+              <span className="font-medium text-[var(--text)]">2. Landing page messaging.</span>{" "}
+              Does the page continue the ad&rsquo;s promise, or does the shopper have to re-orient from scratch?
+            </li>
+            <li>
+              <span className="font-medium text-[var(--text)]">3. Homepage.</span>{" "}
+              Does a first-time visitor understand what you sell and why it matters, within seconds?
+            </li>
+            <li>
+              <span className="font-medium text-[var(--text)]">4. Navigation and collections.</span>{" "}
+              Can shoppers find what they want without thinking — on mobile especially?
+            </li>
+            <li>
+              <span className="font-medium text-[var(--text)]">5. Product page.</span>{" "}
+              Does the page answer every buying question near the buy button — shipping, returns, stock, trust — or only at checkout?
+            </li>
+            <li>
+              <span className="font-medium text-[var(--text)]">6. Mobile UX.</span>{" "}
+              Most of your traffic arrives on a phone. Is the journey smooth on a small screen, or does it break?
+            </li>
+            <li>
+              <span className="font-medium text-[var(--text)]">7. Offer architecture.</span>{" "}
+              Is the deal clear, and does the value you communicate justify the price you charge?
+            </li>
+            <li>
+              <span className="font-medium text-[var(--text)]">8. Pricing presentation.</span>{" "}
+              Are prices, discounts, and comparisons presented without confusion or fine-print surprises?
+            </li>
+            <li>
+              <span className="font-medium text-[var(--text)]">9. Social proof.</span>{" "}
+              Are reviews and ratings visible where the buying decision actually happens — not buried pages away?
+            </li>
+            <li>
+              <span className="font-medium text-[var(--text)]">10. Trust signals.</span>{" "}
+              Guarantees, policies, and credibility cues, placed near the point of purchase.
+            </li>
+            <li>
+              <span className="font-medium text-[var(--text)]">11. Cart.</span>{" "}
+              Does your cart build confidence, or does it introduce doubt — surprise costs, confusing options?
+            </li>
+            <li>
+              <span className="font-medium text-[var(--text)]">12. Checkout.</span>{" "}
+              Is the path to payment short, clear, and free of friction and last-minute surprises?
+            </li>
+            <li>
+              <span className="font-medium text-[var(--text)]">13. Tracking and measurement.</span>{" "}
+              Can you actually see where shoppers drop off? GA4, events, and funnels — set up so decisions run on evidence.
+            </li>
+          </ol>
+        </section>
+
+        {/* 5c — Pricing */}
+        <section id="pricing" className="mt-14 md:mt-20">
+          <h2 className={h2Class}>How much does Shopify CRO cost?</h2>
+          <p className={bodyClass}>
+            <span className="font-medium text-[var(--text)]">
+              A one-off CRO audit typically costs $500–$5,000, and agency
+              retainers run $4,000–$20,000 per month. My offer is simpler: the
+              Shopify Conversion Fix Sprint is $750, fixed price.
+            </span>
+          </p>
+          <p className={bodyClass}>
+            That $750 covers the 13-area teardown plus the highest-impact fixes
+            implemented on your store within 7 days — no discovery retainer, no
+            monthly commitment, no hidden quote. If something falls outside the
+            sprint scope, I flag it and quote it separately before doing
+            anything.
+          </p>
+        </section>
+
+        {/* 5d — Audit vs Sprint comparison */}
+        <section id="audit-vs-sprint" className="mt-14 md:mt-20">
+          <h2 className={h2Class}>Traditional CRO Audit vs Conversion Fix Sprint</h2>
+          <div className="mt-6 overflow-x-auto">
+            <table className="w-full min-w-[540px] text-left text-base leading-relaxed text-[var(--text-secondary)] md:text-lg">
+              <thead>
+                <tr className="border-b border-[#d4d4d4] text-[var(--text)]">
+                  <th className="py-3 pr-4 align-top font-medium"></th>
+                  <th className="py-3 pr-4 align-top font-medium">Traditional CRO audit</th>
+                  <th className="py-3 align-top font-medium">Conversion Fix Sprint</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-[#e0e0e0]">
+                <tr>
+                  <td className="py-3 pr-4 align-top font-medium text-[var(--text)]">Diagnosis</td>
+                  <td className="py-3 pr-4 align-top">A written report — findings and recommendations, often dozens of pages.</td>
+                  <td className="py-3 align-top">13-area teardown with screenshots, every finding ranked by revenue impact.</td>
+                </tr>
+                <tr>
+                  <td className="py-3 pr-4 align-top font-medium text-[var(--text)]">Implementation</td>
+                  <td className="py-3 pr-4 align-top">You get the report; implementing it is on you or your developer.</td>
+                  <td className="py-3 align-top">The highest-impact fixes shipped on your store, inside your existing theme.</td>
+                </tr>
+                <tr>
+                  <td className="py-3 pr-4 align-top font-medium text-[var(--text)]">Delivery time</td>
+                  <td className="py-3 pr-4 align-top">Usually 2–4 weeks for the report alone.</td>
+                  <td className="py-3 align-top">7 days from kickoff to handoff — audit and fixes.</td>
+                </tr>
+                <tr>
+                  <td className="py-3 pr-4 align-top font-medium text-[var(--text)]">Pricing</td>
+                  <td className="py-3 pr-4 align-top">Typically $500–$5,000 for the audit; implementation quoted separately.</td>
+                  <td className="py-3 align-top">$750 fixed. Everything in the sprint scope is included.</td>
+                </tr>
+                <tr>
+                  <td className="py-3 pr-4 align-top font-medium text-[var(--text)]">Who executes fixes</td>
+                  <td className="py-3 pr-4 align-top">Nobody — or a separate developer you hire afterward.</td>
+                  <td className="py-3 align-top">Me — the same person who audited your store.</td>
+                </tr>
+                <tr>
+                  <td className="py-3 pr-4 align-top font-medium text-[var(--text)]">What happens after</td>
+                  <td className="py-3 pr-4 align-top">You decide what to implement and when.</td>
+                  <td className="py-3 align-top">Handoff summary: what changed, why it changed, and what to watch next.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </section>
 
         {/* 6 — Process */}
@@ -477,6 +639,43 @@ export default function ShopifyCroConsultantPage() {
                 You get a handoff summary: what changed, why it changed, and
                 what to watch next. If you want follow-up work afterward, we
                 can talk about it — no obligation, no retainer pitch baked in.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-general text-lg font-medium text-[var(--text)]">
+                How much does Shopify CRO cost?
+              </h3>
+              <p className={bodyClass}>
+                A one-off CRO audit typically costs $500–$5,000, and agency
+                retainers run $4,000–$20,000 per month. My Shopify Conversion
+                Fix Sprint is $750 fixed: a 13-area teardown plus the
+                highest-impact fixes implemented on your store in 7 days — no
+                retainer, no hidden quote.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-general text-lg font-medium text-[var(--text)]">
+                What is included in a Shopify conversion audit?
+              </h3>
+              <p className={bodyClass}>
+                The sprint covers a 13-area teardown of your full buying
+                journey — paid traffic alignment, landing pages, homepage,
+                navigation, product pages, mobile UX, offer, pricing, social
+                proof, trust, cart, checkout, and measurement — documented with
+                screenshots, fixes ranked by revenue impact, and the
+                highest-impact ones implemented in 7 days.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-general text-lg font-medium text-[var(--text)]">
+                Should I hire a Shopify CRO consultant or redesign my store?
+              </h3>
+              <p className={bodyClass}>
+                If your store looks fine but isn&rsquo;t converting, a redesign
+                is usually the wrong first move — the problem is rarely the
+                theme. A CRO sprint finds and fixes the actual leaks:
+                messaging, offer, trust, cart, checkout. Redesign only when the
+                brand or structure is genuinely broken, not when the journey is.
               </p>
             </div>
           </div>
