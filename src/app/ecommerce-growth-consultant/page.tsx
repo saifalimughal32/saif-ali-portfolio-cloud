@@ -527,6 +527,14 @@ export default function EcommerceGrowthConsultantPage() {
             I&rsquo;ll tell you honestly whether owning the whole line will
             move the needle for you. If it won&rsquo;t, I&rsquo;ll say so.
           </p>
+          <p className={bodyClass}>
+            Prefer to start with the diagnosis? My{" "}
+            <Link href="/ecommerce-ux-audit" className="text-[var(--accent)] underline underline-offset-4">
+              ecommerce UX audit
+            </Link>{" "}
+            is a teardown-style review of your store — the itemized report,
+            ranked by impact, before anything changes.
+          </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link href="/book" className={ctaButtonClass}>
               Book a fit call
