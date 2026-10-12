@@ -490,6 +490,14 @@ export default function ShopifyCroConsultantPage() {
             I&rsquo;ll tell you honestly whether a sprint will move the needle
             for you. If it won&rsquo;t, I&rsquo;ll say so.
           </p>
+          <p className={bodyClass}>
+            Thinking bigger than conversion — who should own your ecommerce
+            growth end to end? Read my{" "}
+            <Link href="/ecommerce-growth-consultant" className="text-[var(--accent)] underline underline-offset-4">
+              ecommerce growth consultant
+            </Link>{" "}
+            page.
+          </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link href="/book" className={ctaButtonClass}>
               Book a fit call
