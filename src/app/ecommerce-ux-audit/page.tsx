@@ -544,6 +544,13 @@ export default function EcommerceUxAuditPage() {
             audit will move the needle for you. If it won&rsquo;t, I&rsquo;ll
             say so.
           </p>
+          <p className={bodyClass}>
+            Running paid traffic to a landing page that leaks clicks? Read my{" "}
+            <Link href="/landing-page-optimization" className="text-[var(--accent)] underline underline-offset-4">
+              landing page optimization
+            </Link>{" "}
+            page — the ad-to-page handoff, rebuilt to convert.
+          </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link href="/book" className={ctaButtonClass}>
               Book a fit call

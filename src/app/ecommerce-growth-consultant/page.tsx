@@ -535,6 +535,14 @@ export default function EcommerceGrowthConsultantPage() {
             is a teardown-style review of your store — the itemized report,
             ranked by impact, before anything changes.
           </p>
+          <p className={bodyClass}>
+            Want the page your ads point to rebuilt to convert? My{" "}
+            <Link href="/landing-page-optimization" className="text-[var(--accent)] underline underline-offset-4">
+              landing page optimization
+            </Link>{" "}
+            engagement aligns message, offer, and creative with your paid
+            traffic.
+          </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link href="/book" className={ctaButtonClass}>
               Book a fit call

@@ -506,6 +506,13 @@ export default function ShopifyCroConsultantPage() {
             page — a teardown-style review of your store, delivered as a
             ranked report before we change a thing.
           </p>
+          <p className={bodyClass}>
+            Running paid traffic to a page that drops the click? Read my{" "}
+            <Link href="/landing-page-optimization" className="text-[var(--accent)] underline underline-offset-4">
+              landing page optimization
+            </Link>{" "}
+            page — message, offer, and creative aligned with your ads.
+          </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link href="/book" className={ctaButtonClass}>
               Book a fit call

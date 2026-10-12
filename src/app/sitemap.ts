@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "https://www.saifali.site/shopify-cro-consultant", changeFrequency: "monthly", priority: 0.9 },
     { url: "https://www.saifali.site/ecommerce-growth-consultant", changeFrequency: "monthly", priority: 0.9 },
     { url: "https://www.saifali.site/ecommerce-ux-audit", changeFrequency: "monthly", priority: 0.9 },
+    { url: "https://www.saifali.site/landing-page-optimization", changeFrequency: "monthly", priority: 0.9 },
     { url: "https://www.saifali.site/book", changeFrequency: "monthly", priority: 0.7 },
     { url: "https://www.saifali.site/cv", changeFrequency: "monthly", priority: 0.5 },
   ];
