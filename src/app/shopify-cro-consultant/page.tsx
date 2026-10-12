@@ -498,6 +498,14 @@ export default function ShopifyCroConsultantPage() {
             </Link>{" "}
             page.
           </p>
+          <p className={bodyClass}>
+            Want the expert diagnosis before any fixes? Read my{" "}
+            <Link href="/ecommerce-ux-audit" className="text-[var(--accent)] underline underline-offset-4">
+              ecommerce UX audit
+            </Link>{" "}
+            page — a teardown-style review of your store, delivered as a
+            ranked report before we change a thing.
+          </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link href="/book" className={ctaButtonClass}>
               Book a fit call
