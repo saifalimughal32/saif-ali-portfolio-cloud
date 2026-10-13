@@ -338,6 +338,8 @@ export default function EcommerceGrowthConsultantPage() {
           </p>
         </section>
 
+        {/* deploy retrigger: Vercel missed the c115be4b push event; content unchanged */}
+
         {/* 5 — The sprint offer */}
         <section id="sprint" className="mt-14 md:mt-20">
           <h2 className={h2Class}>Where we start: the Shopify Conversion Fix Sprint</h2>
