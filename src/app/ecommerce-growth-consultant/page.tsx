@@ -633,6 +633,14 @@ export default function EcommerceGrowthConsultantPage() {
             engagement aligns message, offer, and creative with your paid
             traffic.
           </p>
+          <p className={bodyClass}>
+            Want to see the full teardown in practice first? My{" "}
+<Link href="/case-studies" className="text-[var(--accent)] underline underline-offset-4">
+              case studies
+            </Link>{" "}
+            page documents the 13-area review behind every engagement —
+            problem, evidence, impact, fix, priority.
+          </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link href="/book" className={ctaButtonClass}>
               Book a fit call
