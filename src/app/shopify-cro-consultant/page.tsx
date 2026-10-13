@@ -712,6 +712,15 @@ export default function ShopifyCroConsultantPage() {
             </Link>{" "}
             page — message, offer, and creative aligned with your ads.
           </p>
+          <p className={bodyClass}>
+            Curious what the teardown looks like on a real storefront?
+            Read my{" "}
+<Link href="/case-studies" className="text-[var(--accent)] underline underline-offset-4">
+              case studies
+            </Link>{" "}
+            page — the 13-area teardown methodology, shown step by step on a
+            public store.
+          </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link href="/book" className={ctaButtonClass}>
               Book a fit call
