@@ -98,6 +98,14 @@ const faqSchema = {
         text: "Seven days from kickoff: intake, the teardown against your live ads, the rewrite and rebuild, then a before-and-after verification on mobile and desktop.",
       },
     },
+    {
+      "@type": "Question",
+      name: "How do I know the problem is my landing page and not my ads?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Split the funnel at the click. If your click-through rate is healthy but the page barely converts, the ad kept its promise and the page broke it — that is the landing page. If click-through itself is weak, the ad's promise is not landing — that is the ad account. I start every engagement by reading both numbers, because rebuilding a page when the ad is the problem (or reworking ads when the page is the problem) just moves the loss around. If the numbers say the page is not the leak, I will tell you before you pay.",
+      },
+    },
   ],
 };
 
@@ -201,7 +209,72 @@ export default function LandingPageOptimizationPage() {
           </p>
         </section>
 
-        {/* 2 — Who this is for */}
+        {/* 2 — The ad-math thesis */}
+        <section id="ad-math" className="mt-14 md:mt-20">
+          <h2 className={h2Class}>Why profitable Meta ads can still produce poor ecommerce results</h2>
+          <p className={bodyClass}>
+            An ad can look profitable and still lose money. Click-through
+            above benchmark, cost per click under control, creative approved
+            and scaling — and the store barely moves. The usual response is
+            to fix the ads: new angles, new hooks, broader targeting, more
+            budget. Sometimes that works. Often it just buys more of the
+            same expensive clicks, because the leak was never in the ad
+            account. It was on the page the clicks land on.
+          </p>
+          <p className={bodyClass}>
+            The math is unforgiving. If a page turns one in a hundred clicks
+            into customers when it could turn three, most of every extra ad
+            dollar is waste before it is spent. Fixing the page multiplies
+            every ad dollar already being bought — new creative cannot do
+            that, because new creative lands on the same page.
+          </p>
+          <p className={bodyClass}>
+            <span className="font-medium text-[var(--text)]">
+              How to tell which one is leaking:
+            </span>{" "}
+            read the two numbers separately. Healthy click-through with weak
+            conversion means the ad kept its promise and the page broke it —
+            that is a landing page problem. Weak click-through means the
+            promise itself is not landing — that is an ad problem. Most
+            founders optimize the wrong one, because the ad account is where
+            the dashboards are and the page is where nobody looks.
+          </p>
+          <p className={bodyClass}>
+            <span className="font-medium text-[var(--text)]">
+              What a finding looks like
+            </span>{" "}
+            (illustrative example, not a client result):
+          </p>
+          <ul className={listClass}>
+            <li>
+              — <span className="font-medium text-[var(--text)]">Problem.</span>{" "}
+              The hero headline does not repeat the ad&rsquo;s promise.
+            </li>
+            <li>
+              — <span className="font-medium text-[var(--text)]">Evidence.</span>{" "}
+              The ad&rsquo;s first line offers free shipping over $50; the
+              landing page hero shows the brand name and a lifestyle image,
+              with no mention of shipping until checkout.
+            </li>
+            <li>
+              — <span className="font-medium text-[var(--text)]">Impact.</span>{" "}
+              The visitor cannot confirm they are in the right place in the
+              first seconds, so a share of paid clicks leaves before
+              scrolling.
+            </li>
+            <li>
+              — <span className="font-medium text-[var(--text)]">Fix.</span>{" "}
+              Mirror the ad&rsquo;s opening promise in the hero&rsquo;s first
+              line, and restate the offer above the fold.
+            </li>
+            <li>
+              — <span className="font-medium text-[var(--text)]">Priority.</span>{" "}
+              P1 — it touches every paid click the page receives.
+            </li>
+          </ul>
+        </section>
+
+        {/* 3 — Who this is for */}
         <section id="who-its-for" className="mt-14 md:mt-20">
           <h2 className={h2Class}>Who this is for</h2>
           <ul className={listClass}>
@@ -224,7 +297,7 @@ export default function LandingPageOptimizationPage() {
           </p>
         </section>
 
-        {/* 3 — AEO definition block */}
+        {/* 4 — AEO definition block */}
         <section id="what-it-is" className="mt-14 md:mt-20">
           <h2 className={h2Class}>What does landing page optimization actually involve?</h2>
           <p className={bodyClass}>
@@ -252,7 +325,7 @@ export default function LandingPageOptimizationPage() {
           </p>
         </section>
 
-        {/* 4 — Method */}
+        {/* 5 — Method */}
         <section id="method" className="mt-14 md:mt-20">
           <h2 className={h2Class}>My method: message, offer, creative — aligned</h2>
           <p className={bodyClass}>
@@ -293,7 +366,7 @@ export default function LandingPageOptimizationPage() {
           </p>
         </section>
 
-        {/* 5 — The offer */}
+        {/* 6 — The offer */}
         <section id="offer" className="mt-14 md:mt-20">
           <h2 className={h2Class}>What&rsquo;s included: the landing page engagement</h2>
           <p className={bodyClass}>
@@ -340,7 +413,7 @@ export default function LandingPageOptimizationPage() {
           <CtaRow label="Optimize my landing page" />
         </section>
 
-        {/* 6 — Process */}
+        {/* 7 — Process */}
         <section id="process" className="mt-14 md:mt-20">
           <h2 className={h2Class}>How the engagement works</h2>
           <ol className={listClass + " list-none"}>
@@ -368,7 +441,7 @@ export default function LandingPageOptimizationPage() {
           </ol>
         </section>
 
-        {/* 7 — Anti-cannibalization */}
+        {/* 8 — Anti-cannibalization */}
         <section id="vs-others" className="mt-14 md:mt-20">
           <h2 className={h2Class}>How is this different from the Conversion Fix Sprint?</h2>
           <p className={bodyClass}>
@@ -400,7 +473,7 @@ export default function LandingPageOptimizationPage() {
           </p>
         </section>
 
-        {/* 8 — Proof */}
+        {/* 9 — Proof */}
         <section id="proof" className="mt-14 md:mt-20">
           <h2 className={h2Class}>Proof</h2>
           <p className={bodyClass}>
@@ -428,7 +501,7 @@ export default function LandingPageOptimizationPage() {
               or confirmed quotes — to be added here when available. Never invent. */}
         </section>
 
-        {/* 9 — Why me */}
+        {/* 10 — Why me */}
         <section id="why-me" className="mt-14 md:mt-20">
           <h2 className={h2Class}>Why work with me on your landing page</h2>
           <ul className={listClass}>
@@ -475,7 +548,7 @@ export default function LandingPageOptimizationPage() {
           </ul>
         </section>
 
-        {/* 10 — FAQs */}
+        {/* 11 — FAQs */}
         <section id="faq" className="mt-14 md:mt-20">
           <h2 className={h2Class}>Questions founders ask</h2>
           <div className="mt-6 space-y-8">
@@ -567,10 +640,26 @@ export default function LandingPageOptimizationPage() {
                 verification on mobile and desktop.
               </p>
             </div>
+            <div>
+              <h3 className="font-general text-lg font-medium text-[var(--text)]">
+                How do I know the problem is my landing page and not my ads?
+              </h3>
+              <p className={bodyClass}>
+                Split the funnel at the click. If your click-through rate is
+                healthy but the page barely converts, the ad kept its promise
+                and the page broke it — that is the landing page. If
+                click-through itself is weak, the ad&rsquo;s promise is not
+                landing — that is the ad account. I start every engagement by
+                reading both numbers, because rebuilding a page when the ad
+                is the problem (or reworking ads when the page is the
+                problem) just moves the loss around. If the numbers say the
+                page is not the leak, I will tell you before you pay.
+              </p>
+            </div>
           </div>
         </section>
 
-        {/* 11 — Closing CTA */}
+        {/* 12 — Closing CTA */}
         <section id="book" className="mt-14 md:mt-20">
           <h2 className={h2Class}>Make the click worth it</h2>
           <p className={bodyClass}>
