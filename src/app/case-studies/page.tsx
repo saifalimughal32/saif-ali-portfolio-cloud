@@ -68,6 +68,14 @@ const faqSchema = {
     },
     {
       "@type": "Question",
+      name: "What does 'not measured' mean in your case-study format?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "It means exactly what it says. Every case study on this page is structured as problem, research, diagnosis, changes, and measured result. Where no client engagement exists — independent methodology demos — there is no conversion lift to report, so the result is labelled not measured instead of being invented. Client before-and-after results will carry real numbers here only when they are real and the client agrees.",
+      },
+    },
+    {
+      "@type": "Question",
       name: "How is a teardown different from the Conversion Fix Sprint?",
       acceptedAnswer: {
         "@type": "Answer",
@@ -204,7 +212,7 @@ export default function CaseStudiesPage() {
           </p>
         </section>
 
-        {/* 2 — Methodology demo */}
+        {/* 2 — Methodology demo (honest outcome format) */}
         <section id="demo" className="mt-14 md:mt-20">
           <h2 className={h2Class}>Methodology demo: a public storefront</h2>
           <p className={bodyClass}>
@@ -213,51 +221,66 @@ export default function CaseStudiesPage() {
             </span>{" "}
             This teardown was run on a public US candle storefront, using
             only what any visitor can see. No private data, no client
-            relationship, no invented outcomes.
+            relationship, no invented outcomes. It follows the same outcome
+            format every case study on this page will use: problem,
+            research, diagnosis, changes, and measured result — with an
+            explicit &ldquo;not measured&rdquo; note wherever nothing was
+            measured.
           </p>
+          <h3 className="font-general mt-8 text-lg font-medium text-[var(--text)]">
+            Problem
+          </h3>
           <p className={bodyClass}>
-            The finding, on the store&rsquo;s $24 product page: the shipping
-            cost was stated in the announcement bar (&ldquo;$7 shipping, free
-            over $80&rdquo;), but there was no delivery-time estimate
-            anywhere near Add to Cart. A first-time buyer could see what
-            shipping costs and still couldn&rsquo;t tell how long the candle
-            takes to arrive. No stock indicator and no money-back guarantee
-            appeared near the button either.
+            On the store&rsquo;s $24 product page, a first-time buyer could
+            see what shipping costs ($7, free over $80 — stated in the
+            announcement bar) but couldn&rsquo;t tell how long the candle
+            would take to arrive: there was no delivery-time estimate
+            anywhere near Add to Cart. Arrival timing is the question that
+            stops a first order, and the page didn&rsquo;t answer it.
           </p>
-          <ul className={listClass}>
-            <li>
-              — <span className="font-medium text-[var(--text)]">Delivery and returns:</span>{" "}
-              reviewed with findings — cost visible, timing missing at the
-              buy box, the one place the buyer is deciding.
-            </li>
-            <li>
-              — <span className="font-medium text-[var(--text)]">Variants and purchase controls:</span>{" "}
-              reviewed with findings — no stock indicator near Add to Cart.
-            </li>
-            <li>
-              — <span className="font-medium text-[var(--text)]">Reviews and trust:</span>{" "}
-              reviewed with no meaningful issue on this page — ratings were
-              present and visible; the gap was placement of guarantees, not
-              absence of proof.
-            </li>
-            <li>
-              — <span className="font-medium text-[var(--text)]">Product page messaging:</span>{" "}
-              reviewed with findings — the page answers &ldquo;what does it
-              cost to ship&rdquo; but not &ldquo;when will it arrive,&rdquo;
-              and arrival timing is the question that stops a first order.
-            </li>
-          </ul>
+          <h3 className="font-general mt-8 text-lg font-medium text-[var(--text)]">
+            Research
+          </h3>
           <p className={bodyClass}>
-            That single page shows the pattern the methodology is built to
-            catch: the store states the cost and skips the timing — and
-            timing is what a first-time buyer is actually weighing. Multiply
-            that lens across all thirteen areas and you have the teardown.
+            A 13-area review of the page, using only visitor-visible data.
+            Area status: delivery and returns — reviewed with findings;
+            variants and purchase controls — reviewed with findings; product
+            page messaging — reviewed with findings; reviews and trust —
+            reviewed with no meaningful issue (ratings were present and
+            visible; the gap was guarantee placement, not missing proof);
+            the remaining nine areas — not assessed (single-page demo scope,
+            not a full engagement).
+          </p>
+          <h3 className="font-general mt-8 text-lg font-medium text-[var(--text)]">
+            Diagnosis
+          </h3>
+          <p className={bodyClass}>
+            The store states the cost and skips the timing — and timing is
+            what a first-time buyer is actually weighing. Placement
+            compounds it: no stock indicator and no money-back guarantee
+            appear near the button, the one place the buyer is deciding.
+          </p>
+          <h3 className="font-general mt-8 text-lg font-medium text-[var(--text)]">
+            Changes
+          </h3>
+          <p className={bodyClass}>
+            None implemented. This was an independent demo, not a client
+            engagement — I don&rsquo;t touch stores I don&rsquo;t work with.
+          </p>
+          <h3 className="font-general mt-8 text-lg font-medium text-[var(--text)]">
+            Measured result
+          </h3>
+          <p className={bodyClass}>
+            Not measured. With no engagement and no access to the
+            store&rsquo;s analytics, there is no conversion lift to report —
+            and I won&rsquo;t invent one. The output of a methodology demo
+            is the ranked finding list above: the thinking you can judge,
+            not a result you can&rsquo;t verify.
           </p>
           {/* [PROOF NEEDED]: client before/after screenshots, metric snapshots,
               or confirmed quotes — to be added here when available. Never invent. */}
         </section>
-
-        {/* 3 — What the teardown leads to */}
+{/* 3 — What the teardown leads to */}
         <section id="offer" className="mt-14 md:mt-20">
           <h2 className={h2Class}>From teardown to fixed: the Sprint</h2>
           <p className={bodyClass}>
@@ -367,6 +390,21 @@ export default function CaseStudiesPage() {
                 arrive. No stock indicator and no money-back guarantee
                 appeared near the button either. The cost is stated; the
                 timing the buyer actually needs is missing.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-general text-lg font-medium text-[var(--text)]">
+                What does &lsquo;not measured&rsquo; mean in your case-study format?
+              </h3>
+              <p className={bodyClass}>
+                It means exactly what it says. Every case study on this page
+                is structured as problem, research, diagnosis, changes, and
+                measured result. Where no client engagement exists —
+                independent methodology demos — there is no conversion lift
+                to report, so the result is labelled not measured instead
+                of being invented. Client before-and-after results will
+                carry real numbers here only when they are real and the
+                client agrees.
               </p>
             </div>
             <div>
