@@ -98,6 +98,14 @@ const faqSchema = {
         text: "Whatever you want. Implement the fixes yourself, hand the report to your developer or team, or book the Conversion Fix Sprint and have me implement the highest-impact items and verify them. The report doesn't expire and it doesn't come with a sales pitch attached.",
       },
     },
+    {
+      "@type": "Question",
+      name: "How do you decide what to fix first?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "By expected revenue impact — never by how the site looks. P1 findings are frictions at the purchase decision that touch most buyers: hidden shipping costs near the buy button, missing trust signals where payment happens. P2 findings stall buyers on high-traffic pages before they reach the decision. Visual polish sits at P3. The report opens with the P1 list, so the first page is where the money is.",
+      },
+    },
   ],
 };
 
@@ -266,6 +274,96 @@ export default function EcommerceUxAuditPage() {
               my portfolio
             </Link>
             .
+          </p>
+        </section>
+
+        {/* 4b — Sample finding format */}
+        <section id="sample-finding" className="mt-14 md:mt-20">
+          <h2 className={h2Class}>What a finding actually looks like</h2>
+          <p className={bodyClass}>
+            Every finding in the report follows the same five-field format —
+            Problem, Evidence, Impact, Fix, Priority. The example below is
+            illustrative and anonymized: it shows the format, not a client
+            case. The pattern it describes — delivery information hidden from
+            the buy button — is one that keeps appearing in independent
+            store reviews.
+          </p>
+          <ul className={listClass}>
+            <li>
+              — <span className="font-medium text-[var(--text)]">Problem:</span>{" "}
+              no delivery or returns information anywhere near the buy
+              button.
+            </li>
+            <li>
+              — <span className="font-medium text-[var(--text)]">Evidence:</span>{" "}
+              the product page shows price and add-to-bag; shipping cost and
+              delivery time appear only at checkout. The store&rsquo;s own
+              policy pages confirm flat-rate shipping and a returns window —
+              buyers just can&rsquo;t see them where the purchase decision
+              happens.
+            </li>
+            <li>
+              — <span className="font-medium text-[var(--text)]">Impact:</span>{" "}
+              buyers decide at the buy button, not at checkout — and hidden
+              shipping cost is one of the most common reasons carts get
+              abandoned. Page-level friction at the purchase decision,
+              touching most buyers.
+            </li>
+            <li>
+              — <span className="font-medium text-[var(--text)]">Fix:</span>{" "}
+              one line under the buy button — the store&rsquo;s real policy,
+              surfaced where it matters (e.g. &ldquo;Flat $7 shipping
+              &middot; free over $80 &middot; arrives in 3–5 days&rdquo;),
+              linking to the full policy. Two lines of copy, no redesign.
+            </li>
+            <li>
+              — <span className="font-medium text-[var(--text)]">Priority:</span>{" "}
+              P1 — highest expected revenue impact.
+            </li>
+          </ul>
+          <p className={bodyClass}>
+            Every finding in your report looks like this: the specific page
+            and element, the evidence I saw, why it costs sales, the
+            concrete change — and its rank. Nothing vague, nothing you have
+            to interpret.
+          </p>
+        </section>
+
+        {/* 4c — Prioritization method */}
+        <section id="prioritization" className="mt-14 md:mt-20">
+          <h2 className={h2Class}>Ranked by conversion impact — never by how it looks</h2>
+          <p className={bodyClass}>
+            The rank answers one question: if you can only fix five things
+            this month, which five move revenue? Each finding is ranked by
+            expected conversion impact — the pages the friction touches, how
+            much buyer traffic reaches them, and how close the friction sits
+            to the purchase. Visual preference plays no part: &ldquo;this
+            looks dated&rdquo; is never a finding on its own.
+          </p>
+          <ul className={listClass}>
+            <li>
+              — <span className="font-medium text-[var(--text)]">P1 — fix first:</span>{" "}
+              friction at the purchase decision itself — the buy-button
+              area, cart, checkout entry — touching most buyers. Hidden
+              shipping costs, missing trust signals where payment happens,
+              broken purchase controls.
+            </li>
+            <li>
+              — <span className="font-medium text-[var(--text)]">P2 — fix next:</span>{" "}
+              friction on your highest-traffic pages — homepage, top
+              collections, key product pages — that stalls buyers before
+              they ever reach the decision.
+            </li>
+            <li>
+              — <span className="font-medium text-[var(--text)]">P3 — when there&rsquo;s time:</span>{" "}
+              everything else: low-traffic pages, edge cases, and visual
+              polish. A prettier button never outranks a missing shipping
+              cost.
+            </li>
+          </ul>
+          <p className={bodyClass}>
+            The report opens with the P1 list — so the first page is where
+            the money is, and nobody has to guess where to start.
           </p>
         </section>
 
@@ -530,6 +628,21 @@ export default function EcommerceUxAuditPage() {
                 Sprint and have me implement the highest-impact items and
                 verify them. The report doesn&rsquo;t expire and it
                 doesn&rsquo;t come with a sales pitch attached.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-general text-lg font-medium text-[var(--text)]">
+                How do you decide what to fix first?
+              </h3>
+              <p className={bodyClass}>
+                By expected revenue impact — never by how the site looks.
+                P1 findings are frictions at the purchase decision that
+                touch most buyers: hidden shipping costs near the buy
+                button, missing trust signals where payment happens. P2
+                findings stall buyers on high-traffic pages before they
+                reach the decision. Visual polish sits at P3. The report
+                opens with the P1 list, so the first page is where the
+                money is.
               </p>
             </div>
           </div>
