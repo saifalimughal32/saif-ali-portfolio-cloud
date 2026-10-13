@@ -667,6 +667,15 @@ export default function LandingPageOptimizationPage() {
             at it — I&rsquo;ll tell you honestly whether the page is the
             leak. If it isn&rsquo;t, I&rsquo;ll say so.
           </p>
+          <p className={bodyClass}>
+            Wondering what a full-store teardown covers beyond one page?
+            The{" "}
+<Link href="/case-studies" className="text-[var(--accent)] underline underline-offset-4">
+              case studies
+            </Link>{" "}
+            page walks through the 13-area methodology I use on every
+            engagement.
+          </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link href="/book" className={ctaButtonClass}>
               Book a fit call
