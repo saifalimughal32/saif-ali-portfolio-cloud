@@ -98,6 +98,14 @@ const faqSchema = {
         text: "You get a handoff summary: what changed, why it changed, and what to watch next. If you want broader growth work afterward — landing pages, ongoing reviews across the whole line — we scope it together. No obligation, no retainer pitch baked in.",
       },
     },
+    {
+      "@type": "Question",
+      name: "What is a bottleneck diagnosis?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The first step of growth work: I walk your whole funnel as a buyer — ad to checkout, mobile and desktop — and find the single constraint costing you the most sales right now. Every engagement starts there, because fixing the bottleneck moves revenue and fixing everything at once hides what worked.",
+      },
+    },
   ],
 };
 
@@ -259,6 +267,74 @@ export default function EcommerceGrowthConsultantPage() {
               my portfolio
             </Link>
             .
+          </p>
+        </section>
+
+        {/* 4b — Full-journey thesis */}
+        <section id="full-journey-thesis" className="mt-14 md:mt-20">
+          <h2 className={h2Class}>Growth is a connected system</h2>
+          <p className={bodyClass}>
+            <span className="font-medium text-[var(--text)]">
+              Your funnel is one line: the ad makes a promise, the click
+              carries intent, the landing page receives it, the product page
+              sells it, the offer and trust signals close it, and checkout
+              collects it. Break any link and the whole line leaks.
+            </span>
+          </p>
+          <p className={bodyClass}>
+            That is why growth work that only fixes one stage keeps
+            disappointing. A sharper ad pointed at a confusing landing page
+            just buys more expensive bounces. A beautiful store with a weak
+            offer converts a trickle of expensive traffic. A strong offer
+            with no trust near the buy button stalls at the final step.
+            Each stage multiplies the next — so the work has to diagnose
+            the line in order, not the stage someone happens to sell.
+          </p>
+          <p className={bodyClass}>
+            Most people own one slice: ads <em>or</em> landing pages{" "}
+            <em>or</em> the store. The slices don&rsquo;t talk to each
+            other — and the gaps between them are where your growth goes.
+            One operator across the whole line is the thesis of this page:
+            the handoffs get owned instead of dropped.
+          </p>
+        </section>
+
+        {/* 4c — Bottleneck diagnosis */}
+        <section id="bottleneck-diagnosis" className="mt-14 md:mt-20">
+          <h2 className={h2Class}>Bottleneck diagnosis: find the one constraint</h2>
+          <p className={bodyClass}>
+            A line converts at the speed of its tightest constraint. The
+            bottleneck is the single stage costing you the most sales right
+            now — the message mismatch between ad and landing page, the
+            product page that hides shipping, the checkout step where
+            buyers stall. Every engagement starts by finding it, because
+            fixing the bottleneck moves revenue and fixing everything at
+            once hides what worked.
+          </p>
+          <ul className={listClass}>
+            <li>
+              — <span className="font-medium text-[var(--text)]">Walk the line as a buyer.</span>{" "}
+              Ad to checkout, mobile and desktop. I document where buyers
+              hesitate, stall, or drop — with screenshots from your actual
+              pages.
+            </li>
+            <li>
+              — <span className="font-medium text-[var(--text)]">Name the constraint.</span>{" "}
+              Out of everything found, one stage is the binding constraint:
+              the leak that, fixed, unlocks the most revenue. That is what
+              gets fixed first.
+            </li>
+            <li>
+              — <span className="font-medium text-[var(--text)]">Fix in order, verify after.</span>{" "}
+              The bottleneck first, then the next. Every change checked
+              after it ships — so you always know what moved the number.
+            </li>
+          </ul>
+          <p className={bodyClass}>
+            The ranked fix list you approve on day three of the sprint{" "}
+            <em>is</em> this diagnosis written down: every finding ordered
+            by expected revenue impact, bottleneck first, so the work
+            starts where the money is.
           </p>
         </section>
 
@@ -514,6 +590,18 @@ export default function EcommerceGrowthConsultantPage() {
                 what to watch next. If you want broader growth work afterward —
                 landing pages, ongoing reviews across the whole line — we scope
                 it together. No obligation, no retainer pitch baked in.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-general text-lg font-medium text-[var(--text)]">
+                What is a bottleneck diagnosis?
+              </h3>
+              <p className={bodyClass}>
+                The first step of growth work: I walk your whole funnel as a
+                buyer — ad to checkout, mobile and desktop — and find the
+                single constraint costing you the most sales right now. Every
+                engagement starts there, because fixing the bottleneck moves
+                revenue and fixing everything at once hides what worked.
               </p>
             </div>
           </div>
