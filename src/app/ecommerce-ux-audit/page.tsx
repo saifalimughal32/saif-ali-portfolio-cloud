@@ -664,6 +664,14 @@ export default function EcommerceUxAuditPage() {
             </Link>{" "}
             page — the ad-to-page handoff, rebuilt to convert.
           </p>
+          <p className={bodyClass}>
+            Want to see the audit format before you book? The{" "}
+<Link href="/case-studies" className="text-[var(--accent)] underline underline-offset-4">
+              case studies
+            </Link>{" "}
+            page shows the teardown methodology on a public storefront —
+            every finding ranked by revenue impact.
+          </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link href="/book" className={ctaButtonClass}>
               Book a fit call
