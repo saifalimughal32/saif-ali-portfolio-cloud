@@ -8,6 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.saifali.site/free-audit",
   },
+  robots: {
+    index: false,
+    follow: false,
+  },
   openGraph: {
     title: "Free Ecommerce Audit | Saif Ali",
     description:
