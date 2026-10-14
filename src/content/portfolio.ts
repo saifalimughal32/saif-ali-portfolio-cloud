@@ -229,11 +229,11 @@ export const projects: PortfolioProject[] = [
   },
   {
     id: "mora",
-    title: "MORA",
+    title: "MORA — Brand Identity Design for a Lavender-Blueberry Drink Brand",
     category: "branding",
     thumbnail: "/projects/mora.jpg",
     thumbnailAlt:
-      "MORA brand identity board — Dream Better. Feel Brighter.",
+      "MORA brand identity board — lavender-blueberry drink logo and packaging designed to stand out at the shelf and on socials",
     media: [
       { type: "image", src: "/projects/mora/brand-board.jpg" },
       { type: "image", src: "/projects/mora/lifestyle-drink.jpg" },
@@ -243,9 +243,9 @@ export const projects: PortfolioProject[] = [
       { type: "image", src: "/projects/mora/social.jpg" },
     ],
     description:
-      "Brand identity and campaign system for MORA — a calming lavender–blueberry drink. Logo, packaging, apparel, retail environment, and social stories built around “Dream Better. Feel Brighter.”",
+      "Brand identity and packaging design for MORA, a calming lavender–blueberry drink. Identity system, packaging, apparel, retail environment, and social stories built around “Dream Better. Feel Brighter.” Context: MORA is a calming lavender-blueberry drink — beverage shoppers decide in seconds at the shelf and on socials, so the identity is built to be recognizable at a glance and consistent across packaging, apparel, and campaign visuals. Role: full identity system — logo, product packaging, apparel, retail environment, and social story concepts. Result: one cohesive visual language that carries from shelf to screen, giving the brand a consistent look across every touchpoint.",
     contribution:
-      "Visual identity, product packaging, lifestyle campaign, merch, and storefront concepts.",
+      "Brand identity system, product packaging, apparel, retail environment, and social campaign concepts.",
     status: "published",
     approvedForDisplay: true,
   },
@@ -527,3 +527,4 @@ export const projects: PortfolioProject[] = [
 export const publishedProjects = projects.filter(
   (p) => p.approvedForDisplay && p.status === "published",
 );
+
