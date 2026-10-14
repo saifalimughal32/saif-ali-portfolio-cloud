@@ -251,11 +251,11 @@ export const projects: PortfolioProject[] = [
   },
   {
     id: "rivori-matcha",
-    title: "Rivori Matcha",
+    title: "Rivori Matcha — Brand Identity Design for a Playful Matcha Lifestyle Brand",
     category: "branding",
     thumbnail: "/projects/rivori-matcha.jpg",
     thumbnailAlt:
-      "Rivori Matcha brand identity — packaging cups, carrier bag, and logo",
+      "Rivori Matcha brand identity board — playful matcha packaging cups, carrier bag and logo system designed for shelf and social recognition",
     media: [
       { type: "image", src: "/projects/rivori-matcha/packaging-cups-bag.jpg" },
       { type: "image", src: "/projects/rivori-matcha/logo-mark.jpg" },
@@ -269,9 +269,9 @@ export const projects: PortfolioProject[] = [
       { type: "image", src: "/projects/rivori-matcha/brand-collage.jpg" },
     ],
     description:
-      "Full brand identity for Rivori Matcha — a playful matcha lifestyle brand. Logo system, packaging, storefront, social, and lifestyle campaign visuals built around Smooth. Fresh. Uplifting.",
+      "Full brand identity for Rivori Matcha, a playful matcha lifestyle brand — logo system, packaging, storefront, social, and lifestyle campaign visuals. Context: Rivori Matcha is built around \u201cSmooth. Fresh. Uplifting.\u201d — matcha competes in a crowded wellness-drink space where shelf recognition and social shareability decide first purchases, so the identity is built to be recognizable at a glance and consistent from packaging cups to storefront to social profiles. Role: full identity system — logo and logo mark, packaging cups and carrier bag system, storefront graphics, shipping boxes, social profile kit, and lifestyle campaign visuals. Result: one cohesive identity that carries the brand\u2019s playful energy across every touchpoint, from the cup in hand to the shelf, the box at the door, and the feed.",
     contribution:
-      "Brand identity, packaging system, environmental graphics, and campaign photography direction.",
+      "Brand identity system — logo, packaging cups and carrier bag, storefront and environmental graphics, shipping boxes, social profile kit, and lifestyle campaign visuals.",
     status: "published",
     approvedForDisplay: true,
   },
