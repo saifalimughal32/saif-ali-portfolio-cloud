@@ -211,19 +211,19 @@ export const projects: PortfolioProject[] = [
   },
   {
     id: "homely",
-    title: "Homely Furniture",
+    title: "Homely Furniture — Shopify Store Design for a Cozy Furniture Brand",
     category: "shopify",
     thumbnail: "/projects/homely.jpg",
-    thumbnailAlt: "Homely Furniture Shopify store — soft forms armchair hero",
+    thumbnailAlt: "Homely Furniture Shopify storefront — soft-form armchair hero designed for conversion",
     media: [
       { type: "image", src: "/projects/homely/section-01.jpg" },
       { type: "image", src: "/projects/homely/section-02.jpg" },
       { type: "image", src: "/projects/homely/full.jpg" },
     ],
     description:
-      "Shopify store design for Homely Furniture — soft-form chairs and cozy living. Product-led hero, catalog highlights, and warm brand UI.",
+      "Shopify store design for Homely Furniture, a cozy furniture brand. Product-led hero, catalog highlights, and warm brand UI built to guide shoppers from first scroll to purchase. Context: Homely Furniture sells soft-form chairs and cozy living pieces — furniture shoppers compare carefully, so the design keeps the hero product-led, browsing calm, and brand warmth consistent. Role: full storefront design — product showcase UI, catalog highlights, and ecommerce visual direction. Result: a warm, browsing-friendly layout that guides shoppers from hero through product discovery toward purchase.",
     contribution:
-      "Shopify storefront design, product showcase UI, and ecommerce visual direction.",
+      "Shopify storefront design, product showcase UI, catalog highlights, and ecommerce visual direction.",
     status: "published",
     approvedForDisplay: true,
   },
