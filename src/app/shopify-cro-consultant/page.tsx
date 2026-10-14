@@ -393,6 +393,13 @@ export default function ShopifyCroConsultantPage() {
               Can you actually see where shoppers drop off? GA4, events, and funnels — set up so decisions run on evidence.
             </li>
           </ol>
+          <p className={bodyClass}>
+            This is the same checklist published openly as the{" "}
+            <Link href="/resources/shopify-conversion-framework" className="text-[var(--accent)] underline underline-offset-4">
+              13-area Shopify conversion framework
+            </Link>{" "}
+            — what each of the 13 areas covers, and what good looks like.
+          </p>
         </section>
 
         {/* 5c — Pricing */}

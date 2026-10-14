@@ -674,7 +674,11 @@ export default function LandingPageOptimizationPage() {
               case studies
             </Link>{" "}
             page walks through the 13-area methodology I use on every
-            engagement.
+            engagement. The checklist itself is published as the{" "}
+            <Link href="/resources/shopify-conversion-framework" className="text-[var(--accent)] underline underline-offset-4">
+              open 13-area Shopify conversion framework
+            </Link>
+            .
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link href="/book" className={ctaButtonClass}>

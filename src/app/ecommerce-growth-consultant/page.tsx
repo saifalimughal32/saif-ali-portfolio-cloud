@@ -639,7 +639,12 @@ export default function EcommerceGrowthConsultantPage() {
               case studies
             </Link>{" "}
             page documents the 13-area review behind every engagement —
-            problem, evidence, impact, fix, priority.
+            problem, evidence, impact, fix, priority. The checklist itself
+            is published as the{" "}
+            <Link href="/resources/shopify-conversion-framework" className="text-[var(--accent)] underline underline-offset-4">
+              13-area Shopify conversion framework
+            </Link>
+            .
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link href="/book" className={ctaButtonClass}>

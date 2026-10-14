@@ -275,6 +275,14 @@ export default function EcommerceUxAuditPage() {
             </Link>
             .
           </p>
+          <p className={bodyClass}>
+            The full checklist behind this method — what each of the 13
+            areas covers — is published as the{" "}
+            <Link href="/resources/shopify-conversion-framework" className="text-[var(--accent)] underline underline-offset-4">
+              open 13-area Shopify conversion framework
+            </Link>
+            .
+          </p>
         </section>
 
         {/* 4b — Sample finding format */}
