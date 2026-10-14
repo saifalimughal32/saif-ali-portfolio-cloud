@@ -198,7 +198,13 @@ export default function CaseStudiesPage() {
             messaging, product images and video, pricing and offer, reviews
             and trust, delivery and returns, variants and purchase controls,
             mobile experience, cart, accessible checkout, and ads-to-landing-
-            page consistency. Most &ldquo;audits&rdquo; check three of these
+            page consistency. The full breakdown — what each of the
+            thirteen reviews covers and what good looks like — is published
+            as the{" "}
+            <Link href="/resources/shopify-conversion-framework" className="text-[var(--accent)] underline underline-offset-4">
+              13-area Shopify conversion framework
+            </Link>
+            . Most &ldquo;audits&rdquo; check three of these
             and call it a CRO review. The teardown checks all thirteen and
             says plainly which ones had nothing wrong — because a clean area
             is also a finding, and it stops you fixing what isn&rsquo;t
