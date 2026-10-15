@@ -120,6 +120,22 @@ const faqSchema = {
         text: "If your store looks fine but isn't converting, a redesign is usually the wrong first move — the problem is rarely the theme. A CRO sprint finds and fixes the actual leaks: messaging, offer, trust, cart, checkout. Redesign only when the brand or structure is genuinely broken, not when the journey is.",
       },
     },
+    {
+      "@type": "Question",
+      name: "What does a Shopify CRO consultant do?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A Shopify CRO consultant finds and fixes the reasons your store visitors don't buy. The work runs across the full journey — ad click, landing page, product page, cart, checkout — identifying friction points, ranking them by revenue impact, and implementing the fixes. Unlike a designer or developer, a CRO consultant is measured on one thing: turning more of your existing traffic into customers.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How long does it take to see results from Shopify CRO?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The sprint itself finishes in 7 days — audit, fixes, verification. When the results show up depends on your traffic: with steady ad or organic traffic, you can usually read the impact in your analytics within 2 to 4 weeks. Low-traffic stores take longer to reach a readable sample. I don't promise a lift on a date; I promise the fixes ship and the measurement is honest.",
+      },
+    },
   ],
 };
 
@@ -683,6 +699,34 @@ export default function ShopifyCroConsultantPage() {
                 theme. A CRO sprint finds and fixes the actual leaks:
                 messaging, offer, trust, cart, checkout. Redesign only when the
                 brand or structure is genuinely broken, not when the journey is.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-general text-lg font-medium text-[var(--text)]">
+                What does a Shopify CRO consultant do?
+              </h3>
+              <p className={bodyClass}>
+                A Shopify CRO consultant finds and fixes the reasons your
+                store visitors don&rsquo;t buy. The work runs across the full
+                journey — ad click, landing page, product page, cart,
+                checkout — identifying friction points, ranking them by
+                revenue impact, and implementing the fixes. Unlike a designer
+                or developer, a CRO consultant is measured on one thing:
+                turning more of your existing traffic into customers.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-general text-lg font-medium text-[var(--text)]">
+                How long does it take to see results from Shopify CRO?
+              </h3>
+              <p className={bodyClass}>
+                The sprint itself finishes in 7 days — audit, fixes,
+                verification. When the results show up depends on your
+                traffic: with steady ad or organic traffic, you can usually
+                read the impact in your analytics within 2 to 4 weeks.
+                Low-traffic stores take longer to reach a readable sample. I
+                don&rsquo;t promise a lift on a date; I promise the fixes ship
+                and the measurement is honest.
               </p>
             </div>
           </div>
