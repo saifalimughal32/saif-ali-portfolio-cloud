@@ -106,6 +106,22 @@ const faqSchema = {
         text: "By expected revenue impact — never by how the site looks. P1 findings are frictions at the purchase decision that touch most buyers: hidden shipping costs near the buy button, missing trust signals where payment happens. P2 findings stall buyers on high-traffic pages before they reach the decision. Visual polish sits at P3. The report opens with the P1 list, so the first page is where the money is.",
       },
     },
+    {
+      "@type": "Question",
+      name: "What is an ecommerce UX audit?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A systematic, expert review of how real buyers move through your store — homepage, navigation, collections, product pages, cart and checkout — done the way a buyer does it. It pinpoints the exact frictions that cost sales, ranks every finding by expected revenue impact, and delivers a written report with annotated screenshots and concrete fixes you can implement yourself or hand to your team.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How do I know if my store needs a UX audit?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Three signals: traffic with real intent converts far below what you’d expect, your landing pages bounce fast, or you redesigned and conversions stayed flat. If buyers reach the product page and leave, or carts stall around shipping, trust and purchase details, the store has friction worth a teardown before you spend more on traffic.",
+      },
+    },
   ],
 };
 
@@ -651,6 +667,33 @@ export default function EcommerceUxAuditPage() {
                 reach the decision. Visual polish sits at P3. The report
                 opens with the P1 list, so the first page is where the
                 money is.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-general text-lg font-medium text-[var(--text)]">
+                What is an ecommerce UX audit?
+              </h3>
+              <p className={bodyClass}>
+                A systematic, expert review of how real buyers move through
+                your store — homepage, navigation, collections, product pages,
+                cart and checkout — done the way a buyer does it. It pinpoints
+                the exact frictions that cost sales, ranks every finding by
+                expected revenue impact, and delivers a written report with
+                annotated screenshots and concrete fixes you can implement
+                yourself or hand to your team.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-general text-lg font-medium text-[var(--text)]">
+                How do I know if my store needs a UX audit?
+              </h3>
+              <p className={bodyClass}>
+                Three signals: traffic with real intent converts far below
+                what you&rsquo;d expect, your landing pages bounce fast, or
+                you redesigned and conversions stayed flat. If buyers reach
+                the product page and leave, or carts stall around shipping,
+                trust and purchase details, the store has friction worth a
+                teardown before you spend more on traffic.
               </p>
             </div>
           </div>
