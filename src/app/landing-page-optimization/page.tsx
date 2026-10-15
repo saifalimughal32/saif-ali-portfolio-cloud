@@ -106,6 +106,22 @@ const faqSchema = {
         text: "Split the funnel at the click. If your click-through rate is healthy but the page barely converts, the ad kept its promise and the page broke it — that is the landing page. If click-through itself is weak, the ad's promise is not landing — that is the ad account. I start every engagement by reading both numbers, because rebuilding a page when the ad is the problem (or reworking ads when the page is the problem) just moves the loss around. If the numbers say the page is not the leak, I will tell you before you pay.",
       },
     },
+    {
+      "@type": "Question",
+      name: "What is landing page optimization?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Landing page optimization is the process of aligning a page with the traffic it receives: the headline continues the ad's promise, the offer is legible within seconds, friction on the path to the CTA is removed, and the page loads fast on mobile. It is measured in conversion rate \u2014 the share of visitors who take the page's one action \u2014 not in opinions about design.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is message match and why does it matter?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Message match is the continuity between what an ad promises and what the landing page says. If the ad sells '20% off winter boots' and the page headline talks about free returns, the visitor's brain stalls \u2014 the promise was broken, and trust drops before the pitch even starts. Strong message match means the headline, imagery, and offer echo the ad so closely that the visitor never has to reorient.",
+      },
+    },
   ],
 };
 
@@ -654,6 +670,35 @@ export default function LandingPageOptimizationPage() {
                 is the problem (or reworking ads when the page is the
                 problem) just moves the loss around. If the numbers say the
                 page is not the leak, I will tell you before you pay.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-general text-lg font-medium text-[var(--text)]">
+                What is landing page optimization?
+              </h3>
+              <p className={bodyClass}>
+                Landing page optimization is the process of aligning a page
+                with the traffic it receives: the headline continues the
+                ad&rsquo;s promise, the offer is legible within seconds,
+                friction on the path to the CTA is removed, and the page
+                loads fast on mobile. It is measured in conversion rate —
+                the share of visitors who take the page&rsquo;s one action
+                — not in opinions about design.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-general text-lg font-medium text-[var(--text)]">
+                What is message match and why does it matter?
+              </h3>
+              <p className={bodyClass}>
+                Message match is the continuity between what an ad promises
+                and what the landing page says. If the ad sells &lsquo;20%
+                off winter boots&rsquo; and the page headline talks about
+                free returns, the visitor&rsquo;s brain stalls — the
+                promise was broken, and trust drops before the pitch even
+                starts. Strong message match means the headline, imagery,
+                and offer echo the ad so closely that the visitor never has
+                to reorient.
               </p>
             </div>
           </div>
