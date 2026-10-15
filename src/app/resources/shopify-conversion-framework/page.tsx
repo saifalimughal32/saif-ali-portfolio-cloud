@@ -87,6 +87,22 @@ const faqSchema = {
         text: "Yes. Link to this page with attribution to Saif Ali. If you publish your own teardown using it, the honest-labelling rule travels with it: every area gets a status — reviewed with findings, reviewed with no meaningful issue, not accessible, or not assessed.",
       },
     },
+    {
+      "@type": "Question",
+      name: "How long does it take to review a store with the 13-area framework?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "In the Conversion Fix Sprint I run the full 13-area review and implement the highest-impact fixes in the theme within seven days. Doing it yourself is slower but workable: walk the store in buyer order, give each area group — discovery, product page, offer and trust, checkout — a focused block of time, and rank your findings by traffic times friction before fixing anything.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Which of the 13 areas usually costs stores the most?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No single area wins for every store — but the costliest gaps usually sit in areas 4 through 9: the product page and buy box, where paid traffic actually decides. Missing delivery costs, missing reviews near the price, or a broken variant selector ends the session quietly. Homepage tweaks get debated endlessly; a silent buy-box problem gets the money. Rank by traffic times friction, not by area number.",
+      },
+    },
   ],
 };
 
@@ -389,6 +405,36 @@ export default function ConversionFrameworkPage() {
                 honest-labelling rule travels with it: every area gets a
                 status — reviewed with findings, reviewed with no
                 meaningful issue, not accessible, or not assessed.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-general text-lg font-medium text-[var(--text)]">
+                How long does it take to review a store with the 13-area
+                framework?
+              </h3>
+              <p className={bodyClass}>
+                In the Conversion Fix Sprint I run the full 13-area review
+                and implement the highest-impact fixes in the theme within
+                seven days. Doing it yourself is slower but workable: walk
+                the store in buyer order, give each area group —
+                discovery, product page, offer and trust, checkout — a
+                focused block of time, and rank your findings by traffic
+                times friction before fixing anything.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-general text-lg font-medium text-[var(--text)]">
+                Which of the 13 areas usually costs stores the most?
+              </h3>
+              <p className={bodyClass}>
+                No single area wins for every store — but the
+                costliest gaps usually sit in areas 4 through 9: the product
+                page and buy box, where paid traffic actually decides.
+                Missing delivery costs, missing reviews near the price, or
+                a broken variant selector ends the session quietly. Homepage
+                tweaks get debated endlessly; a silent buy-box problem gets
+                the money. Rank by traffic times friction, not by area
+                number.
               </p>
             </div>
           </div>
