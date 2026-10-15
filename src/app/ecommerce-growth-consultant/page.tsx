@@ -106,6 +106,22 @@ const faqSchema = {
         text: "The first step of growth work: I walk your whole funnel as a buyer — ad to checkout, mobile and desktop — and find the single constraint costing you the most sales right now. Every engagement starts there, because fixing the bottleneck moves revenue and fixing everything at once hides what worked.",
       },
     },
+    {
+      "@type": "Question",
+      name: "What does an ecommerce growth consultant do for a DTC brand?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "An ecommerce growth consultant finds where a DTC brand's revenue leaks and fixes the highest-impact constraint first. That means reviewing the full customer journey — Meta ads, landing pages, product pages, cart, and checkout — diagnosing the bottleneck, then implementing fixes ranked by conversion impact. It's diagnosis plus execution across the whole line, not advice confined to one channel.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "When should I hire an ecommerce growth consultant instead of an agency?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Hire a growth consultant when your bottleneck is the journey between channels — your ads perform but the landing page drops, or the store converts but paid traffic bounces. Agencies optimize inside one silo; a consultant owns the seams. If you're early enough that one person can walk your whole funnel as a buyer and fix what matters most, that beats paying three specialists who never talk to each other.",
+      },
+    },
   ],
 };
 
@@ -606,6 +622,35 @@ export default function EcommerceGrowthConsultantPage() {
                 revenue and fixing everything at once hides what worked.
               </p>
             </div>
+            <div>
+              <h3 className="font-general text-lg font-medium text-[var(--text)]">
+                What does an ecommerce growth consultant do for a DTC brand?
+              </h3>
+              <p className={bodyClass}>
+                An ecommerce growth consultant finds where a DTC brand&rsquo;s
+                revenue leaks and fixes the highest-impact constraint first.
+                That means reviewing the full customer journey — Meta ads,
+                landing pages, product pages, cart, and checkout — diagnosing
+                the bottleneck, then implementing fixes ranked by conversion
+                impact. It&rsquo;s diagnosis plus execution across the whole
+                line, not advice confined to one channel.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-general text-lg font-medium text-[var(--text)]">
+                When should I hire an ecommerce growth consultant instead of
+                an agency?
+              </h3>
+              <p className={bodyClass}>
+                Hire a growth consultant when your bottleneck is the journey
+                between channels — your ads perform but the landing page
+                drops, or the store converts but paid traffic bounces.
+                Agencies optimize inside one silo; a consultant owns the
+                seams. If you&rsquo;re early enough that one person can walk
+                your whole funnel as a buyer and fix what matters most, that
+                beats paying three specialists who never talk to each other.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -664,3 +709,4 @@ export default function EcommerceGrowthConsultantPage() {
     </main>
   );
 }
+
