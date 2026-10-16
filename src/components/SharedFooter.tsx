@@ -124,28 +124,31 @@ export function SharedFooter() {
               </a>
             </p>
           ) : null}
-          <p>
+        </div>
+
+        <div className="container-site mt-16 flex items-center justify-between text-sm text-[var(--text)]">
+          <span>{year}</span>
+          <div className="flex items-center gap-5">
+            <span>All rights reserved.</span>
             <a
               href="https://www.trustpilot.com/review/saifali.site"
               target="_blank"
               rel="noreferrer"
               aria-label="Reviews on Trustpilot"
-              className="inline-flex items-center justify-center"
+              className="flex flex-col items-end gap-1"
             >
               <Image
                 src="/media/trustpilot-stars.svg"
                 alt="Rated on Trustpilot"
-                width={160}
-                height={30}
-                className="h-7 w-auto"
+                width={120}
+                height={23}
+                className="h-5 w-auto"
               />
+              <span className="text-xs text-[var(--text-secondary)]">
+                Trusted by Trustpilot
+              </span>
             </a>
-          </p>
-        </div>
-
-        <div className="container-site mt-16 flex items-center justify-between text-sm text-[var(--text)]">
-          <span>{year}</span>
-          <span>All rights reserved.</span>
+          </div>
         </div>
       </div>
 
