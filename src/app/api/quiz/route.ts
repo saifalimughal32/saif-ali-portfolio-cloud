@@ -1,9 +1,12 @@
 import { NextResponse } from "next/server";
+import nodemailer from "nodemailer";
 import {
   quizContactMethods,
   quizContactTimes,
   type QuizSubmission,
 } from "@/content/quiz";
+
+const MAILBOX = "info@saifali.site";
 
 export async function POST(request: Request) {
   let body: Partial<QuizSubmission>;
@@ -56,7 +59,51 @@ export async function POST(request: Request) {
     submittedAt: new Date().toISOString(),
   };
 
-  console.info("[quiz]", payload);
+  const smtpUser = process.env.SMTP_USER;
+  const smtpPass = process.env.SMTP_PASS;
+  const smtpHost = process.env.SMTP_HOST || "smtp.hostinger.com";
+  const smtpPort = Number(process.env.SMTP_PORT || "465");
 
-  return NextResponse.json({ ok: true, delivery: "local-log" });
+  if (!smtpUser || !smtpPass) {
+    console.error("[quiz] Missing SMTP_USER or SMTP_PASS");
+    return NextResponse.json({ ok: false, error: "Delivery failed" }, { status: 500 });
+  }
+
+  const text = [
+    `New quiz lead: ${name}`,
+    `Email: ${email}`,
+    `Phone: ${phone}`,
+    `Best time: ${bestTime}`,
+    `Preferred contact: ${preferredContact}`,
+    `Stage: ${stage}${stageLabel ? ` (${stageLabel})` : ""}`,
+    `Submitted at: ${payload.submittedAt}`,
+    "",
+    "Answers:",
+    ...payload.answers.map((a) => `- ${a.question || a.questionId}: ${a.label || a.optionId}`),
+  ].join("\n");
+
+  try {
+    const transporter = nodemailer.createTransport({
+      host: smtpHost,
+      port: smtpPort,
+      secure: smtpPort === 465,
+      auth: {
+        user: smtpUser,
+        pass: smtpPass,
+      },
+    });
+
+    await transporter.sendMail({
+      from: MAILBOX,
+      to: MAILBOX,
+      replyTo: email,
+      subject: `New quiz lead: ${name}`,
+      text,
+    });
+  } catch (err) {
+    console.error("[quiz] SMTP delivery failed", err);
+    return NextResponse.json({ ok: false, error: "Delivery failed" }, { status: 500 });
+  }
+
+  return NextResponse.json({ ok: true, delivery: "smtp" });
 }

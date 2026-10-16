@@ -73,6 +73,29 @@ export function CalendlyEmbed({ url }: { url: string }) {
     };
   }, [url]);
 
+  // Track completed bookings: Calendly's inline widget posts
+  // `calendly.event_scheduled` to window when a call is booked.
+  useEffect(() => {
+    function onMessage(e: MessageEvent) {
+      const data = e?.data as { event?: string } | null;
+      if (!data || typeof data !== "object") return;
+      if (data.event !== "calendly.event_scheduled") return;
+      try {
+        const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
+        if (typeof gtag === "function") {
+          gtag("event", "booking_scheduled", {
+            page: window.location.pathname,
+            transport_type: "beacon",
+          });
+        }
+      } catch {
+        /* analytics is best-effort */
+      }
+    }
+    window.addEventListener("message", onMessage);
+    return () => window.removeEventListener("message", onMessage);
+  }, []);
+
   return (
     <div
       id="calendly-embed"
