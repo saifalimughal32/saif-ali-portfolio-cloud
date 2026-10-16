@@ -124,6 +124,16 @@ export function SharedFooter() {
               </a>
             </p>
           ) : null}
+          <p>
+            <a
+              href="https://www.trustpilot.com/review/saifali.site"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 text-base font-medium text-[var(--text)] md:text-lg"
+            >
+              Reviews on Trustpilot
+            </a>
+          </p>
         </div>
 
         <div className="container-site mt-16 flex items-center justify-between text-sm text-[var(--text)]">
