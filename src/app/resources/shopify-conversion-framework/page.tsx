@@ -6,9 +6,31 @@ import { site } from "@/content/site";
 export const metadata: Metadata = {
   title: "The 13-Area Shopify Conversion Framework | Saif Ali",
   description:
-    "The open 13-area review I run on every Shopify store — homepage to checkout to ad consistency. What each area covers, what good looks like, and how findings get ranked.",
+    "The open 13-area review I run on every Shopify store — homepage to checkout to ad consistency. What each area covers and what good looks like.",
   alternates: {
     canonical: "https://www.saifali.site/resources/shopify-conversion-framework",
+  },
+  openGraph: {
+    title: "The 13-Area Shopify Conversion Framework | Saif Ali",
+    description:
+      "The open 13-area review I run on every Shopify store — homepage to checkout to ad consistency. What each area covers and what good looks like.",
+    url: "/resources/shopify-conversion-framework",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 2240,
+        height: 1120,
+        alt: "Saif Ali — Ecommerce Growth Consultant for DTC Brands",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The 13-Area Shopify Conversion Framework | Saif Ali",
+    description:
+      "The open 13-area review I run on every Shopify store — homepage to checkout to ad consistency. What each area covers and what good looks like.",
+    images: ["/og-image.jpg"],
   },
 };
 
@@ -69,6 +91,14 @@ const faqSchema = {
       acceptedAnswer: {
         "@type": "Answer",
         text: "No — and that's the point of the honest labelling. Most stores lose sales in three to five areas and are genuinely fine in the rest. The framework forces you to name the clean areas too: reviewed with no meaningful issue. Without that discipline, every audit becomes a 40-item to-do list and the three things that actually cost money get buried.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does the framework work for stores outside Shopify?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Partially. The 13 areas describe a buying journey, not a platform — product pages, trust, checkout friction exist everywhere. But the specifics assume Shopify: its theme structure, its checkout constraints, and the apps and analytics access a Shopify store gives me. On other platforms the lens still works; the fix list will differ.",
       },
     },
     {
@@ -224,6 +254,9 @@ export default function ConversionFrameworkPage() {
             </em>{" "}
             Framework
           </h1>
+          <p className="mt-3 text-sm text-[var(--text-muted)]">
+            By Saif Ali · Published 14 October 2026
+          </p>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-[var(--text-secondary)] md:text-lg">
             <span className="font-medium text-[var(--text)]">
               The 13-area Shopify conversion framework is the structured
@@ -388,6 +421,19 @@ export default function ConversionFrameworkPage() {
             </div>
             <div>
               <h3 className="font-general text-lg font-medium text-[var(--text)]">
+                Does the framework work for stores outside Shopify?
+              </h3>
+              <p className={bodyClass}>
+                Partially. The 13 areas describe a buying journey, not a
+                platform — product pages, trust, checkout friction exist
+                everywhere. But the specifics assume Shopify: its theme
+                structure, its checkout constraints, and the apps and
+                analytics access a Shopify store gives me. On other
+                platforms the lens still works; the fix list will differ.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-general text-lg font-medium text-[var(--text)]">
                 How do you rank which finding to fix first?
               </h3>
               <p className={bodyClass}>
@@ -443,6 +489,18 @@ export default function ConversionFrameworkPage() {
             </div>
           </div>
         </section>
+
+        {/* Author bio */}
+        <p className={bodyClass}>
+          <a
+            href="https://www.saifali.site/"
+            className="text-[var(--accent)] underline underline-offset-4"
+          >
+            Saif Ali
+          </a>{" "}
+          is an ecommerce growth consultant for DTC brands, doing
+          full-journey CRO across Meta ads, landing pages and Shopify.
+        </p>
 
         {/* Closing CTA */}
         <section id="book" className="mt-14 md:mt-20">

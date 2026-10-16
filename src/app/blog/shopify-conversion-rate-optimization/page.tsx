@@ -7,10 +7,34 @@ export const metadata: Metadata = {
   title:
     "Shopify Conversion Rate Optimization: 13 High Impact Fixes That Increase Sales | Saif Ali",
   description:
-    "13 high-impact Shopify CRO fixes from real store reviews — shipping clarity, visible reviews, mobile buy path, cart and checkout. What each leak is, why it costs sales, and how to check your store.",
+    "13 high-impact Shopify CRO fixes from real store reviews: shipping clarity, visible reviews, mobile buy path, cart and checkout.",
   alternates: {
     canonical:
       "https://www.saifali.site/blog/shopify-conversion-rate-optimization",
+  },
+  openGraph: {
+    title:
+      "Shopify Conversion Rate Optimization: 13 High Impact Fixes That Increase Sales | Saif Ali",
+    description:
+      "13 high-impact Shopify CRO fixes from real store reviews: shipping clarity, visible reviews, mobile buy path, cart and checkout.",
+    url: "/blog/shopify-conversion-rate-optimization",
+    type: "article",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 2240,
+        height: 1120,
+        alt: "Saif Ali — Ecommerce Growth Consultant for DTC Brands",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Shopify Conversion Rate Optimization: 13 High Impact Fixes That Increase Sales | Saif Ali",
+    description:
+      "13 high-impact Shopify CRO fixes from real store reviews: shipping clarity, visible reviews, mobile buy path, cart and checkout.",
+    images: ["/og-image.jpg"],
   },
 };
 
@@ -36,6 +60,79 @@ const articleSchema = {
     "@type": "Thing",
     name: "Shopify conversion rate optimization",
   },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id":
+    "https://www.saifali.site/blog/shopify-conversion-rate-optimization#breadcrumb",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://www.saifali.site/",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Blog",
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: "Shopify Conversion Rate Optimization",
+    },
+  ],
+};
+
+/** Rendered visibly below and mirrored in the FAQPage JSON-LD that follows */
+const blogFaqs: { question: string; answer: string }[] = [
+  {
+    question: "What is Shopify conversion rate optimization?",
+    answer:
+      "The practice of finding where shoppers drop off in your Shopify buying journey — product pages, cart, checkout — and fixing those leaks in order of revenue impact, rather than redesigning the store.",
+  },
+  {
+    question: "What is a good conversion rate for a Shopify store?",
+    answer:
+      "It varies by niche and traffic source; the honest benchmark is your own trend. Most stores I review leak most at the same points: shipping clarity near the buy button, reviews near the title, and the mobile path to checkout. Fix order beats industry averages.",
+  },
+  {
+    question: "Should I redesign my store or fix conversion leaks first?",
+    answer:
+      "Fix the leaks first. Redesigns are expensive guesses; the 13 fixes in this article work inside your existing theme and most can be checked in under a minute each.",
+  },
+  {
+    question: "How long does Shopify CRO take to show results?",
+    answer:
+      "The fixes in this article are checks you can run today. A full teardown-plus-implementation engagement — the Shopify Conversion Fix Sprint — ships in 7 days; what happens after depends on your traffic and offer.",
+  },
+  {
+    question: "Do I need developer help for these fixes?",
+    answer:
+      "Most are content and theme-setting changes a store owner can make. Anything structural — checkout-adjacent or theme-code work — is where a specialist earns the fee.",
+  },
+  {
+    question: "Where do I start if I can only fix three things?",
+    answer:
+      "Shipping cost and delivery time near the buy button, star ratings near the product title, and the mobile path to the buy button — in that order.",
+  },
+];
+
+const blogFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://www.saifali.site/blog/shopify-conversion-rate-optimization#faq",
+  mainEntity: blogFaqs.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answer,
+    },
+  })),
 };
 
 const ctaButtonClass =
@@ -135,6 +232,14 @@ export default function BlogCroFixesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogFaqSchema) }}
+      />
       <div className="mx-auto w-full max-w-4xl">
         {/* Breadcrumb / back — mirrors the sibling pages' pattern */}
         <div className="flex flex-wrap items-end justify-between gap-4">
@@ -151,6 +256,21 @@ export default function BlogCroFixesPage() {
 
         {/* Hero */}
         <section className="mt-6">
+          <nav
+            aria-label="Breadcrumb"
+            className="text-sm text-[var(--text-secondary)]"
+          >
+            <Link
+              href="/"
+              className="text-[var(--accent)] underline underline-offset-4"
+            >
+              Home
+            </Link>
+            <span aria-hidden> / </span>
+            <span>Blog</span>
+            <span aria-hidden> / </span>
+            <span>Shopify Conversion Rate Optimization</span>
+          </nav>
           <h1 className="font-clash text-[clamp(2rem,5vw,3.35rem)] font-semibold leading-[1.08] tracking-[-0.03em] text-[var(--text)]">
             Shopify Conversion Rate
             <br />
@@ -160,6 +280,9 @@ export default function BlogCroFixesPage() {
             </em>{" "}
             That Increase Sales
           </h1>
+          <p className="mt-3 text-sm text-[var(--text-muted)]">
+            By Saif Ali · Published 15 October 2026
+          </p>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-[var(--text-secondary)] md:text-lg">
             <span className={leadClass}>
               Most Shopify stores don&rsquo;t have a traffic problem. They
@@ -232,6 +355,33 @@ export default function BlogCroFixesPage() {
             then cart, then checkout.
           </p>
         </section>
+
+        {/* FAQs */}
+        <section id="faq">
+          <h2 className={h2Class}>Questions founders ask about Shopify CRO</h2>
+          <div className="mt-6 space-y-8">
+            {blogFaqs.map((item) => (
+              <div key={item.question}>
+                <h3 className="font-general text-lg font-medium text-[var(--text)]">
+                  {item.question}
+                </h3>
+                <p className={bodyClass}>{item.answer}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Author bio */}
+        <p className={bodyClass}>
+          <a
+            href="https://www.saifali.site/"
+            className="text-[var(--accent)] underline underline-offset-4"
+          >
+            Saif Ali
+          </a>{" "}
+          is an ecommerce growth consultant for DTC brands, doing
+          full-journey CRO across Meta ads, landing pages and Shopify.
+        </p>
 
         {/* Closing CTA */}
         <section id="book" className="mt-14 md:mt-20">
