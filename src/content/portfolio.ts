@@ -277,11 +277,11 @@ export const projects: PortfolioProject[] = [
   },
   {
     id: "spookybite",
-    title: "SpookyBite",
+    title: "SpookyBite — Brand Identity Design for a Playful Pizza Brand",
     category: "branding",
     thumbnail: "/projects/spookybite.jpg",
     thumbnailAlt:
-      "SpookyBite pizza brand identity — ghost mascot and packaging",
+      "SpookyBite pizza brand identity board — ghost mascot, logo lockup, pizza boxes and packaging system designed for shelf and social recognition",
     media: [
       { type: "image", src: "/projects/spookybite/brand-system.jpg" },
       { type: "image", src: "/projects/spookybite/logo-lockup.jpg" },
@@ -295,9 +295,9 @@ export const projects: PortfolioProject[] = [
       { type: "image", src: "/projects/spookybite/social-cheesy.jpg" },
     ],
     description:
-      "SpookyBite is a playful pizza identity that brings a spooky twist to everyday cravings. Bold red, orange, and cream palette, a cute ghost mascot, and energetic packaging and social visuals that turn pizza into a fun, feel-good experience.",
+      "Full brand identity for SpookyBite, a playful pizza brand — ghost mascot, wordmark, packaging system, storefront, pattern, and social visuals. Context: SpookyBite pairs everyday pizza cravings with a spooky twist — in food branding the identity has to trigger recognition and appetite at a glance, from the pizza box in hand to the storefront to the feed, so the system is built around one memorable mascot and a bold red, orange, and cream palette. Role: full identity system — ghost mascot and wordmark, logo lockup, packaging boxes, cup-and-bag system, storefront graphics, brand pattern, stickers, and social post visuals. Result: one cohesive identity that carries the brand\u2019s playful energy across every touchpoint, from the box at the door to the storefront to the feed.",
     contribution:
-      "Brand identity, mascot, wordmark, packaging system, pattern, and social visual direction.",
+      "Brand identity system — ghost mascot, wordmark and logo lockup, pizza box and cup-and-bag packaging, storefront graphics, brand pattern, stickers, and social visual direction.",
     status: "published",
     approvedForDisplay: true,
   },
