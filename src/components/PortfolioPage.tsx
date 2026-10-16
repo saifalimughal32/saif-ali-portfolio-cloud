@@ -194,6 +194,7 @@ export function PortfolioPage() {
                   <button
                     key={project.id}
                     type="button"
+                    data-project-id={project.id}
                     className="group rounded-[22px] bg-[#f3f3f3] p-4 text-left transition-opacity sm:rounded-[28px] sm:p-8"
                     onClick={() => openProject(project.id)}
                   >
