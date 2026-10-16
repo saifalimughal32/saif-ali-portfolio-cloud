@@ -95,9 +95,9 @@ export const site = {
     },
   ] as SocialLink[],
   meta: {
-    homeTitle: "Ecommerce CRO Consultant for DTC Brands | Saif Ali",
+    homeTitle: "Ecommerce Growth Consultant for DTC Brands | Saif Ali",
     homeDescription:
-      "I help DTC brands turn ad clicks into customers — full-journey CRO across Meta ads, landing pages and Shopify. DM for a free teardown.",
+      "I help DTC brands turn ad clicks into customers — full-journey CRO across Meta ads, landing pages and Shopify. $750 Conversion Fix Sprint.",
     portfolioTitle: "Shopify & Ecommerce Portfolio | Saif Ali",
     portfolioDescription:
       "Selected Shopify builds, CRO-focused redesigns and ecommerce growth work by Saif Ali. See the builds and the thinking behind them.",

@@ -3,7 +3,7 @@ export const about = {
   /** Offer-style heading — accent words render in brand orange */
   line1: "Ecommerce growth consulting that reduces",
   line2Before: "wasted spend and ",
-  line2Accent: "scale what sells",
+  line2Accent: "scales what sells",
   subtitle: "Ad. Click. Landing page. Store. Checkout. One full-journey CRO system.",
   body: "If your Shopify store looks fine but CPA stays high, the pieces aren’t connected. As an ecommerce growth consultant, I run full-journey CRO — connecting store design, offer clarity, Meta creatives, and paid growth — so brands waste less, convert more consistently, and scale with confidence.",
   impactLine: "Done-for-you systems that compound.",
