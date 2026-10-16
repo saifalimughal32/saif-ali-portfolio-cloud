@@ -303,10 +303,11 @@ export const projects: PortfolioProject[] = [
   },
   {
     id: "ai-video1",
-    title: "AI Lifestyle UGC Ad",
+    title: "AI Lifestyle UGC Ad — Realistic AI-Generated Video Creative for Meta",
     category: "ai-creatives",
     thumbnail: "/projects/ai-video1.jpg",
-    thumbnailAlt: "AI-generated lifestyle UGC video ad",
+    thumbnailAlt:
+      "AI-generated lifestyle UGC video ad — realistic creator-style video creative made for Meta advertising",
     media: [
       {
         type: "video",
@@ -315,8 +316,9 @@ export const projects: PortfolioProject[] = [
       },
     ],
     description:
-      "Real-looking AI UGC video creative for Meta — lifestyle angle built to test and scale.",
-    contribution: "AI video generation, edit, and ad-ready delivery.",
+      "AI-generated UGC-style video ad in a lifestyle angle, made for Meta creative testing. Context: lifestyle and creator-style angles are the staple of DTC Meta ad accounts — this creative is generated to look and feel like real UGC so it fits natively in the feed. Role: AI video generation, creative direction, edit, and ad-ready delivery. Result: a test-ready lifestyle angle that gives a brand realistic UGC-style creative without organizing a shoot.",
+    contribution:
+      "AI video generation, creative direction, edit, and ad-ready delivery for Meta.",
     status: "published",
     approvedForDisplay: true,
   },
