@@ -10,6 +10,28 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.saifali.site/landing-page-optimization",
   },
+  openGraph: {
+    title: "Landing Page Optimization for Shopify Brands | Saif Ali",
+    description:
+      "Landing page optimization for Shopify brands: message, offer and creative aligned with your paid traffic. Audited, rewritten, rebuilt. $750 fixed.",
+    url: "/landing-page-optimization",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 2240,
+        height: 1120,
+        alt: "Saif Ali — Ecommerce Growth Consultant for DTC Brands",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Landing Page Optimization for Shopify Brands | Saif Ali",
+    description:
+      "Landing page optimization for Shopify brands: message, offer and creative aligned with your paid traffic. Audited, rewritten, rebuilt. $750 fixed.",
+    images: ["/og-image.jpg"],
+  },
 };
 
 const serifItalic = {
@@ -52,7 +74,7 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "What exactly do I get?",
+      name: "What exactly do I get from the landing page rebuild?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "$750, fixed price. A teardown of your landing page against your live ads — message match, offer clarity, creative consistency, and the mobile path to the CTA — then a full rewrite of the page copy and the page rebuilt inside your existing theme or builder, delivered within seven days of kickoff, with before-and-after notes on what changed and why.",
@@ -68,7 +90,7 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "What do you need from me to start?",
+      name: "What do you need from me to start the landing page rebuild?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "The landing page URL, the ads currently pointing at it, and your offer details — pricing, shipping, guarantees. Read access to the ad account and to your analytics helps me match the message to the audience, but the work doesn't stall without it.",
@@ -92,10 +114,18 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "How long does it take?",
+      name: "How long does the landing page rebuild take?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "Seven days from kickoff: intake, the teardown against your live ads, the rewrite and rebuild, then a before-and-after verification on mobile and desktop.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What happens after the landing page rebuild?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "You get a before-and-after summary: what changed on the page, which ad promises each section now matches, and what to watch in your analytics. The rewrite is yours to keep. If the rest of the store shows the same gaps, the Conversion Fix Sprint applies the same treatment across product pages, cart and checkout.",
       },
     },
     {
@@ -587,7 +617,7 @@ export default function LandingPageOptimizationPage() {
             </div>
             <div>
               <h3 className="font-general text-lg font-medium text-[var(--text)]">
-                What exactly do I get?
+                What exactly do I get from the landing page rebuild?
               </h3>
               <p className={bodyClass}>
                 $750, fixed price. A teardown of your landing page against
@@ -613,7 +643,7 @@ export default function LandingPageOptimizationPage() {
             </div>
             <div>
               <h3 className="font-general text-lg font-medium text-[var(--text)]">
-                What do you need from me to start?
+                What do you need from me to start the landing page rebuild?
               </h3>
               <p className={bodyClass}>
                 The landing page URL, the ads currently pointing at it, and
@@ -648,12 +678,25 @@ export default function LandingPageOptimizationPage() {
             </div>
             <div>
               <h3 className="font-general text-lg font-medium text-[var(--text)]">
-                How long does it take?
+                How long does the landing page rebuild take?
               </h3>
               <p className={bodyClass}>
                 Seven days from kickoff: intake, the teardown against your
                 live ads, the rewrite and rebuild, then a before-and-after
                 verification on mobile and desktop.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-general text-lg font-medium text-[var(--text)]">
+                What happens after the landing page rebuild?
+              </h3>
+              <p className={bodyClass}>
+                You get a before-and-after summary: what changed on the page,
+                which ad promises each section now matches, and what to watch
+                in your analytics. The rewrite is yours to keep. If the rest
+                of the store shows the same gaps, the Conversion Fix Sprint
+                applies the same treatment across product pages, cart and
+                checkout.
               </p>
             </div>
             <div>

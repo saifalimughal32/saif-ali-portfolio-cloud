@@ -8,6 +8,28 @@ export const metadata: Metadata = {
   description:
     "Shopify CRO consultant for DTC brands — full-journey conversion audits from Meta ads to checkout. Book the $750 Shopify Conversion Fix Sprint.",
   alternates: { canonical: "/shopify-cro-consultant" },
+  openGraph: {
+    title: "Shopify CRO Consultant for DTC Brands | Saif Ali",
+    description:
+      "Shopify CRO consultant for DTC brands — full-journey conversion audits from Meta ads to checkout. Book the $750 Shopify Conversion Fix Sprint.",
+    url: "/shopify-cro-consultant",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 2240,
+        height: 1120,
+        alt: "Saif Ali — Ecommerce Growth Consultant for DTC Brands",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Shopify CRO Consultant for DTC Brands | Saif Ali",
+    description:
+      "Shopify CRO consultant for DTC brands — full-journey conversion audits from Meta ads to checkout. Book the $750 Shopify Conversion Fix Sprint.",
+    images: ["/og-image.jpg"],
+  },
 };
 
 const serifItalic = {
@@ -69,7 +91,7 @@ const faqSchema = {
       name: "What access do you need to my store?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Shopify collaborator access — I'll tell you exactly which permissions and why before you approve anything. If I'm reviewing your ads, read-only access to the ad account helps; GA4 read access too, if you have it. I won't touch anything outside the agreed fixes.",
+        text: "For the Conversion Fix Sprint: Shopify collaborator access — I'll tell you exactly which permissions and why before you approve anything. If I'm reviewing your ads, read-only access to the ad account helps; GA4 read access too, if you have it. I won't touch anything outside the agreed fixes.",
       },
     },
     {
@@ -90,7 +112,7 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "What happens after the sprint?",
+      name: "What happens after the Conversion Fix Sprint?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "You get a handoff summary: what changed, why it changed, and what to watch next. If you want follow-up work afterward, we can talk about it — no obligation, no retainer pitch baked in.",
@@ -101,7 +123,7 @@ const faqSchema = {
       name: "How much does Shopify CRO cost?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "A one-off CRO audit typically costs $500–$5,000, and agency retainers run $4,000–$20,000 per month. My Shopify Conversion Fix Sprint is $750 fixed: a 13-area teardown plus the highest-impact fixes implemented on your store in 7 days — no retainer, no hidden quote.",
+        text: "In the market, one-off CRO audits I've seen quoted run $500–$5,000, and agency retainers run $4,000–$20,000 per month. My Shopify Conversion Fix Sprint is $750 fixed: a 13-area teardown plus the highest-impact fixes implemented on your store in 7 days — no retainer, no hidden quote.",
       },
     },
     {
@@ -118,6 +140,14 @@ const faqSchema = {
       acceptedAnswer: {
         "@type": "Answer",
         text: "If your store looks fine but isn't converting, a redesign is usually the wrong first move — the problem is rarely the theme. A CRO sprint finds and fixes the actual leaks: messaging, offer, trust, cart, checkout. Redesign only when the brand or structure is genuinely broken, not when the journey is.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Who is the Conversion Fix Sprint NOT a good fit for?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "If you just launched with almost no traffic, a sprint is premature — fixes need enough buyers to prove they work, and your analytics need data to read. If the store genuinely needs a new brand and structure, a redesign comes first. And if you need ongoing ad management rather than a one-off fix, I am not your media buyer.",
       },
     },
     {
@@ -520,13 +550,14 @@ export default function ShopifyCroConsultantPage() {
             show you yet — and I&rsquo;d rather tell you that than invent some.
           </p>
           <p className={bodyClass}>
-            What I can show you is how I audit. In independent store reviews
-            I&rsquo;ve published, the same patterns keep appearing: no
-            delivery or returns information near the buy button, trust signals
-            sitting pages away from the purchase, variant selectors with no
-            stock indication, shipping costs revealed only at checkout. That
-            is the lens I bring to your store — and you can see the range of
-            builds behind it in{" "}
+            What I can show you is how I audit stores: in independent store
+            reviews I&rsquo;ve published, the same purchase-path patterns keep
+            appearing &mdash; no delivery or returns information near the buy
+            button, trust signals pages away from payment, variant selectors
+            with no stock indication, shipping costs revealed only at
+            checkout. That is the lens I bring to your product pages, cart,
+            and checkout &mdash; and you can see the range of builds behind it
+            in{" "}
             <Link href="/portfolio" className="text-[var(--accent)] underline underline-offset-4">
               my portfolio
             </Link>
@@ -624,7 +655,8 @@ export default function ShopifyCroConsultantPage() {
                 What access do you need to my store?
               </h3>
               <p className={bodyClass}>
-                Shopify collaborator access — I&rsquo;ll tell you exactly which
+                For the Conversion Fix Sprint: Shopify collaborator access —
+                I&rsquo;ll tell you exactly which
                 permissions and why before you approve anything. If I&rsquo;m
                 reviewing your ads, read-only access to the ad account helps;
                 GA4 read access too, if you have it. I won&rsquo;t touch
@@ -656,7 +688,7 @@ export default function ShopifyCroConsultantPage() {
             </div>
             <div>
               <h3 className="font-general text-lg font-medium text-[var(--text)]">
-                What happens after the sprint?
+                What happens after the Conversion Fix Sprint?
               </h3>
               <p className={bodyClass}>
                 You get a handoff summary: what changed, why it changed, and
@@ -669,7 +701,8 @@ export default function ShopifyCroConsultantPage() {
                 How much does Shopify CRO cost?
               </h3>
               <p className={bodyClass}>
-                A one-off CRO audit typically costs $500–$5,000, and agency
+                In the market, one-off CRO audits I&rsquo;ve seen quoted run
+                $500–$5,000, and agency
                 retainers run $4,000–$20,000 per month. My Shopify Conversion
                 Fix Sprint is $750 fixed: a 13-area teardown plus the
                 highest-impact fixes implemented on your store in 7 days — no
@@ -699,6 +732,19 @@ export default function ShopifyCroConsultantPage() {
                 theme. A CRO sprint finds and fixes the actual leaks:
                 messaging, offer, trust, cart, checkout. Redesign only when the
                 brand or structure is genuinely broken, not when the journey is.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-general text-lg font-medium text-[var(--text)]">
+                Who is the Conversion Fix Sprint NOT a good fit for?
+              </h3>
+              <p className={bodyClass}>
+                If you just launched with almost no traffic, a sprint is
+                premature &mdash; fixes need enough buyers to prove they work,
+                and your analytics need data to read. If the store genuinely
+                needs a new brand and structure, a redesign comes first. And
+                if you need ongoing ad management rather than a one-off fix,
+                I am not your media buyer.
               </p>
             </div>
             <div>

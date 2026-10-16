@@ -10,6 +10,28 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.saifali.site/ecommerce-ux-audit",
   },
+  openGraph: {
+    title: "Ecommerce UX Audit for Shopify Stores | Saif Ali",
+    description:
+      "Ecommerce UX audit for Shopify stores: teardown-style expert review across 13 areas, annotated screenshots, fixes ranked by impact. $750 fixed.",
+    url: "/ecommerce-ux-audit",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 2240,
+        height: 1120,
+        alt: "Saif Ali — Ecommerce Growth Consultant for DTC Brands",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ecommerce UX Audit for Shopify Stores | Saif Ali",
+    description:
+      "Ecommerce UX audit for Shopify stores: teardown-style expert review across 13 areas, annotated screenshots, fixes ranked by impact. $750 fixed.",
+    images: ["/og-image.jpg"],
+  },
 };
 
 const serifItalic = {
@@ -52,10 +74,18 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "What exactly do I get?",
+      name: "What exactly does the UX audit report include?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "A written teardown report. Your store is reviewed across 13 areas — homepage, navigation, collections, product page messaging, images and video, pricing and offer, reviews and trust, delivery and returns, variants and purchase controls, mobile, cart, checkout, and ads and landing-page consistency. Every finding comes with an annotated screenshot, an explanation of why it costs sales, and the concrete fix — ranked by revenue impact, not vague advice.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can I see a sample audit report before I book?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes — the methodology demos on the case studies page are the closest public equivalent: a public storefront walked through the same 13 areas, with findings ranked the same way. A paid audit report is the same format pointed at your store, with annotated screenshots of your pages and a fix list your team can implement.",
       },
     },
     {
@@ -68,7 +98,7 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "How long does it take?",
+      name: "How long does the UX audit take?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "The audit is delivered within seven days of kickoff: intake, the full teardown, ranking every finding by impact, and the written report.",
@@ -79,7 +109,7 @@ const faqSchema = {
       name: "Do you need access to my store?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. The teardown is done the way a buyer does it — no collaborator access needed. Read-only analytics access helps me see where buyers actually drop off, but it isn't required; the audit stands on the expert review alone.",
+        text: "For the UX audit: no store access needed. The teardown is done the way a buyer does it — no collaborator access required. Read-only analytics access helps me see where buyers actually drop off, but it isn't required; the audit stands on the expert review alone.",
       },
     },
     {
@@ -587,7 +617,7 @@ export default function EcommerceUxAuditPage() {
             </div>
             <div>
               <h3 className="font-general text-lg font-medium text-[var(--text)]">
-                What exactly do I get?
+                What exactly does the UX audit report include?
               </h3>
               <p className={bodyClass}>
                 A written teardown report. Your store is reviewed across 13
@@ -602,6 +632,19 @@ export default function EcommerceUxAuditPage() {
             </div>
             <div>
               <h3 className="font-general text-lg font-medium text-[var(--text)]">
+                Can I see a sample audit report before I book?
+              </h3>
+              <p className={bodyClass}>
+                Yes &mdash; the methodology demos on the case studies page are
+                the closest public equivalent: a public storefront walked
+                through the same 13 areas, with findings ranked the same way.
+                A paid audit report is the same format pointed at your store,
+                with annotated screenshots of your pages and a fix list your
+                team can implement.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-general text-lg font-medium text-[var(--text)]">
                 How much does the audit cost?
               </h3>
               <p className={bodyClass}>
@@ -612,7 +655,7 @@ export default function EcommerceUxAuditPage() {
             </div>
             <div>
               <h3 className="font-general text-lg font-medium text-[var(--text)]">
-                How long does it take?
+                How long does the UX audit take?
               </h3>
               <p className={bodyClass}>
                 The audit is delivered within seven days of kickoff: intake,
@@ -625,8 +668,9 @@ export default function EcommerceUxAuditPage() {
                 Do you need access to my store?
               </h3>
               <p className={bodyClass}>
-                No. The teardown is done the way a buyer does it — no
-                collaborator access needed. Read-only analytics access helps
+                For the UX audit: no store access needed. The teardown is
+                done the way a buyer does it — no collaborator access
+                required. Read-only analytics access helps
                 me see where buyers actually drop off, but it isn&rsquo;t
                 required; the audit stands on the expert review alone.
               </p>

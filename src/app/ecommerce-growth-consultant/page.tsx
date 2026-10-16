@@ -10,6 +10,28 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.saifali.site/ecommerce-growth-consultant",
   },
+  openGraph: {
+    title: "Ecommerce Growth Consultant for DTC Brands | Saif Ali",
+    description:
+      "Ecommerce growth consultant for DTC brands — Meta ads, landing pages, Shopify and checkout in one growth line. Book the $750 Conversion Fix Sprint.",
+    url: "/ecommerce-growth-consultant",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 2240,
+        height: 1120,
+        alt: "Saif Ali — Ecommerce Growth Consultant for DTC Brands",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ecommerce Growth Consultant for DTC Brands | Saif Ali",
+    description:
+      "Ecommerce growth consultant for DTC brands — Meta ads, landing pages, Shopify and checkout in one growth line. Book the $750 Conversion Fix Sprint.",
+    images: ["/og-image.jpg"],
+  },
 };
 
 const serifItalic = {
@@ -76,10 +98,18 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "What do you need from me to start?",
+      name: "What do you need from me to start the sprint?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "Shopify collaborator access — I'll specify the exact permissions before you approve anything. Read-only access to your ad account so I can review the journey from the ad side, and GA4 read access if you have it. Mostly I need your time during the sprint: quick answers to quick questions.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How much traffic do I need before hiring a growth consultant?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Enough to read decisions from. If you cannot tell whether a change moved sales because weeks pass with barely any buyers, the constraint is traffic, not the store — growth work can still find leaks, but you will not be able to measure the fix. Stores with steady ad or organic traffic get the most from this work.",
       },
     },
     {
@@ -92,7 +122,7 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "What happens after the sprint?",
+      name: "What happens after the sprint — do you offer ongoing work?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "You get a handoff summary: what changed, why it changed, and what to watch next. If you want broader growth work afterward — landing pages, ongoing reviews across the whole line — we scope it together. No obligation, no retainer pitch baked in.",
@@ -461,12 +491,12 @@ export default function EcommerceGrowthConsultantPage() {
           </p>
           <p className={bodyClass}>
             What I can show you is how I audit. In independent store reviews
-            I&rsquo;ve published, the same patterns keep appearing: no
-            delivery or returns information near the buy button, trust signals
-            sitting pages away from the purchase, variant selectors with no
-            stock indication, shipping costs revealed only at checkout. That
-            is the lens I bring to your whole line — and you can see the builds
-            behind it in{" "}
+            I&rsquo;ve published, the same leaks keep appearing between the
+            parts: ads whose promises the landing page drops, product pages
+            that hide shipping costs until checkout, reviews nowhere near the
+            buy button, carts and checkout that give hesitant buyers no reason
+            to finish. That is the lens I bring to your whole line &mdash; and
+            you can see the builds behind it in{" "}
             <Link href="/portfolio" className="text-[var(--accent)] underline underline-offset-4">
               my portfolio
             </Link>
@@ -579,7 +609,7 @@ export default function EcommerceGrowthConsultantPage() {
             </div>
             <div>
               <h3 className="font-general text-lg font-medium text-[var(--text)]">
-                What do you need from me to start?
+                What do you need from me to start the sprint?
               </h3>
               <p className={bodyClass}>
                 Shopify collaborator access — I&rsquo;ll specify the exact
@@ -587,6 +617,19 @@ export default function EcommerceGrowthConsultantPage() {
                 your ad account so I can review the journey from the ad side,
                 and GA4 read access if you have it. Mostly I need your time
                 during the sprint: quick answers to quick questions.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-general text-lg font-medium text-[var(--text)]">
+                How much traffic do I need before hiring a growth consultant?
+              </h3>
+              <p className={bodyClass}>
+                Enough to read decisions from. If you cannot tell whether a
+                change moved sales because weeks pass with barely any buyers,
+                the constraint is traffic, not the store &mdash; growth work
+                can still find leaks, but you will not be able to measure the
+                fix. Stores with steady ad or organic traffic get the most
+                from this work.
               </p>
             </div>
             <div>
@@ -601,7 +644,7 @@ export default function EcommerceGrowthConsultantPage() {
             </div>
             <div>
               <h3 className="font-general text-lg font-medium text-[var(--text)]">
-                What happens after the sprint?
+                What happens after the sprint — do you offer ongoing work?
               </h3>
               <p className={bodyClass}>
                 You get a handoff summary: what changed, why it changed, and
