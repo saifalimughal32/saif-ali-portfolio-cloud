@@ -308,6 +308,10 @@ export default function ConversionFrameworkPage() {
             <Link href="/case-studies" className="text-[var(--accent)] underline underline-offset-4">
               case studies page
             </Link>
+            . For the fixes themselves in plain language, the blog covers{" "}
+            <Link href="/blog/shopify-conversion-rate-optimization" className="text-[var(--accent)] underline underline-offset-4">
+              13 high-impact Shopify conversion fixes that increase sales
+            </Link>
             .
           </p>
         </section>
@@ -468,3 +472,4 @@ export default function ConversionFrameworkPage() {
     </main>
   );
 }
+
