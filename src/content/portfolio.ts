@@ -307,7 +307,7 @@ export const projects: PortfolioProject[] = [
     category: "ai-creatives",
     thumbnail: "/projects/ai-video1.jpg",
     thumbnailAlt:
-      "AI-generated lifestyle UGC video ad — realistic creator-style video creative made for Meta advertising",
+      "AI-generated lifestyle UGC video ad — realistic creator-style video creative made for Meta ad creative testing",
     media: [
       {
         type: "video",
@@ -316,7 +316,7 @@ export const projects: PortfolioProject[] = [
       },
     ],
     description:
-      "AI-generated UGC-style video ad in a lifestyle angle, made for Meta creative testing. Context: lifestyle and creator-style angles are the staple of DTC Meta ad accounts — this creative is generated to look and feel like real UGC so it fits natively in the feed. Role: AI video generation, creative direction, edit, and ad-ready delivery. Result: a test-ready lifestyle angle that gives a brand realistic UGC-style creative without organizing a shoot.",
+      "AI-generated UGC-style video ad in a lifestyle angle, built for Meta creative testing. Context: Meta ad accounts run on a test-and-scale loop — winners get scaled, losers get killed — so every testing round needs fresh angles, and lifestyle/creator formats are the staple DTC brands test with. Problem: real UGC means casting, shooting, and waiting, so brands short on native-looking creative recycle the same ads and let fatigue set in. Role: AI video generation, creative direction, edit, and ad-ready delivery — generated to look and feel like real UGC so it sits natively in the feed. Result: a test-ready lifestyle angle the brand can drop into its testing rotation — realistic UGC-style creative without organizing a shoot. Campaign performance: not published — this entry demonstrates the creative, not the ad results.",
     contribution:
       "AI video generation, creative direction, edit, and ad-ready delivery for Meta.",
     status: "published",
