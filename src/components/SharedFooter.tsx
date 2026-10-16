@@ -129,9 +129,16 @@ export function SharedFooter() {
               href="https://www.trustpilot.com/review/saifali.site"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 text-base font-medium text-[var(--text)] md:text-lg"
+              aria-label="Reviews on Trustpilot"
+              className="inline-flex items-center justify-center"
             >
-              Reviews on Trustpilot
+              <Image
+                src="/media/trustpilot-stars.svg"
+                alt="Rated on Trustpilot"
+                width={160}
+                height={30}
+                className="h-7 w-auto"
+              />
             </a>
           </p>
         </div>
