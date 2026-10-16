@@ -88,6 +88,14 @@ const faqSchema = {
     },
     {
       "@type": "Question",
+      name: "Should I hire a freelancer instead of a CRO consultant?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A freelancer is the right call when you already know the fix and need hands — a new section, a speed tweak, a theme edit. A CRO consultant owns the diagnosis first: finding the leaks, ranking them by revenue impact, then fixing the ones that count. Hiring freelancers without that diagnosis means paying per task and hoping the tasks were the right ones.",
+      },
+    },
+    {
+      "@type": "Question",
       name: "What access do you need to my store?",
       acceptedAnswer: {
         "@type": "Answer",
@@ -648,6 +656,19 @@ export default function ShopifyCroConsultantPage() {
                 operator, one fixed scope, faster decisions. An agency still
                 makes sense if you need a whole team and ongoing
                 experimentation at scale.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-general text-lg font-medium text-[var(--text)]">
+                Should I hire a freelancer instead of a CRO consultant?
+              </h3>
+              <p className={bodyClass}>
+                A freelancer is the right call when you already know the fix
+                and need hands — a new section, a speed tweak, a theme edit.
+                A CRO consultant owns the diagnosis first: finding the leaks,
+                ranking them by revenue impact, then fixing the ones that
+                count. Hiring freelancers without that diagnosis means paying
+                per task and hoping the tasks were the right ones.
               </p>
             </div>
             <div>
