@@ -4,9 +4,32 @@ import { cv } from "@/content/cv";
 import { site } from "@/content/site";
 
 export const metadata: Metadata = {
-  title: `CV | ${site.displayName}`,
-  description: `Curriculum Vitae for ${site.displayName} — founder of whyitworks.ai.`,
+  title: "CV — Saif Ali | Shopify CRO & Ecommerce Growth Consultant",
+  description:
+    "CV of Saif Ali — Shopify CRO consultant and ecommerce growth consultant for DTC brands: Meta ads, landing pages, Shopify builds, 2022–present.",
   alternates: { canonical: "/cv" },
+  openGraph: {
+    title: "CV — Saif Ali | Shopify CRO & Ecommerce Growth Consultant",
+    description:
+      "CV of Saif Ali — Shopify CRO consultant and ecommerce growth consultant for DTC brands: Meta ads, landing pages, Shopify builds, 2022–present.",
+    url: "/cv",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 2240,
+        height: 1120,
+        alt: "Saif Ali — Ecommerce Growth Consultant for DTC Brands",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CV — Saif Ali | Shopify CRO & Ecommerce Growth Consultant",
+    description:
+      "CV of Saif Ali — Shopify CRO consultant and ecommerce growth consultant for DTC brands: Meta ads, landing pages, Shopify builds, 2022–present.",
+    images: ["/og-image.jpg"],
+  },
 };
 
 function SectionTitle({ children }: { children: string }) {
@@ -104,6 +127,16 @@ export default function CvPage() {
               <SectionTitle>About</SectionTitle>
               <p className="mt-3 max-w-3xl text-sm leading-relaxed text-[var(--text)] md:text-[15px]">
                 {cv.about}
+              </p>
+              <p className="mt-3 max-w-3xl text-sm leading-relaxed text-[var(--text)] md:text-[15px]">
+                Currently offering{" "}
+                <Link
+                  href="/shopify-cro-consultant"
+                  className="text-[var(--accent)] underline underline-offset-4"
+                >
+                  Shopify CRO consulting
+                </Link>{" "}
+                for DTC brands.
               </p>
             </section>
 

@@ -6,9 +6,31 @@ import { site } from "@/content/site";
 export const metadata: Metadata = {
   title: "Case Studies: Shopify CRO Teardowns | Saif Ali",
   description:
-    "Shopify CRO case studies and teardown methodology: the 13-area full-journey review behind every engagement, with an independent methodology demo on a public storefront. Honest proof — no invented results.",
+    "Shopify CRO teardowns: the 13-area review behind every engagement, shown on a public storefront demo. Honest proof — no invented results.",
   alternates: {
     canonical: "https://www.saifali.site/case-studies",
+  },
+  openGraph: {
+    title: "Case Studies: Shopify CRO Teardowns | Saif Ali",
+    description:
+      "Shopify CRO teardowns: the 13-area review behind every engagement, shown on a public storefront demo. Honest proof — no invented results.",
+    url: "/case-studies",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 2240,
+        height: 1120,
+        alt: "Saif Ali — Ecommerce Growth Consultant for DTC Brands",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Case Studies: Shopify CRO Teardowns | Saif Ali",
+    description:
+      "Shopify CRO teardowns: the 13-area review behind every engagement, shown on a public storefront demo. Honest proof — no invented results.",
+    images: ["/og-image.jpg"],
   },
 };
 
@@ -104,6 +126,26 @@ const faqSchema = {
 const ctaButtonClass =
   "inline-flex items-center gap-2 rounded-full bg-[var(--accent)] px-7 py-3.5 text-sm font-medium text-white transition-opacity hover:opacity-90";
 
+const collectionSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "https://www.saifali.site/case-studies#collection",
+  name: "Case Studies: Shopify CRO Teardowns | Saif Ali",
+  url: "https://www.saifali.site/case-studies",
+  mainEntity: {
+    "@type": "ItemList",
+    numberOfItems: 1,
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Methodology demo: a public storefront",
+        url: "https://www.saifali.site/case-studies#demo",
+      },
+    ],
+  },
+};
+
 const h2Class =
   "font-general text-[clamp(1.6rem,3.5vw,2.4rem)] font-medium leading-tight tracking-[-1px] text-[var(--text)]";
 const bodyClass = "mt-4 text-base leading-relaxed text-[var(--text-secondary)] md:text-lg";
@@ -135,6 +177,10 @@ export default function CaseStudiesPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
       />
       <div className="mx-auto w-full max-w-4xl">
         {/* Breadcrumb / back — mirrors the sibling pages' pattern */}

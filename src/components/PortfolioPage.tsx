@@ -236,6 +236,26 @@ export function PortfolioPage() {
         </div>
       </main>
 
+      <div className="container-wide pb-10">
+        <p className="text-center text-base text-[var(--text-secondary)]">
+          Like what you see?{" "}
+          <a
+            href="/book"
+            className="text-[var(--accent)] underline underline-offset-4"
+          >
+            Book a fit call
+          </a>{" "}
+          — or browse the{" "}
+          <a
+            href="/case-studies"
+            className="text-[var(--accent)] underline underline-offset-4"
+          >
+            case studies
+          </a>{" "}
+          for full teardowns.
+        </p>
+      </div>
+
       <SharedFooter />
 
       {activeProject && activeMedia ? (

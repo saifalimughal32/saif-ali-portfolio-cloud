@@ -35,6 +35,18 @@ export function PortfolioCategoryHero({ intro }: { intro: PortfolioCategoryIntro
         <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-[var(--text-secondary)] md:text-lg">
           {intro.body}
         </p>
+        <p className="mx-auto mt-3 max-w-2xl text-base leading-relaxed text-[var(--text-secondary)] md:text-lg">
+          Selected Shopify store builds, CRO-focused redesigns, and ecommerce
+          growth work — each with the thinking behind the build. For the review
+          method behind the work, see the{" "}
+          <a
+            href="/case-studies"
+            className="text-[var(--accent)] underline underline-offset-4"
+          >
+            case-study teardowns
+          </a>
+          .
+        </p>
         <div className="mt-7 flex justify-center">
           <ScheduleCallButton
             url={site.bookingUrl}
