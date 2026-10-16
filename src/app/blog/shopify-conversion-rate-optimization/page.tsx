@@ -242,7 +242,15 @@ export default function BlogCroFixesPage() {
             If you&rsquo;d like, I&rsquo;ll review your store&rsquo;s
             buying journey myself and tell you honestly where the leaks
             are. No pressure either way. If the list above is enough to get
-            you started, that&rsquo;s a win too.
+            you started, that&rsquo;s a win too. If you&rsquo;d rather
+            have a specialist own the full journey, here&rsquo;s{" "}
+            <Link
+              href="/shopify-cro-consultant"
+              className="text-[var(--accent)] underline underline-offset-4"
+            >
+              how I work as a Shopify CRO consultant
+            </Link>
+            .
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link href="/book" className={ctaButtonClass}>
@@ -271,3 +279,4 @@ export default function BlogCroFixesPage() {
     </main>
   );
 }
+
