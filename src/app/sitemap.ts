@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "https://www.saifali.site/case-studies", lastModified: "2026-10-16", changeFrequency: "monthly", priority: 0.9 },
     { url: "https://www.saifali.site/resources/shopify-conversion-framework", lastModified: "2026-10-16", changeFrequency: "monthly", priority: 0.8 },
     { url: "https://www.saifali.site/blog/shopify-conversion-rate-optimization", lastModified: "2026-10-16", changeFrequency: "monthly", priority: 0.8 },
+    { url: "https://www.saifali.site/blog/mobile-cro-shopify", lastModified: "2026-10-17", changeFrequency: "monthly", priority: 0.8 },
     { url: "https://www.saifali.site/book", lastModified: "2026-10-16", changeFrequency: "monthly", priority: 0.7 },
     { url: "https://www.saifali.site/cv", lastModified: "2026-10-16", changeFrequency: "monthly", priority: 0.5 },
   ];
