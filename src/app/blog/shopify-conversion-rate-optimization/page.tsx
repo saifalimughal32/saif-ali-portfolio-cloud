@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import Link from "next/link";
 import { SharedFooter } from "@/components/SharedFooter";
 import { site } from "@/content/site";
@@ -144,7 +145,7 @@ const bodyClass =
   "mt-4 text-base leading-relaxed text-[var(--text-secondary)] md:text-lg";
 const leadClass = "font-medium text-[var(--text)]";
 
-const fixes: { title: string; what: string; why: string; check: string }[] = [
+const fixes: { title: string; what: string; why: ReactNode; check: string }[] = [
   {
     title: "1. Put shipping cost and delivery time next to the buy button",
     what: "The actual shipping price and how long delivery takes, shown within sight of the add-to-cart button — not hidden behind a “calculated at checkout” line or buried in a footer policy page.",
@@ -178,7 +179,22 @@ const fixes: { title: string; what: string; why: string; check: string }[] = [
   {
     title: "6. Make the mobile path to the buy button short",
     what: "On a phone, the distance from the top of the product page to the add-to-cart button is short — the buyer doesn’t scroll through galleries, brand stories, and feature lists before they can buy.",
-    why: "Most of your traffic arrives on a phone, and phone visitors scroll less patiently than desktop visitors. Every full screen of content between arrival and the buy button is a chance to lose them. The buy button should be reachable within one or two scrolls.",
+    why: (
+      <>
+        Most of your traffic arrives on a phone, and phone visitors scroll
+        less patiently than desktop visitors. Every full screen of content
+        between arrival and the buy button is a chance to lose them. The buy
+        button should be reachable within one or two scrolls. For the full
+        mobile teardown, see{" "}
+        <Link
+          href="/blog/mobile-cro-shopify"
+          className="text-[var(--accent)] underline underline-offset-4"
+        >
+          mobile CRO for Shopify: 9 fixes that recover phone sales
+        </Link>
+        .
+      </>
+    ),
     check: "Open your product page on your phone and count the screens before the add-to-cart button appears. If it’s more than two, tighten the layout above it.",
   },
   {
