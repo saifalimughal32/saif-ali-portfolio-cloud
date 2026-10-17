@@ -324,10 +324,11 @@ export const projects: PortfolioProject[] = [
   },
   {
     id: "ai-video3",
-    title: "AI Product Story Ad",
+    title: "AI Product Story Ad — AI-Generated Video Creative with Product Storytelling",
     category: "ai-creatives",
     thumbnail: "/projects/ai-video3.jpg",
-    thumbnailAlt: "AI-generated product story video ad",
+    thumbnailAlt:
+      "AI-generated product story video ad — branded AI video creative with product storytelling and conversion-focused pacing",
     media: [
       {
         type: "video",
@@ -336,8 +337,9 @@ export const projects: PortfolioProject[] = [
       },
     ],
     description:
-      "Branded AI video ad with product storytelling and conversion-focused pacing.",
-    contribution: "AI production, creative direction, and platform-ready edit.",
+      "AI-generated product story video ad with conversion-focused pacing. Context: paid-social testing runs on fresh creative angles — a product-story format gives the brand a storytelling angle to rotate alongside hooks, UGC, and offer-led ads. Problem: telling a real product story on camera needs a shoot, talent, and timelines, so teams lean on static product shots that blend into the feed. Role: AI video generation, creative direction, pacing and edit for conversion-focused storytelling, delivered ad-ready — built to look like a branded product story without organizing a shoot. Result: a test-ready product-story angle the brand can drop into its creative rotation. Campaign performance: not published — this entry demonstrates the creative, not the ad results.",
+    contribution:
+      "AI video production, creative direction, and ad-ready edit.",
     status: "published",
     approvedForDisplay: true,
   },
