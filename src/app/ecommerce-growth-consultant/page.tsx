@@ -473,12 +473,12 @@ export default function EcommerceGrowthConsultantPage() {
             between them.
           </p>
           <p className={bodyClass}>
-            If you know the problem is only in the store, start with my{" "}
+            If you know the problem is only in the store, the{" "}
             <Link href="/shopify-cro-consultant" className="text-[var(--accent)] underline underline-offset-4">
-              Shopify CRO consulting
+              Shopify Conversion Fix Sprint
             </Link>{" "}
-            page. If the question is bigger — who should run our ecommerce
-            growth — you&rsquo;re reading the right page.
+            is the sharper starting point. If the question is bigger — who
+            should run our ecommerce growth — you&rsquo;re reading the right page.
           </p>
         </section>
 
@@ -752,4 +752,5 @@ export default function EcommerceGrowthConsultantPage() {
     </main>
   );
 }
+
 

@@ -824,11 +824,11 @@ export default function ShopifyCroConsultantPage() {
             ranked report before we change a thing.
           </p>
           <p className={bodyClass}>
-            Running paid traffic to a page that drops the click? Read my{" "}
+            Running paid traffic to a page that drops the click? Read about the{" "}
             <Link href="/landing-page-optimization" className="text-[var(--accent)] underline underline-offset-4">
-              landing page optimization
+              landing page rebuild
             </Link>{" "}
-            page — message, offer, and creative aligned with your ads.
+            — message, offer, and creative aligned with your ads.
           </p>
           <p className={bodyClass}>
             Curious what the teardown looks like on a real storefront?
@@ -857,3 +857,4 @@ export default function ShopifyCroConsultantPage() {
     </main>
   );
 }
+

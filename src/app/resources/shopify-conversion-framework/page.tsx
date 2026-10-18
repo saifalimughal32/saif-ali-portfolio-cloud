@@ -271,7 +271,7 @@ export default function ConversionFrameworkPage() {
             boxes, real carts — never invented, never presented as client
             work.
           </p>
-          <CtaRow />
+          <CtaRow label="Start the sprint" />
         </section>
 
         {/* The honest-labelling rule */}
@@ -530,4 +530,5 @@ export default function ConversionFrameworkPage() {
     </main>
   );
 }
+
 
