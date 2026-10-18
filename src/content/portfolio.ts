@@ -345,10 +345,11 @@ export const projects: PortfolioProject[] = [
   },
   {
     id: "ai-bag",
-    title: "AI Handbag Ad",
+    title: "AI Handbag Ad — AI-Generated Video Creative for Fashion Accessories",
     category: "ai-creatives",
     thumbnail: "/projects/ai-bag.jpg",
-    thumbnailAlt: "AI creative video for handbag ecommerce",
+    thumbnailAlt:
+      "AI-generated fashion handbag video ad — product-led accessories creative with clean studio-style framing",
     media: [
       {
         type: "video",
@@ -356,8 +357,10 @@ export const projects: PortfolioProject[] = [
         poster: "/projects/ai-creatives/bag-poster.jpg",
       },
     ],
-    description: "AI video ad for a fashion handbag offer — clean product-led creative.",
-    contribution: "AI scene generation and ad edit.",
+    description:
+      "AI-generated handbag video ad with product-led creative for a fashion accessories offer. Context: accessories brands need close-up product creatives that hold attention in the feed — UGC covers storytelling, but it does not always show the product clearly. Problem: shooting real product footage with consistent lighting and styling takes a shoot day, and plain product shots blend into the feed. Role: AI scene generation, product-led creative direction, and ad-ready edit — built to look like a styled product shoot without organizing one. Result: a test-ready product-led angle the brand can rotate alongside lifestyle and offer-led ads. Campaign performance: not published — this entry demonstrates the creative, not the ad results.",
+    contribution:
+      "AI scene generation, product-led creative direction, and ad-ready edit.",
     status: "published",
     approvedForDisplay: true,
   },
