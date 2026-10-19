@@ -366,10 +366,12 @@ export const projects: PortfolioProject[] = [
   },
   {
     id: "ai-teller",
-    title: "AI Homeware Ad",
+    title:
+      "AI Homeware Ad — AI-Generated Video Creative for Homeware & Tableware",
     category: "ai-creatives",
     thumbnail: "/projects/ai-teller.jpg",
-    thumbnailAlt: "AI creative video for tableware and homeware",
+    thumbnailAlt:
+      "AI-generated homeware video ad — tableware styled in a warm in-home scene",
     media: [
       {
         type: "video",
@@ -377,8 +379,10 @@ export const projects: PortfolioProject[] = [
         poster: "/projects/ai-creatives/teller-poster.jpg",
       },
     ],
-    description: "AI UGC-style ad for homeware / tableware ecommerce.",
-    contribution: "AI creative production and editing.",
+    description:
+      "AI-generated homeware video ad with styled in-home scenes for a tableware offer. Context: homeware brands sell a feeling — tableware and decor need to be seen styled in a real home setting to trigger purchase intent, and flat product shots undersell them. Problem: styling and shooting tableware in a beautiful home setting means a location, a stylist, and a shoot day, which is slow and expensive when testing multiple looks. Role: AI scene generation, home-styled creative direction, and ad-ready edit — built to look like an in-home styled shoot without organizing one. Result: a test-ready styled-scene angle the brand can rotate alongside UGC and offer-led ads. Campaign performance: not published — this entry demonstrates the creative, not the ad results.",
+    contribution:
+      "AI scene generation, home-styled creative direction, and ad-ready edit.",
     status: "published",
     approvedForDisplay: true,
   },
