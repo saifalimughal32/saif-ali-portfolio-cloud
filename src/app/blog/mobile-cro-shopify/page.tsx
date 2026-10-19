@@ -6,14 +6,14 @@ import { site } from "@/content/site";
 export const metadata: Metadata = {
   title: "Mobile CRO for Shopify: 9 Fixes That Recover Phone Sales | Saif Ali",
   description:
-    "Most Shopify traffic is mobile — and most of it leaks on the phone. 9 mobile-specific CRO fixes: sticky buy bar, tap targets, iOS zoom, express checkout.",
+    "Most Shopify traffic is mobile — and most of it leaks on the phone. 9 mobile CRO fixes: sticky buy bar, tap targets, iOS zoom, express checkout.",
   alternates: {
     canonical: "https://www.saifali.site/blog/mobile-cro-shopify",
   },
   openGraph: {
     title: "Mobile CRO for Shopify: 9 Fixes That Recover Phone Sales | Saif Ali",
     description:
-      "Most Shopify traffic is mobile — and most of it leaks on the phone. 9 mobile-specific CRO fixes: sticky buy bar, tap targets, iOS zoom, express checkout.",
+      "Most Shopify traffic is mobile — and most of it leaks on the phone. 9 mobile CRO fixes: sticky buy bar, tap targets, iOS zoom, express checkout.",
     url: "/blog/mobile-cro-shopify",
     type: "article",
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mobile CRO for Shopify: 9 Fixes That Recover Phone Sales | Saif Ali",
     description:
-      "Most Shopify traffic is mobile — and most of it leaks on the phone. 9 mobile-specific CRO fixes: sticky buy bar, tap targets, iOS zoom, express checkout.",
+      "Most Shopify traffic is mobile — and most of it leaks on the phone. 9 mobile CRO fixes: sticky buy bar, tap targets, iOS zoom, express checkout.",
     images: ["/og-image.jpg"],
   },
 };
