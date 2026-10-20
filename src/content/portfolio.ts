@@ -388,10 +388,11 @@ export const projects: PortfolioProject[] = [
   },
   {
     id: "ai-ring",
-    title: "AI Jewelry Ad",
+    title: "AI Jewelry Ad — AI-Generated Video Creative for Jewelry Brands",
     category: "ai-creatives",
     thumbnail: "/projects/ai-ring.jpg",
-    thumbnailAlt: "AI creative video for jewelry brand",
+    thumbnailAlt:
+      "AI-generated jewelry video ad — macro detail shots and styled lifestyle framing",
     media: [
       {
         type: "video",
@@ -399,8 +400,10 @@ export const projects: PortfolioProject[] = [
         poster: "/projects/ai-creatives/ring-poster.jpg",
       },
     ],
-    description: "Premium AI video creative for jewelry — detail shots and lifestyle framing.",
-    contribution: "AI video generation and brand-aligned edit.",
+    description:
+      "AI-generated jewelry video ad with macro detail shots and styled lifestyle framing for a jewelry offer. Context: jewelry is high-consideration — sparkle, craftsmanship detail, and seeing it worn is what triggers desire, and flat packshots undersell that. Problem: macro jewelry photography and styled lifestyle framing need specialized photography, controlled lighting, and a model shoot, which is slow and expensive when testing new collections. Role: AI video generation, detail-led creative direction, and ad-ready edit — built to look like a luxury jewelry shoot without organizing one. Result: a test-ready detail-led angle the brand can rotate alongside UGC and offer-led ads. Campaign performance: not published — this entry demonstrates the creative, not the ad results.",
+    contribution:
+      "AI video generation, detail-led creative direction, and ad-ready edit.",
     status: "published",
     approvedForDisplay: true,
   },
