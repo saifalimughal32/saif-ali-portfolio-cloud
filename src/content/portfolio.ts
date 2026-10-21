@@ -409,10 +409,12 @@ export const projects: PortfolioProject[] = [
   },
   {
     id: "ai-kleid",
-    title: "AI Apparel Ad",
+    title:
+      "AI Apparel Ad — AI-Generated Fashion Video Creative for Clothing Brands",
     category: "ai-creatives",
     thumbnail: "/projects/ai-kleid.jpg",
-    thumbnailAlt: "AI creative video for apparel ecommerce",
+    thumbnailAlt:
+      "AI-generated apparel video ad — model-worn styling with realistic fabric movement",
     media: [
       {
         type: "video",
@@ -420,8 +422,10 @@ export const projects: PortfolioProject[] = [
         poster: "/projects/ai-creatives/kleid-poster.jpg",
       },
     ],
-    description: "AI fashion video ad for apparel — model and product storytelling.",
-    contribution: "AI UGC production and ad editing.",
+    description:
+      "AI-generated apparel video ad with model-worn styling and realistic fabric movement for a clothing offer. Context: apparel sells on how clothes look when worn — fit, drape, and movement are what convince a shopper, and flat lays or packshots do not show that. Problem: booking a model, a location, and a styling day to film product-on-model footage is slow and expensive when testing new drops. Role: AI video generation, model-led creative direction, and ad-ready edit — built to look like an on-model fashion shoot without organizing one. Result: a test-ready model-worn angle the brand can rotate alongside UGC and offer-led ads. Campaign performance: not published — this entry demonstrates the creative, not the ad results.",
+    contribution:
+      "AI video generation, model-led creative direction, and ad-ready edit.",
     status: "published",
     approvedForDisplay: true,
   },
