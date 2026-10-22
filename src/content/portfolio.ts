@@ -431,10 +431,11 @@ export const projects: PortfolioProject[] = [
   },
   {
     id: "ai-padel",
-    title: "AI Sports Ad",
+    title: "AI Sports Ad — AI-Generated Video Creative for Sports Brands",
     category: "ai-creatives",
     thumbnail: "/projects/ai-padel.jpg",
-    thumbnailAlt: "AI creative video for sports and padel brand",
+    thumbnailAlt:
+      "AI-generated sports video ad — on-court padel action with product-focused framing",
     media: [
       {
         type: "video",
@@ -442,8 +443,9 @@ export const projects: PortfolioProject[] = [
         poster: "/projects/ai-creatives/padel-poster.jpg",
       },
     ],
-    description: "AI video creative for sports / padel ecommerce — action and product focus.",
-    contribution: "AI scene creation and performance-oriented edit.",
+    description:
+      "AI-generated sports video ad with on-court padel action and product-focused framing for a sports offer. Context: sports products sell on energy — shoppers buy the movement, the intensity, and the on-court feel, and static packshots cannot show that. Problem: filming real on-court action footage needs athletes, court time, and a camera crew, which is slow and expensive when testing new creative angles. Role: AI video generation, action-led creative direction, and ad-ready edit — built to look like a shot-on-court sports ad without organizing a shoot. Result: a test-ready action angle the brand can rotate alongside UGC and offer-led ads. Campaign performance: not published — this entry demonstrates the creative, not the ad results.",
+    contribution: "AI video generation, action-led creative direction, and ad-ready edit.",
     status: "published",
     approvedForDisplay: true,
   },
