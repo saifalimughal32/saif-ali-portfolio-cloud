@@ -451,10 +451,11 @@ export const projects: PortfolioProject[] = [
   },
   {
     id: "ai-food",
-    title: "AI Food Ad",
+    title: "AI Food Ad — AI-Generated Video Creative for Food Brands",
     category: "ai-creatives",
     thumbnail: "/projects/ai-food.jpg",
-    thumbnailAlt: "AI creative video for food brand",
+    thumbnailAlt:
+      "AI-generated food video ad — appetite appeal and product close-ups for Meta ads",
     media: [
       {
         type: "video",
@@ -462,8 +463,10 @@ export const projects: PortfolioProject[] = [
         poster: "/projects/ai-creatives/food-poster.jpg",
       },
     ],
-    description: "AI food video ad — appetite appeal and product close-ups for Meta.",
-    contribution: "AI creative generation and platform-ready delivery.",
+    description:
+      "AI-generated food video ad with appetite appeal and product close-ups, built for Meta ad placements. Context: food and drink offers win or lose on appetite appeal — shoppers buy the texture, the steam, the close-up that makes them hungry, and static packshots cannot trigger that. Problem: filming real food footage needs a shoot day, food styling, and a crew, which is slow and expensive when testing new creative angles. Role: AI video generation, appetite-led creative direction, and ad-ready edit — built to look like a shot food commercial without organizing a shoot. Result: a test-ready appetite angle the brand can rotate alongside UGC and offer-led ads. Campaign performance: not published — this entry demonstrates the creative, not the ad results.",
+    contribution:
+      "AI video generation, appetite-led creative direction, and ad-ready edit.",
     status: "published",
     approvedForDisplay: true,
   },
