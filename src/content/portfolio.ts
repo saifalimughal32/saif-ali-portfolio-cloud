@@ -472,10 +472,11 @@ export const projects: PortfolioProject[] = [
   },
   {
     id: "ai-klammern",
-    title: "AI Accessories Ad",
+    title: "AI Accessories Ad — AI-Generated Video Creative for Fashion Accessories",
     category: "ai-creatives",
     thumbnail: "/projects/ai-klammern.jpg",
-    thumbnailAlt: "AI creative video for fashion accessories",
+    thumbnailAlt:
+      "AI-generated accessories video ad — styling, detail close-ups and movement for Meta ads",
     media: [
       {
         type: "video",
@@ -483,8 +484,10 @@ export const projects: PortfolioProject[] = [
         poster: "/projects/ai-creatives/klammern-poster.jpg",
       },
     ],
-    description: "AI accessories video creative for DTC fashion brands.",
-    contribution: "AI production and ad editing.",
+    description:
+      "AI-generated accessories video ad with styling, detail close-ups and movement, built for Meta ad placements. Context: fashion accessories sell on detail and movement — the clasp, the finish, the way a piece catches light — and static packshots flatten that. Problem: filming real accessory footage needs styling, a model or a set, and a crew, which is slow and expensive when testing new creative angles. Role: AI video generation, accessory-led creative direction, and ad-ready edit — built to look like a shot product commercial without organizing a shoot. Result: a test-ready detail-and-movement angle the brand can rotate alongside UGC and offer-led ads. Campaign performance: not published — this entry demonstrates the creative, not the ad results.",
+    contribution:
+      "AI video generation, accessory-led creative direction, and ad-ready edit.",
     status: "published",
     approvedForDisplay: true,
   },
