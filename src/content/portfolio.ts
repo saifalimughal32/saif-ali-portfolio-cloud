@@ -545,6 +545,27 @@ export const projects: PortfolioProject[] = [
     status: "published",
     approvedForDisplay: true,
   },
+  {
+    id: "habibi",
+    title: "Habibi \u2014 Brand Identity Design for a Bold Fast Food Brand",
+    category: "branding",
+    thumbnail: "/projects/habibi.jpg",
+    thumbnailAlt:
+      "Habibi fast food brand identity board \u2014 expressive habibi! wordmark, vibrant orange and brown palette, packaging and campaign system designed for instant recognition",
+    media: [
+      { type: "image", src: "/projects/habibi/brand-board.jpg" },
+      { type: "image", src: "/projects/habibi/logo-system.jpg" },
+      { type: "image", src: "/projects/habibi/posters-social.jpg" },
+      { type: "image", src: "/projects/habibi/crispy-campaign.jpg" },
+      { type: "image", src: "/projects/habibi/merch-delivery.jpg" },
+    ],
+    description:
+      "Full brand identity for Habibi, a bold fast food brand \u2014 expressive wordmark, vibrant color system, packaging, posters, merchandise, and social visuals, designed by whyitworks. Context: fast food is a crowded category where a brand gets a second to trigger appetite and recognition \u2014 from the bucket in hand to the restaurant wall to the feed \u2014 so the identity is built around one warm, expressive wordmark and a bold orange, brown, and cream palette, with big food photography doing the talking. Role: complete identity system built around the supplied Habibi logo \u2014 logo variations and lockups, Gliker display typography, color system, packaging for buckets, cups, and bags, poster and campaign design, social media templates, and merchandise and delivery branding. Result: one cohesive, high energy identity that carries across packaging, campaigns, and everyday touchpoints, giving Habibi a distinctive look that stands apart from generic fast food branding.",
+    contribution:
+      "Brand identity system \u2014 logo application and lockups, packaging, campaign posters, social templates, merchandise, and delivery branding.",
+    status: "published",
+    approvedForDisplay: true,
+  },
 ];
 
 export const publishedProjects = projects.filter(
