@@ -493,10 +493,11 @@ export const projects: PortfolioProject[] = [
   },
   {
     id: "ai-outfit",
-    title: "AI Outfit Lifestyle Ad",
+    title: "AI Outfit Lifestyle Ad — AI-Generated Video Creative for Fashion Outfits",
     category: "ai-creatives",
     thumbnail: "/projects/ai-outfit.jpg",
-    thumbnailAlt: "AI creative video for outfit lifestyle ecommerce",
+    thumbnailAlt:
+      "AI-generated outfit lifestyle video ad — full-look styling and movement for Meta ads",
     media: [
       {
         type: "video",
@@ -504,8 +505,10 @@ export const projects: PortfolioProject[] = [
         poster: "/projects/ai-creatives/outfit-poster.jpg",
       },
     ],
-    description: "AI lifestyle outfit ad — full look storytelling for ecommerce.",
-    contribution: "AI UGC creative and edit.",
+    description:
+      "AI-generated outfit lifestyle video ad with full-look styling and movement, built for Meta ad placements. Context: fashion outfits sell on the whole look — the fit, the styling, the way the pieces move together — and a single packshot cannot carry that story. Problem: filming real lifestyle footage needs a location, a model, styling, and a crew, which is slow and expensive when testing new creative angles. Role: AI video generation, outfit-led creative direction, and ad-ready edit — built to look like a shot lifestyle commercial without organizing a shoot. Result: a test-ready full-look angle the brand can rotate alongside UGC and offer-led ads. Campaign performance: not published — this entry demonstrates the creative, not the ad results.",
+    contribution:
+      "AI video generation, outfit-led creative direction, and ad-ready edit.",
     status: "published",
     approvedForDisplay: true,
   },
