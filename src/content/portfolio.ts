@@ -514,10 +514,11 @@ export const projects: PortfolioProject[] = [
   },
   {
     id: "ai-static-ads",
-    title: "AI Static Ads",
+    title: "AI Static Ads — AI-Generated Static Ad Creatives for Meta Testing",
     category: "ai-creatives",
     thumbnail: "/projects/ai-statics.jpg",
-    thumbnailAlt: "AI-generated static Meta ad creatives",
+    thumbnailAlt:
+      "AI-generated static ad creatives — brand and direct-response formats for Meta ad testing",
     media: [
       { type: "image", src: "/projects/ai-creatives/static-30.jpg" },
       { type: "image", src: "/projects/ai-creatives/static-31.jpg" },
@@ -529,8 +530,9 @@ export const projects: PortfolioProject[] = [
       { type: "image", src: "/projects/ai-creatives/static-38.jpg" },
     ],
     description:
-      "AI static ad set — brand and direct-response formats ready for creative testing.",
-    contribution: "AI image ads, angle variations, and ad-account-ready exports.",
+      "AI-generated static ad creatives in brand and direct-response formats, built for creative testing on Meta. Context: static ads still carry a large share of Meta testing because they are fast to produce and easy to read in the feed, and one strong angle can be tested across placements without a shoot. Problem: producing enough varied angles — brand-led, offer-led, and product-led — by traditional design is slow when a brand needs to test quickly. Role: AI image generation, angle variations, and ad-account-ready exports — a set of ready-to-test statics across formats. Result: a test-ready set of angles the brand can rotate against video and UGC to find what stops the scroll. Campaign performance: not published — this entry demonstrates the creative, not the ad results.",
+    contribution:
+      "AI image generation, angle variations, and ad-account-ready exports.",
     status: "published",
     approvedForDisplay: true,
   },
