@@ -538,18 +538,18 @@ export const projects: PortfolioProject[] = [
   },
   {
     id: "ai-product-visuals",
-    title: "AI Product Visuals",
+    title: "AI Product Visuals — AI-Generated Product Imagery for Ecommerce Catalogs and Ads",
     category: "ai-creatives",
     thumbnail: "/projects/ai-product.jpg",
-    thumbnailAlt: "AI-generated product and brand visuals",
+    thumbnailAlt: "AI-generated product visuals — catalog, social and ad-ready imagery for ecommerce brands",
     media: [
       { type: "image", src: "/projects/ai-creatives/static-product.jpg" },
       { type: "image", src: "/projects/ai-creatives/static-r1.jpg" },
       { type: "image", src: "/projects/ai-creatives/static-rounded.jpg" },
     ],
     description:
-      "AI product and brand visuals for ecommerce — catalog, social, and ad use.",
-    contribution: "AI product imagery and branded asset creation.",
+      "Context: an ecommerce brand needs clean, consistent product imagery across its catalog, social posts, and ads, but a full photo shoot for every angle and variation is slow and costly. Problem: without strong visuals, listings and ads look flat and shoppers move on before they see what the product offers. Role: I directed and generated the product visuals with AI, keeping the product, lighting, and brand look consistent across the set. Result: a ready-to-use set of catalog, social, and ad images the brand can publish without a shoot. Campaign performance: not published — this entry demonstrates the creative, not the ad results.",
+    contribution: "AI image generation, product-led creative direction, and ad-ready exports.",
     status: "published",
     approvedForDisplay: true,
   },
