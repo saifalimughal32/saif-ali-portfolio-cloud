@@ -574,6 +574,28 @@ export const projects: PortfolioProject[] = [
     status: "published",
     approvedForDisplay: true,
   },
+  {
+    id: "luma",
+    title: "Luma \u2014 Brand Identity Design for a Protein Soft Serve Brand",
+    category: "branding",
+    thumbnail: "/projects/luma.jpg",
+    thumbnailAlt:
+      "Luma protein soft serve brand identity \u2014 two striped Luma cups held against a summer sky, chunky rounded wordmark, indulgence without compromise campaign visual",
+    media: [
+      { type: "image", src: "/projects/luma/campaign-hero.jpg" },
+      { type: "image", src: "/projects/luma/brand-messaging.jpg" },
+      { type: "image", src: "/projects/luma/sculptural-logo.jpg" },
+      { type: "image", src: "/projects/luma/colour-system.jpg" },
+      { type: "image", src: "/projects/luma/packaging-wall.jpg" },
+      { type: "image", src: "/projects/luma/cafe-posters.jpg" },
+    ],
+    description:
+      "Full brand identity for Luma, a protein soft serve brand \u2014 playful rounded wordmark, flavour-led colour system, packaging, signage, and campaign visuals, designed by whyitworks. Context: protein desserts usually dress like diet products \u2014 restrained, clinical, apologetic \u2014 so Luma is built the other way around, indulgence first with the protein as the bonus, around one soft, rounded wordmark and a palette taken from the product itself: Sky Blue, Orange Cream, Vanilla White, Choco Brown, and Lavender Mist. Role: complete identity system \u2014 primary logo with construction, clear space, and misuse rules, colour and Helvetica typography system, packaging for 12 oz cups and 33 oz take-home pints across vanilla, strawberry, and chocolate flavour pairings, staff apron and cap, exterior signage, caf\u00e9 posters, outdoor billboard and street hoarding campaigns, delivery cartons, and social templates, all carrying the line Indulgence Without Compromise. Result: one cohesive, high-energy identity that stays instantly recognisable from a cup in hand to a billboard \u2014 a protein brand that looks like a treat, not a compromise.",
+    contribution:
+      "Brand identity system \u2014 logo and usage guidelines, colour and typography, packaging, signage, outdoor and caf\u00e9 campaigns, and social templates.",
+    status: "published",
+    approvedForDisplay: true,
+  },
 ];
 
 export const publishedProjects = projects.filter(
