@@ -48,6 +48,17 @@ const serviceSchema = {
   description:
     "Teardown-style UX audit for Shopify stores — an expert review of the full buying journey across 13 areas, with annotated screenshots and a fix list ranked by revenue impact.",
   url: "https://www.saifali.site/ecommerce-ux-audit",
+  telephone: "+92 345 4105932",
+  priceRange: "$750+",
+  image: "https://www.saifali.site/og-image.jpg",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "L-3 Software Technology Park",
+    addressLocality: "Muzaffarabad",
+    addressRegion: "Azad Jammu and Kashmir",
+    postalCode: "13100",
+    addressCountry: "PK",
+  },
   provider: { "@id": "https://www.saifali.site/#person" },
   areaServed: ["US", "GB"],
   offers: {
