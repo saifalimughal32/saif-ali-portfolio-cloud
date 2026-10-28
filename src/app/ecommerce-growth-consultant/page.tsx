@@ -48,6 +48,17 @@ const serviceSchema = {
   description:
     "Full-journey growth consulting for DTC brands — Meta ads, landing pages, Shopify, and checkout in one growth line.",
   url: "https://www.saifali.site/ecommerce-growth-consultant",
+  telephone: "+92 345 4105932",
+  priceRange: "$750+",
+  image: "https://www.saifali.site/og-image.jpg",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "L-3 Software Technology Park",
+    addressLocality: "Muzaffarabad",
+    addressRegion: "Azad Jammu and Kashmir",
+    postalCode: "13100",
+    addressCountry: "PK",
+  },
   provider: { "@id": "https://www.saifali.site/#person" },
   areaServed: ["US", "GB"],
   offers: {
