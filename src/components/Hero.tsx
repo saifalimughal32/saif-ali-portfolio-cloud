@@ -280,7 +280,6 @@ export function Hero() {
               fill
               sizes="80px"
               className="object-cover"
-              priority
             />
           </div>
           <div className="min-w-0 pt-1">
