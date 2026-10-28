@@ -48,6 +48,17 @@ const serviceSchema = {
   description:
     "Landing page optimization for Shopify brands — the paid-traffic destination page reviewed against your live ads and rebuilt so message, offer, and creative align from click to CTA.",
   url: "https://www.saifali.site/landing-page-optimization",
+  telephone: "+92 345 4105932",
+  priceRange: "$750+",
+  image: "https://www.saifali.site/og-image.jpg",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "L-3 Software Technology Park",
+    addressLocality: "Muzaffarabad",
+    addressRegion: "Azad Jammu and Kashmir",
+    postalCode: "13100",
+    addressCountry: "PK",
+  },
   provider: { "@id": "https://www.saifali.site/#person" },
   areaServed: ["US", "GB"],
   offers: {
