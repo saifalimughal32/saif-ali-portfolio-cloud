@@ -287,11 +287,12 @@ export function Hero() {
             <p className="font-hand text-sm text-[var(--text-secondary)] sm:text-base">
               {site.heroEyebrow}
             </p>
-            <h1 className="mt-1 font-clash text-[clamp(2.5rem,12vw,3.75rem)] font-semibold leading-[0.92] tracking-[-0.04em] text-[var(--text)]">
+            {/* SEO: single h1 per page — the page h1 is the sr-only role title in page.tsx, so the hero name renders as a styled p (zero visual change) */}
+            <p className="mt-1 font-clash text-[clamp(2.5rem,12vw,3.75rem)] font-semibold leading-[0.92] tracking-[-0.04em] text-[var(--text)]">
               {site.heroLeft}
               <br />
               {site.heroRight}
-            </h1>
+            </p>
             <HeroRotatingTagline className="mt-3" align="left" />
             <div className="mt-2">
               <LocalClock align="left" />
