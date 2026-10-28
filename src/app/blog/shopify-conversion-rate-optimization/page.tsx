@@ -55,7 +55,8 @@ const articleSchema = {
   description:
     "13 high-impact Shopify CRO fixes from real store reviews — shipping clarity, visible reviews, mobile buy path, cart and checkout. What each leak is, why it costs sales, and how to check your store.",
   url: "https://www.saifali.site/blog/shopify-conversion-rate-optimization",
-  datePublished: "2026-10-15",
+  datePublished: "2026-10-15T00:00:00+05:00",
+  image: "https://www.saifali.site/og-image.jpg",
   author: { "@id": "https://www.saifali.site/#person" },
   about: {
     "@type": "Thing",
