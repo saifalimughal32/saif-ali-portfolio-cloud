@@ -48,6 +48,17 @@ const serviceSchema = {
   description:
     "Case studies and full-journey teardown methodology for Shopify brands — the 13-area review behind the Shopify Conversion Fix Sprint, shown with an independent methodology demo on a public storefront.",
   url: "https://www.saifali.site/case-studies",
+  telephone: "+92 345 4105932",
+  priceRange: "$750+",
+  image: "https://www.saifali.site/og-image.jpg",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "L-3 Software Technology Park",
+    addressLocality: "Muzaffarabad",
+    addressRegion: "Azad Jammu and Kashmir",
+    postalCode: "13100",
+    addressCountry: "PK",
+  },
   provider: { "@id": "https://www.saifali.site/#person" },
   areaServed: ["US", "GB"],
   offers: {
