@@ -596,6 +596,29 @@ export const projects: PortfolioProject[] = [
     status: "published",
     approvedForDisplay: true,
   },
+  {
+    id: "dentify",
+    title: "Dentify \u2014 Brand Identity Design for a Dental Clinic",
+    category: "branding",
+    thumbnail: "/projects/dentify.jpg",
+    thumbnailAlt:
+      "Dentify dental clinic brand identity \u2014 smiling patient during a checkup with the white Dentify logo, deep blue and cyan system",
+    media: [
+      { type: "image", src: "/projects/dentify/cover.jpg" },
+      { type: "image", src: "/projects/dentify/logo.jpg" },
+      { type: "image", src: "/projects/dentify/colour-typography.jpg" },
+      { type: "image", src: "/projects/dentify/stationery.jpg" },
+      { type: "image", src: "/projects/dentify/billboard.jpg" },
+      { type: "image", src: "/projects/dentify/social-profile.jpg" },
+    ],
+    description:
+      "Full brand identity for Dentify, a modern dental clinic \u2014 a warm, confident system built on gentle precision, designed by whyitworks. Context: dental branding usually leans cold and clinical, so Dentify is built the other way \u2014 clinical clarity with a welcoming visual language that helps patients feel understood from the first appointment. Role: complete identity system around the supplied Dentify emblem and wordmark \u2014 a five-colour system of Deep Blue, Cyan, White, Dark Navy, and Cool Mist, Britti Sans typography, photography direction, clinic interiors and signage, staff ID badges and uniforms, stationery and appointment cards, a printed brand book, billboard and poster campaigns, social templates and stories, and app and web interface branding. Result: one consistent, reassuring identity that carries the same calm voice from the clinic chair to the patient\u2019s phone. The full visual case study is on the site at /case-studies/dentify.",
+    contribution:
+      "Brand identity system \u2014 logo application, colour and typography, clinic signage and interiors, stationery, brand book, campaigns, social and app branding.",
+    liveUrl: "/case-studies/dentify",
+    status: "published",
+    approvedForDisplay: true,
+  },
 ];
 
 export const publishedProjects = projects.filter(

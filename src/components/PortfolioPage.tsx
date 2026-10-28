@@ -322,6 +322,16 @@ export function PortfolioPage() {
                     {activeProject.description}
                   </p>
                 ) : null}
+                {activeProject.liveUrl ? (
+                  <p className="mt-2">
+                    <a
+                      href={activeProject.liveUrl}
+                      className="text-sm font-medium text-[var(--accent)] underline underline-offset-4"
+                    >
+                      View the full case study
+                    </a>
+                  </p>
+                ) : null}
                 {mediaCount > 1 ? (
                   <p className="mt-1 text-xs text-[var(--text-muted)]">
                     {mediaIndex + 1} / {mediaCount}
