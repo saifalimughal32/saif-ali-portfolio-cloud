@@ -70,11 +70,6 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 2,
-      name: "Blog",
-    },
-    {
-      "@type": "ListItem",
-      position: 3,
       name: "Mobile CRO for Shopify",
     },
   ],
