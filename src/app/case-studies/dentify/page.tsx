@@ -277,7 +277,7 @@ export default function CaseStudyDentifyPage() {
               alt={item.alt}
               width={1500}
               height={985}
-              quality={82}
+              quality={75}
               sizes="(max-width: 1152px) 100vw, 1152px"
               priority={i === 0}
               className="h-auto w-full"
