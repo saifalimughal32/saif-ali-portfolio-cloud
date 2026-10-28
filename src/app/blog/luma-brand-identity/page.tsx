@@ -48,7 +48,8 @@ const articleSchema = {
   description:
     "A walkthrough of the Luma brand identity by whyitworks — how a protein soft serve brand was designed around indulgence instead of diet: the wordmark, the flavour-led colour system, Helvetica typography, packaging, signage, and campaign design.",
   url: "https://www.saifali.site/blog/luma-brand-identity",
-  datePublished: "2026-10-28",
+  datePublished: "2026-10-28T00:00:00+05:00",
+  image: "https://www.saifali.site/projects/luma.jpg",
   author: { "@id": "https://www.saifali.site/#person" },
   about: {
     "@type": "Thing",
