@@ -246,6 +246,7 @@ export const projects: PortfolioProject[] = [
       "Brand identity and packaging design for MORA, a calming lavender–blueberry drink. Identity system, packaging, apparel, retail environment, and social stories built around “Dream Better. Feel Brighter.” Context: MORA is a calming lavender-blueberry drink — beverage shoppers decide in seconds at the shelf and on socials, so the identity is built to be recognizable at a glance and consistent across packaging, apparel, and campaign visuals. Role: full identity system — logo, product packaging, apparel, retail environment, and social story concepts. Result: one cohesive visual language that carries from shelf to screen, giving the brand a consistent look across every touchpoint.",
     contribution:
       "Brand identity system, product packaging, apparel, retail environment, and social campaign concepts.",
+    liveUrl: "/case-studies/mora",
     status: "published",
     approvedForDisplay: true,
   },
@@ -272,6 +273,7 @@ export const projects: PortfolioProject[] = [
       "Full brand identity for Rivori Matcha, a playful matcha lifestyle brand — logo system, packaging, storefront, social, and lifestyle campaign visuals. Context: Rivori Matcha is built around \u201cSmooth. Fresh. Uplifting.\u201d — matcha competes in a crowded wellness-drink space where shelf recognition and social shareability decide first purchases, so the identity is built to be recognizable at a glance and consistent from packaging cups to storefront to social profiles. Role: full identity system — logo and logo mark, packaging cups and carrier bag system, storefront graphics, shipping boxes, social profile kit, and lifestyle campaign visuals. Result: one cohesive identity that carries the brand\u2019s playful energy across every touchpoint, from the cup in hand to the shelf, the box at the door, and the feed.",
     contribution:
       "Brand identity system — logo, packaging cups and carrier bag, storefront and environmental graphics, shipping boxes, social profile kit, and lifestyle campaign visuals.",
+    liveUrl: "/case-studies/rivori-matcha",
     status: "published",
     approvedForDisplay: true,
   },
@@ -298,6 +300,7 @@ export const projects: PortfolioProject[] = [
       "Full brand identity for SpookyBite, a playful pizza brand — ghost mascot, wordmark, packaging system, storefront, pattern, and social visuals. Context: SpookyBite pairs everyday pizza cravings with a spooky twist — in food branding the identity has to trigger recognition and appetite at a glance, from the pizza box in hand to the storefront to the feed, so the system is built around one memorable mascot and a bold red, orange, and cream palette. Role: full identity system — ghost mascot and wordmark, logo lockup, packaging boxes, cup-and-bag system, storefront graphics, brand pattern, stickers, and social post visuals. Result: one cohesive identity that carries the brand\u2019s playful energy across every touchpoint, from the box at the door to the storefront to the feed.",
     contribution:
       "Brand identity system — ghost mascot, wordmark and logo lockup, pizza box and cup-and-bag packaging, storefront graphics, brand pattern, stickers, and social visual direction.",
+    liveUrl: "/case-studies/spookybite",
     status: "published",
     approvedForDisplay: true,
   },
@@ -571,6 +574,7 @@ export const projects: PortfolioProject[] = [
       "Context: fast food is a crowded category where a brand gets a second to trigger appetite and recognition — from the bucket in hand to the restaurant wall to the feed. Problem: generic fast food branding blends in, so a bold new brand risks looking like every other outlet before a customer ever tastes the food. Role: I built the complete identity system around the supplied Habibi logo — logo variations and lockups, Gliker display typography, a bold orange, brown, and cream color system, packaging for buckets, cups, and bags, poster and campaign design, social media templates, and merchandise and delivery branding, with big food photography doing the talking. Result: one cohesive, high-energy identity that carries across packaging, campaigns, and everyday touchpoints, giving Habibi a distinctive look that stands apart from generic fast food branding.",
     contribution:
       "Brand identity system \u2014 logo application and lockups, packaging, campaign posters, social templates, merchandise, and delivery branding.",
+    liveUrl: "/case-studies/habibi",
     status: "published",
     approvedForDisplay: true,
   },
@@ -593,6 +597,7 @@ export const projects: PortfolioProject[] = [
       "Full brand identity for Luma, a protein soft serve brand \u2014 playful rounded wordmark, flavour-led colour system, packaging, signage, and campaign visuals, designed by whyitworks. Context: protein desserts usually dress like diet products \u2014 restrained, clinical, apologetic \u2014 so Luma is built the other way around, indulgence first with the protein as the bonus, around one soft, rounded wordmark and a palette taken from the product itself: Sky Blue, Orange Cream, Vanilla White, Choco Brown, and Lavender Mist. Role: complete identity system \u2014 primary logo with construction, clear space, and misuse rules, colour and Helvetica typography system, packaging for 12 oz cups and 33 oz take-home pints across vanilla, strawberry, and chocolate flavour pairings, staff apron and cap, exterior signage, caf\u00e9 posters, outdoor billboard and street hoarding campaigns, delivery cartons, and social templates, all carrying the line Indulgence Without Compromise. Result: one cohesive, high-energy identity that stays instantly recognisable from a cup in hand to a billboard \u2014 a protein brand that looks like a treat, not a compromise.",
     contribution:
       "Brand identity system \u2014 logo and usage guidelines, colour and typography, packaging, signage, outdoor and caf\u00e9 campaigns, and social templates.",
+    liveUrl: "/case-studies/luma",
     status: "published",
     approvedForDisplay: true,
   },

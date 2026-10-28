@@ -16,6 +16,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "https://www.saifali.site/blog/mobile-cro-shopify", lastModified: "2026-10-17", changeFrequency: "monthly", priority: 0.8 },
     { url: "https://www.saifali.site/blog/luma-brand-identity", lastModified: "2026-10-28", changeFrequency: "monthly", priority: 0.8 },
     { url: "https://www.saifali.site/case-studies/dentify", lastModified: "2026-10-29", changeFrequency: "monthly", priority: 0.8 },
+    { url: "https://www.saifali.site/case-studies/luma", lastModified: "2026-10-29", changeFrequency: "monthly", priority: 0.8 },
+    { url: "https://www.saifali.site/case-studies/habibi", lastModified: "2026-10-29", changeFrequency: "monthly", priority: 0.8 },
+    { url: "https://www.saifali.site/case-studies/mora", lastModified: "2026-10-29", changeFrequency: "monthly", priority: 0.8 },
+    { url: "https://www.saifali.site/case-studies/rivori-matcha", lastModified: "2026-10-29", changeFrequency: "monthly", priority: 0.8 },
+    { url: "https://www.saifali.site/case-studies/spookybite", lastModified: "2026-10-29", changeFrequency: "monthly", priority: 0.8 },
     { url: "https://www.saifali.site/book", lastModified: "2026-10-16", changeFrequency: "monthly", priority: 0.7 },
     { url: "https://www.saifali.site/cv", lastModified: "2026-10-16", changeFrequency: "monthly", priority: 0.5 },
   ];
