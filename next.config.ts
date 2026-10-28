@@ -21,6 +21,7 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 60 * 60 * 24 * 30,
     qualities: [60, 75, 85, 92],
   },
+  poweredByHeader: false,
   // Allow Cursor / forwarded preview origins during local cloud-agent testing
   allowedDevOrigins: ["127.0.0.1", "localhost"],
   async headers() {
