@@ -91,9 +91,16 @@ export default function HomePage() {
             <a href="/ecommerce-ux-audit" className={inlineLinkClass}>
               ecommerce UX audits
             </a>
-            , and{" "}
+            ,{" "}
             <a href="/landing-page-optimization" className={inlineLinkClass}>
               landing page optimization
+            </a>
+            , and{" "}
+            <a
+              href="/ecommerce-growth-consultant"
+              className={inlineLinkClass}
+            >
+              ecommerce growth consulting
             </a>{" "}
             for DTC brands — see the{" "}
             <a href="/case-studies" className={inlineLinkClass}>
