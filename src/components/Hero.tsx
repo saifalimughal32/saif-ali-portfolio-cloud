@@ -276,7 +276,7 @@ export function Hero() {
           <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full shadow-[0_6px_20px_rgba(0,0,0,0.12)] sm:h-20 sm:w-20">
             <Image
               src="/media/saif-portrait.jpg"
-              alt=""
+              alt="Saif Ali, founder of whyitworks"
               fill
               sizes="80px"
               className="object-cover"
