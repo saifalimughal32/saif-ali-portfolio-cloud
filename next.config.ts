@@ -22,10 +22,27 @@ const nextConfig: NextConfig = {
     qualities: [60, 75, 85, 92],
   },
   poweredByHeader: false,
+  experimental: {
+    // Tree-shake lucide-react barrel imports out of the initial JS bundle.
+    optimizePackageImports: ["lucide-react"],
+  },
   // Allow Cursor / forwarded preview origins during local cloud-agent testing
   allowedDevOrigins: ["127.0.0.1", "localhost"],
   async headers() {
-    return [{ source: "/:path*", headers: securityHeaders }];
+    return [
+      { source: "/:path*", headers: securityHeaders },
+      {
+        // Self-hosted fonts are fingerprinted by filename only when replaced;
+        // long immutable caching removes repeat-visit font revalidation.
+        source: "/fonts/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+    ];
   },
 };
 
