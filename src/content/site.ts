@@ -4,7 +4,7 @@ const askQuery = encodeURIComponent(
 
 const whatsappNumber =
   process.env.NEXT_PUBLIC_WHATSAPP_NUMBER?.replace(/\D/g, "").trim() ||
-  "923001234567";
+  "923454105932";
 const linkedinUrl =
   process.env.NEXT_PUBLIC_LINKEDIN_URL?.trim() ||
   "https://www.linkedin.com/in/saif-ali-094034279";
