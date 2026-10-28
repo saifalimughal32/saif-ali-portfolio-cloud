@@ -207,7 +207,7 @@ export function ContactSection() {
             <div className="relative overflow-hidden rounded-[24px] bg-[#1a1a1a]">
               <Image
                 src="/media/saif-portrait-contact.jpg"
-                alt=""
+                alt="Saif Ali — ecommerce growth consultant"
                 width={640}
                 height={800}
                 className="h-full min-h-[520px] w-full object-cover"
