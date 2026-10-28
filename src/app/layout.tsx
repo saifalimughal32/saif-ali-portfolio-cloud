@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
+import { preload } from "react-dom";
 import { SmoothScrollProvider } from "@/components/SmoothScrollProvider";
 import { site } from "@/content/site";
 import "./globals.css";
@@ -41,11 +42,25 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Advance discovery of the two fonts the hero paints first (display name in
+  // Clash Display Semibold, body in General Sans). font-display: swap in
+  // globals.css is unchanged — this only moves the fetch earlier.
+  preload("/fonts/ClashDisplay-Semibold.woff2", {
+    as: "font",
+    type: "font/woff2",
+    crossOrigin: "anonymous",
+  });
+  preload("/fonts/GeneralSans-Regular.woff2", {
+    as: "font",
+    type: "font/woff2",
+    crossOrigin: "anonymous",
+  });
   return (
     <html lang="en">
       <body className="antialiased">
         <Script
           async
+          strategy="lazyOnload"
           src="https://www.googletagmanager.com/gtag/js?id=G-0HZ7JB42PE"
         />
         <Script id="ga4-init">
