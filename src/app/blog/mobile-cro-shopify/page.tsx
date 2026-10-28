@@ -48,7 +48,8 @@ const articleSchema = {
   description:
     "Nine mobile-specific conversion fixes for Shopify stores — sticky buy bar, tap targets, iOS zoom behavior, pop-ups, express checkout, and the mobile form details that decide whether a phone visitor becomes a customer.",
   url: "https://www.saifali.site/blog/mobile-cro-shopify",
-  datePublished: "2026-10-17",
+  datePublished: "2026-10-17T00:00:00+05:00",
+  image: "https://www.saifali.site/og-image.jpg",
   author: { "@id": "https://www.saifali.site/#person" },
   about: {
     "@type": "Thing",
