@@ -10,10 +10,12 @@ const linkedinUrl =
   "https://www.linkedin.com/in/saif-ali-094034279";
 /** Set NEXT_PUBLIC_DRIBBBLE_URL to your profile (e.g. https://dribbble.com/handle) */
 const dribbbleUrl =
-  process.env.NEXT_PUBLIC_DRIBBBLE_URL?.trim() || "https://dribbble.com/";
+  process.env.NEXT_PUBLIC_DRIBBBLE_URL?.trim() ||
+  "https://dribbble.com/saifalimughal32";
 /** Set NEXT_PUBLIC_PINTEREST_URL to your profile */
 const pinterestUrl =
-  process.env.NEXT_PUBLIC_PINTEREST_URL?.trim() || "https://www.pinterest.com/";
+  process.env.NEXT_PUBLIC_PINTEREST_URL?.trim() ||
+  "https://www.pinterest.com/saifalimughal32/";
 
 export type SocialLink = {
   label: string;
