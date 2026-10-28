@@ -279,6 +279,14 @@ export default function BlogMobileCroPage() {
             >
               13-area Shopify conversion framework
             </Link>
+            . For the design side of the same work — how a DTC
+            brand&rsquo;s identity gets built from scratch — see the{" "}
+            <Link
+              href="/blog/luma-brand-identity"
+              className="text-[var(--accent)] underline underline-offset-4"
+            >
+              Luma brand identity case study
+            </Link>
             .
           </p>
           <p className={bodyClass + " max-w-2xl"}>
