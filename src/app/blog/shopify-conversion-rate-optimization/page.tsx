@@ -213,7 +213,20 @@ const fixes: { title: string; what: string; why: ReactNode; check: string }[] = 
   {
     title: "10. Use real product images — and enough of them",
     what: "Multiple photos of the actual product: the product alone, the product in use, close-ups of details and materials, and a sense of scale. Zoom that works.",
-    why: "Online buyers can’t touch the product, so images do the job of the in-store pickup. One hero shot leaves questions unanswered — what does the texture look like, how big is it really, what’s in the box? Unanswered questions become reasons not to buy.",
+    why: (
+      <>
+        Online buyers can’t touch the product, so images do the job of the in-store pickup. One hero shot leaves questions unanswered — what does the texture look like, how big is it really, what’s in the box? Unanswered questions become reasons not to buy. How far presentation
+        alone can carry a product is easiest to see in a full brand
+        build — I walked through one in the{" "}
+        <Link
+          href="/blog/luma-brand-identity"
+          className="text-[var(--accent)] underline underline-offset-4"
+        >
+          Luma brand identity case study
+        </Link>
+        .
+      </>
+    ),
     check: "Count the images on your best-seller. Can a buyer see the details, the scale, and the product in context? If you have fewer than four images or no zoom, that’s a gap worth closing.",
   },
   {
