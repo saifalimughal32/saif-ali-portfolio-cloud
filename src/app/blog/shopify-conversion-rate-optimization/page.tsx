@@ -6,7 +6,7 @@ import { site } from "@/content/site";
 
 export const metadata: Metadata = {
   title:
-    "Shopify Conversion Rate Optimization: 13 High Impact Fixes That Increase Sales | Saif Ali",
+    "Shopify Conversion Rate Optimization: 13 Fixes That Increase Sales | Saif Ali",
   description:
     "13 high-impact Shopify CRO fixes from real store reviews: shipping clarity, visible reviews, mobile buy path, cart and checkout.",
   alternates: {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Shopify Conversion Rate Optimization: 13 High Impact Fixes That Increase Sales | Saif Ali",
+      "Shopify Conversion Rate Optimization: 13 Fixes That Increase Sales | Saif Ali",
     description:
       "13 high-impact Shopify CRO fixes from real store reviews: shipping clarity, visible reviews, mobile buy path, cart and checkout.",
     url: "/blog/shopify-conversion-rate-optimization",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Shopify Conversion Rate Optimization: 13 High Impact Fixes That Increase Sales | Saif Ali",
+      "Shopify Conversion Rate Optimization: 13 Fixes That Increase Sales | Saif Ali",
     description:
       "13 high-impact Shopify CRO fixes from real store reviews: shipping clarity, visible reviews, mobile buy path, cart and checkout.",
     images: ["/og-image.jpg"],
