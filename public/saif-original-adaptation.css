@@ -1,0 +1,12 @@
+#saif-project-dialog{padding:0;border:0;border-radius:16px;width:min(900px,92vw);max-height:90vh;overflow:auto;background:white;color:#111}#saif-project-dialog::backdrop{background:#000b;backdrop-filter:blur(8px)}#saif-dialog-image{width:100%;max-height:60vh;object-fit:contain;background:#f3f3f3}.saif-dialog-close{position:sticky;top:12px;float:right;margin:12px 12px -50px 0;z-index:2;width:38px;height:38px;border:0;border-radius:50%;background:white;font-size:26px;cursor:pointer}.saif-dialog-copy{padding:30px;font-family:'Neue Montreal',Arial,sans-serif}.saif-dialog-copy h2{font-size:38px;line-height:1.15;margin:15px 0}.saif-dialog-copy p{font-size:18px;line-height:1.6;margin:15px 0 25px}#saif-dialog-category{font-size:13px;color:#666}#saif-dialog-contact{display:inline-block;padding:14px 22px;background:black;color:white;border-radius:30px}.popup-wrapper{display:none!important}.case-result-wrap .heading-h5,.testimoanial-result-block .heading-h3{overflow-wrap:anywhere}.testimoanial-result-block .heading-h3{font-size:clamp(20px,3vw,40px)}
+/* Keep the logo-to-introduction transition close to its content. */
+@media(min-width:992px){
+ .logo-section.v2{padding-top:120px!important;padding-bottom:32px!important}
+ .hero_track{height:150vh}
+ .hero_sticky{height:min(740px,100vh)}
+ .hero_shuttle{height:fit-content!important;min-height:0!important;max-height:none!important;margin:32px auto!important;align-self:flex-start}
+}
+@media(max-width:991px){.logo-section.v2{padding-bottom:32px!important}.hero_sticky{padding-top:32px!important}}
+
+/* Portfolio imagery already contains its own brand typography. */
+.arc-card-content{justify-content:flex-end!important}

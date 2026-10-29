@@ -1,6 +1,7 @@
 "use client";
 
 import { Star } from "lucide-react";
+import Link from "next/link";
 import type { PortfolioCategoryIntro } from "@/content/portfolio";
 import { site } from "@/content/site";
 import { ScheduleCallButton } from "./ScheduleCallButton";
@@ -39,12 +40,12 @@ export function PortfolioCategoryHero({ intro }: { intro: PortfolioCategoryIntro
           Selected Shopify store builds, CRO-focused redesigns, and ecommerce
           growth work — each with the thinking behind the build. For the review
           method behind the work, see the{" "}
-          <a
+          <Link
             href="/case-studies"
             className="text-[var(--accent)] underline underline-offset-4"
           >
             case-study teardowns
-          </a>
+          </Link>
           .
         </p>
         <div className="mt-7 flex justify-center">
