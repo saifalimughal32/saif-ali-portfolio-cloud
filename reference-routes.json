@@ -45,5 +45,16 @@
   "/contact": "contact.html",
   "/faqs": "faqs.html",
   "/testimonials": "testimonials.html",
-  "/resources": "resources.html"
+  "/resources": "resources.html",
+  "/services": "services.html",
+  "/case-studies/ai-video1": "case-studies/ai-video1.html",
+  "/case-studies/ai-video3": "case-studies/ai-video3.html",
+  "/case-studies/ai-bag": "case-studies/ai-bag.html",
+  "/case-studies/ai-teller": "case-studies/ai-teller.html",
+  "/case-studies/ai-ring": "case-studies/ai-ring.html",
+  "/case-studies/ai-kleid": "case-studies/ai-kleid.html",
+  "/case-studies/ai-padel": "case-studies/ai-padel.html",
+  "/case-studies/ai-food": "case-studies/ai-food.html",
+  "/case-studies/ai-klammern": "case-studies/ai-klammern.html",
+  "/case-studies/ai-outfit": "case-studies/ai-outfit.html"
 }

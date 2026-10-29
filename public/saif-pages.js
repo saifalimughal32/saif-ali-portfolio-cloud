@@ -1,6 +1,27 @@
 (() => {
  'use strict';
  const boot=()=>{
+  // Keep real page navigation independent of animation/dropdown click handlers.
+  window.addEventListener('click',event=>{
+   if(event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+   const link=event.target.closest('.nav-menu-v2 a[href],.saif-portfolio-grid a[href],a.grid-image[href]');
+   if(!link||link.hasAttribute('download')||link.target==='_blank')return;
+   const destination=new URL(link.href,location.href);
+   if(destination.origin!==location.origin||destination.hash||destination.pathname===location.pathname)return;
+   event.preventDefault();event.stopImmediatePropagation();location.assign(destination.href);
+  },true);
+  // All content is already served as static HTML. Speculate only on deliberate
+  // link intent; never prerender submissions, downloads, APIs, or external sites.
+  if(!navigator.connection?.saveData&&!/2g/.test(navigator.connection?.effectiveType||'')){
+   const eligible='a[href^="/"]:not([href^="//"]):not([href^="/api/"]):not([href*="#"]):not([download]):not([target="_blank"])';
+   if(HTMLScriptElement.supports?.('speculationrules')){
+    const rules=document.createElement('script');rules.type='speculationrules';
+    rules.textContent=JSON.stringify({prefetch:[{source:'document',where:{selector_matches:eligible},eagerness:'moderate'}],prerender:[{source:'document',where:{selector_matches:eligible},eagerness:'conservative'}]});document.head.append(rules);
+   }else{
+    const warmed=new Set();const warm=event=>{const a=event.target.closest(eligible);if(!a||warmed.size>=4||warmed.has(a.pathname)||a.pathname===location.pathname)return;warmed.add(a.pathname);const hint=document.createElement('link');hint.rel='prefetch';hint.href=a.href;document.head.append(hint);};
+    document.addEventListener('pointerover',warm,{passive:true});document.addEventListener('focusin',warm);
+   }
+  }
   if(document.body.classList.contains('saif-inner-page')){
    const button=document.querySelector('.nav_menu-button'),menu=document.querySelector('.nav-menu-v2');
    if(button&&menu){menu.id='saif-site-navigation';button.setAttribute('role','button');button.setAttribute('tabindex','0');button.setAttribute('aria-controls',menu.id);button.setAttribute('aria-expanded','false');
