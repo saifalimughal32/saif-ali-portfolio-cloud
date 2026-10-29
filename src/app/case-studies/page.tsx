@@ -1,3 +1,4 @@
+import { EditorialGallery } from "@/components/EditorialGallery";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SharedFooter } from "@/components/SharedFooter";
@@ -180,7 +181,9 @@ function CtaRow({ label = "Book a fit call" }: { label?: string }) {
 
 export default function CaseStudiesPage() {
   return (
-    <main className="saif-portfolio min-h-screen px-5 pb-28 pt-10 md:px-10">
+    <main className="editorial-work-page">
+<EditorialGallery title="Case Studies & Shopify Teardowns"/>
+<details className="editorial-work-method"><summary><h2>The methodology behind the work</h2></summary>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
@@ -209,14 +212,14 @@ export default function CaseStudiesPage() {
 
         {/* Hero */}
         <section className="mt-6">
-          <h1 className="font-clash text-[clamp(2rem,5vw,3.35rem)] font-semibold leading-[1.08] tracking-[-0.03em] text-[var(--text)]">
+          <h2 className="font-clash text-[clamp(2rem,5vw,3.35rem)] font-semibold leading-[1.08] tracking-[-0.03em] text-[var(--text)]">
             Case Studies
             <br />
             &{" "}
             <em className="not-italic accent" style={serifItalic}>
               Shopify Teardowns
             </em>
-          </h1>
+          </h2>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-[var(--text-secondary)] md:text-lg">
             The method is the product. This page documents how I read a
             Shopify store — the full 13-area teardown behind every
@@ -539,6 +542,7 @@ export default function CaseStudiesPage() {
         </section>
       </div>
 
+      </details>
       <SharedFooter />
     </main>
   );

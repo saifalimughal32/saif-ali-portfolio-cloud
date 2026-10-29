@@ -1,10 +1,12 @@
 import type { MetadataRoute } from "next";
+import { publishedProjects } from "@/content/portfolio";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Bump the affected page's lastModified on every content deploy so
   // crawlers get a freshness signal for recrawls.
   return [
-    { url: "https://www.saifali.site/", lastModified: "2026-10-16", changeFrequency: "weekly", priority: 1 },
+    ...["/about","/blog","/contact",...publishedProjects.filter(p=>!p.liveUrl?.startsWith("/case-studies/")).map(p=>"/case-studies/"+p.id)].map(path=>({url:"https://www.saifali.site"+path,lastModified:"2026-10-29"})),
+    { url: "https://www.saifali.site/", lastModified: "2026-10-29", changeFrequency: "weekly", priority: 1 },
     { url: "https://www.saifali.site/portfolio", lastModified: "2026-10-29", changeFrequency: "monthly", priority: 0.8 },
     { url: "https://www.saifali.site/shopify-cro-consultant", lastModified: "2026-10-16", changeFrequency: "monthly", priority: 0.9 },
     { url: "https://www.saifali.site/ecommerce-growth-consultant", lastModified: "2026-10-16", changeFrequency: "monthly", priority: 0.9 },
