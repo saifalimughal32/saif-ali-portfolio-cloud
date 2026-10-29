@@ -1,6 +1,15 @@
 (() => {
  'use strict';
  const boot=()=>{
+  const portfolioCards=[...document.querySelectorAll('[data-portfolio-category]')];
+  const portfolioFilters=[...document.querySelectorAll('[data-portfolio-filter]')];
+  portfolioFilters.forEach(button=>button.addEventListener('click',()=>{
+   portfolioFilters.forEach(other=>other.setAttribute('aria-pressed',String(other===button)));
+   const category=button.dataset.portfolioFilter;
+   portfolioCards.forEach(card=>card.hidden=category!=='all'&&card.dataset.portfolioCategory!==category);
+   const count=portfolioCards.filter(card=>!card.hidden).length;
+   const status=document.getElementById('portfolio-result-count');if(status)status.textContent=count+' project'+(count===1?'':'s');
+  }));
   // Keep real page navigation independent of animation/dropdown click handlers.
   window.addEventListener('click',event=>{
    if(event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
